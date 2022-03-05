@@ -10,6 +10,6 @@ function highestDigit(number) {
 	
     return captureHighestInt;
 }
-
+// Test Cases:
 console.log(highestDigit(121293)) // 9
 console.log(highestDigit(3002003)) // 3
