@@ -4,12 +4,12 @@ console.log("yummy")
 
 // Finds the highest digit, when number is passed in as an input.
 function highestDigit(number) {
+	const convert = number.toString()
+	const slicing = convert.split('')
+	const captureHighestInt = Math.max(...slicing)
 	
-	var stringy = number.toString()
-	var slicing = stringy.split('')
-	var highest = Math.max(slicing)
-	console.log(slicing)
-	return highest;
+    return captureHighestInt;
 }
 
-console.log(highestDigit(345))
+console.log(highestDigit(121293)) // 9
+console.log(highestDigit(3002003)) // 3
