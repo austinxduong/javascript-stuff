@@ -3,7 +3,7 @@ console.log("yummy")
 // Purpose: to demonstrate my thought process, and how I logic my reasoning.
 
 // Finds the highest digit, when number is passed in as an input.
-function highestDigit(number) {
+function findsHighestDigit(number) {
 	const convert = number.toString()
 	const slicing = convert.split('')
 	const captureHighestInt = Math.max(...slicing)
@@ -11,5 +11,5 @@ function highestDigit(number) {
     return captureHighestInt;
 }
 // Test Cases:
-console.log(highestDigit(121293)) // 9
-console.log(highestDigit(3002003)) // 3
+console.log(findsHighestDigit(121293)) // 9
+console.log(findsHighestDigit(3002003)) // 3
