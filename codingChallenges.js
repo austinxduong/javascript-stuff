@@ -1,3 +1,4 @@
+var module = module || {};
 console.log("yummy")
 // A place where I can practice/brainstorm through my coding challenges.
 // Purpose: to demonstrate my thought process, and how I logic my reasoning.
@@ -36,7 +37,7 @@ function sortArrayByLength(arr) {
 		return a.length-b.length
 	})
 }
-
+// Test case(s)
 console.log(sortArrayByLength(['hello', 'austi', 'im', '!'])) // [ '!', 'im', 'hello', 'austi' ]
 
 
