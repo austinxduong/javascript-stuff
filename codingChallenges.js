@@ -13,3 +13,14 @@ function findsHighestDigit(number) {
 // Test Cases:
 console.log(findsHighestDigit(121293)) // 9
 console.log(findsHighestDigit(3002003)) // 3
+
+var myArray = ['a', 'b', 'c', 'd'];
+
+let add = myArray.unshift('addToFirst');
+let remove = myArray.pop()
+let gain = myArray.push('gainedLast')
+
+console.log(myArray)
+console.log(remove, myArray)
+console.log(gain, myArray)
+
