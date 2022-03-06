@@ -1,5 +1,7 @@
 
-Multi-flavored functions with passing test cases. Tests are automated using Jest. ✅
+ Multi-flavored functions with passing test cases. 
+ 
+ >Tests are automated using [Jest](https://jestjs.io/). ✅ 🧪🔬
 
  ```diff
  + Finds Highest Digit
