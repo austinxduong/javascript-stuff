@@ -1,4 +1,4 @@
-const { findsHighestDigit } = require('../../codingChallenges')
+const { findsHighestDigit, sortArrayByLength } = require('../../codingChallenges')
 
 
 describe('Test validity for functions', () => {
@@ -6,5 +6,15 @@ describe('Test validity for functions', () => {
 
     
         expect(findsHighestDigit(876329)).toEqual(9);
+    })
+
+    test('Sort Array of Strings by its length', () => {
+
+
+        expect(sortArrayByLength(
+            ['i/m', 'super','hungry', 'what', 'should', 'i', 'eat' ]
+        )).toEqual(
+            ["i", "i/m", "eat", "what", "super", "hungry", "should"]
+        )
     })
 })

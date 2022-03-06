@@ -24,4 +24,21 @@ console.log(myArray)
 console.log(remove, myArray)
 console.log(gain, myArray)
 
-module.exports = { findsHighestDigit }
+// -------------------------------------------------------------------------
+
+function sortArrayByLength(arr) {
+	let sunday = []
+	
+	for(let i = 0; i < arr.length; i++) {
+		sunday.push(arr[i])
+	}
+	return sunday.sort((a, b) => {
+		return a.length-b.length
+	})
+}
+
+console.log(sortArrayByLength(['hello', 'austi', 'im', '!'])) // [ '!', 'im', 'hello', 'austi' ]
+
+
+module.exports = { findsHighestDigit, sortArrayByLength }
+
