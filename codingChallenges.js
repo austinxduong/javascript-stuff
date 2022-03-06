@@ -24,3 +24,4 @@ console.log(myArray)
 console.log(remove, myArray)
 console.log(gain, myArray)
 
+module.exports = { findsHighestDigit }
