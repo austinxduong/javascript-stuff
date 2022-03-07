@@ -8,7 +8,7 @@ fetch('https://api.aakhilv.me/fun/wouldyourather')
     })
     .then(data => {
         console.log(data.data[0])
-        document.getElementById('root').innerHTML=data.data[0];
+        document.getElementById('fetchQuotes').innerHTML=data.data[0];
     })
 
 
