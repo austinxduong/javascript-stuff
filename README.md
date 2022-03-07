@@ -3,6 +3,7 @@
  
  >Tests are automated using [Jest](https://jestjs.io/). ✅ 🧪🔬
 
+Intellect Level:
  ```diff
  + Finds Highest Digit
  + Sort Array of Strings by its Length
