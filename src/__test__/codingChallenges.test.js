@@ -1,5 +1,5 @@
-const { findsHighestDigit, sortArrayByLength } = require('../../codingChallenges')
-const { fetchQuotes } = require( '../../fetchApi')
+const { findsHighestDigit, sortArrayByLength, calculateDifference } = require('../../codingChallenges')
+// const { fetchQuotes } = require( '../../fetchApi')
 
 
 describe('Test validity for functions', () => {
@@ -15,11 +15,18 @@ describe('Test validity for functions', () => {
             ["i", "i/m", "eat", "what", "super", "hungry", "should"]
         )
     })
-})
 
-describe('Test API fetch call', () => {
-    test('validates status code', () => {
 
-        expect().toEqual()
+    test('Finds difference of all values of an Object as first param, from an integer of the second param', () => {
+        expect(calculateDifference({one: 11, two: 1}, 3)).toEqual(9)
+        expect(calculateDifference({zero:0}, 2)).toEqual(-2)
     })
+
 })
+
+// describe('Test API fetch call', () => {
+//     test('validates status code', () => {
+
+//         expect().toEqual()
+//     })
+// })

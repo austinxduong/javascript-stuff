@@ -40,6 +40,19 @@ function sortArrayByLength(arr) {
 // Test case(s)
 console.log(sortArrayByLength(['hello', 'austi', 'im', '!'])) // [ '!', 'im', 'hello', 'austi' ]
 
+// ---------------------------------------------------------------------------
 
-module.exports = { findsHighestDigit, sortArrayByLength }
+function calculateDifference(obj, limit) {
+	
+	const total = 0
+	
+	let extract = Object.values(obj)
+	
+	let add = extract.reduce((previousVal, currentValue) => previousVal + currentValue, total)
+	
+	return Math.abs(add) - limit
+
+}
+
+module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference }
 

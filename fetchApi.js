@@ -15,3 +15,8 @@ fetch('https://api.aakhilv.me/fun/wouldyourather')
 
 
 
+// once App componnent loads, useEffect is triggered
+//useEffect takes in 2 arguments; callback function, dependency array
+
+//^^ dependency array = second argument of useEffect hook
+// reinvokes
