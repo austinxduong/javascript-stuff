@@ -1,4 +1,4 @@
-const { findsHighestDigit, sortArrayByLength, calculateDifference } = require('../../codingChallenges')
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes } = require('../../codingChallenges')
 // const { fetchQuotes } = require( '../../fetchApi')
 
 
@@ -20,6 +20,10 @@ describe('Test validity for functions', () => {
     test('Finds difference of all values of an Object as first param, from an integer of the second param', () => {
         expect(calculateDifference({one: 11, two: 1}, 3)).toEqual(9)
         expect(calculateDifference({zero:0}, 2)).toEqual(-2)
+    })
+
+    test('returns cube sum of all elements within array', () => {
+        expect(sumOfCubes([3, 2, 11])).toEqual()
     })
 
 })
