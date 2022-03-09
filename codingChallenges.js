@@ -54,5 +54,18 @@ function calculateDifference(obj, limit) {
 
 }
 
-module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference }
+function sumOfCubes(nums) {
+	let collect = []
+	
+	for (let i = 0; i < nums.length; i++) {
+		let cubed = Math.pow(nums[i], 3)
+		collect.push(cubed)
+	}
+	const final = collect.reduce((prev, curr) => prev + curr, 0)
+	return final
+}
+
+// ---------------------------------------------------------------------------
+
+module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes }
 

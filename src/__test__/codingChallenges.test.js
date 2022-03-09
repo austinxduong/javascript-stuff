@@ -22,8 +22,8 @@ describe('Test validity for functions', () => {
         expect(calculateDifference({zero:0}, 2)).toEqual(-2)
     })
 
-    test('returns cube sum of all elements within array', () => {
-        expect(sumOfCubes([3, 2, 11])).toEqual()
+    test('Iterates through array, and returns cube sum of all elements', () => {
+        expect(sumOfCubes([3, 2, 12])).toEqual(1763)
     })
 
 })
