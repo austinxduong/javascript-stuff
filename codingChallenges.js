@@ -65,12 +65,13 @@ function sumOfCubes(nums) {
 	return final
 }
 
-function yummyPi() {
-	let shiftDecimalPlaces = Math.PI.toFixed(n);
+function yummyPi(n) {
+	let shiftDecimalPlaces = Math.PI.toFixed(n); // 
 
 	return Number(shiftDecimalPlaces);
 }
 
+//Number() method converts string to number
 // ---------------------------------------------------------------------------
 
 module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
