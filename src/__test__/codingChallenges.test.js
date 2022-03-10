@@ -1,4 +1,4 @@
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes } = require('../../codingChallenges')
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi } = require('../../codingChallenges')
 // const { fetchQuotes } = require( '../../fetchApi')
 
 
@@ -24,6 +24,13 @@ describe('Test validity for functions', () => {
 
     test('Iterates through array, and returns cube sum of all elements', () => {
         expect(sumOfCubes([3, 2, 12])).toEqual(1763)
+    })
+
+    test('PI to N decimal places', () => {
+        expect(yummyPi(1)).toEqual(3)
+        expect(yummyPi(2)).toEqual(3.1)
+        expect(yummyPi(3)).toEqual(3.14)
+        expect(yummyPi(4)).toEqual(3.142)
     })
 
 })
