@@ -10,6 +10,6 @@
  + Finds Difference of all Object values, from an integer
  + Iterates Array, and returns sum of all cubes
  + Pi to N Decimal Places
- + Two Sum (Pointers & Brute Force For Loop)
+ + Two Sum (Optimal Pointers & Brute Force For Loop)
  ```
 <em>This is a simulation of myself in the Metaverse 🧬 </em>
