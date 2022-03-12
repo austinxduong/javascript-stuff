@@ -1,10 +1,12 @@
+// import fetch from "node-fetch";
+
 var module = module || {};
 console.log("yummy")
 // A place where I can practice/brainstorm through my coding challenges.
 // Purpose: to demonstrate my thought process, and how I logic my reasoning.
 
 // Finds the highest digit, when number is passed in as an input.
-function findsHighestDigit(number) {
+export function findsHighestDigit(number) {
 	const convert = number.toString()
 	const slicing = convert.split('')
 	const captureHighestInt = Math.max(...slicing)
@@ -27,7 +29,7 @@ console.log(gain, myArray)
 
 // -------------------------------------------------------------------------
 
-function sortArrayByLength(arr) {
+export function sortArrayByLength(arr) {
 	let sunday = []
 	
 	for(let i = 0; i < arr.length; i++) {
@@ -42,7 +44,7 @@ console.log(sortArrayByLength(['hello', 'austi', 'im', '!'])) // [ '!', 'im', 'h
 
 // ---------------------------------------------------------------------------
 
-function calculateDifference(obj, limit) {
+export function calculateDifference(obj, limit) {
 	
 	const total = 0
 	
@@ -54,7 +56,9 @@ function calculateDifference(obj, limit) {
 
 }
 
-function sumOfCubes(nums) {
+// ---------------------------------------------------------------------------
+
+export function sumOfCubes(nums) {
 	let collect = []
 	
 	for (let i = 0; i < nums.length; i++) {
@@ -65,14 +69,22 @@ function sumOfCubes(nums) {
 	return final
 }
 
-function yummyPi(n) {
+// ---------------------------------------------------------------------------
+
+export function yummyPi(n) {
 	let shiftDecimalPlaces = Math.PI.toFixed(n); // 
 
 	return Number(shiftDecimalPlaces);
 }
 
+// ---------------------------------------------------------------------------
+//Two Sum 
+export function twoSum(array, targetSum) {
+
+}
+
 //Number() method converts string to number
 // ---------------------------------------------------------------------------
 
-module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
+// module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 

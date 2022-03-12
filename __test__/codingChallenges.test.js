@@ -1,5 +1,7 @@
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi } = require('../../codingChallenges')
+
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum } = require('../codingChallenges')
 // const { fetchQuotes } = require( '../../fetchApi')
+
 
 
 describe('Test validity for functions', () => {
@@ -33,11 +35,16 @@ describe('Test validity for functions', () => {
         expect(yummyPi(4)).toEqual(3.1416)
     })
 
+    test('Finds two elements within Array, and their sum matches targetSum', () => {
+        expect(twoSum(array, targetSum)).toEqual()
+    })
+
 })
 
 // describe('Test API fetch call', () => {
-//     test('validates status code', () => {
+//     test('validates status code', async () => {
 
-//         expect().toEqual()
+//         const apiCall = fetchQuotes().then(data => console.log(data))
+
+//         expect(apiCall).toEqual()
 //     })
-// })

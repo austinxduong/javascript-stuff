@@ -1,4 +1,5 @@
-        //fetch returns us a 'promise'. 
+// import { fetch }  from 'node-fetch'
+//fetch returns us a 'promise'. 
         // '.then' resolves that 'promise'
         // we turn that into a JSON object
         // '.then' resolves it again, this time outputting the data to the console
