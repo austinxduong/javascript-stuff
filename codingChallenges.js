@@ -94,6 +94,34 @@ export function twoSum(array, targetSum) {
 	}
 }
 
+export function twoNumberSumOptimized(array, targetSum) {
+	// sorts all elements in the array in ascending order (small to large)
+	const sorted = array.sort((a, b) => {return a-b})	
+	// define our left and right pointers
+	// define default state if no pairs are found at all = to empty array
+	let leftPointer = 0
+	let rightPointer = sorted.length - 1
+	let pairTwins = []
+	let pairSum;
+		// initilize our loop with a first condition
+		// break out of loop with left and right pointer === targetSum
+		// otherwise increment leftPointer if !=== targetSum 
+		// otherwise decrement rightPionter if !==targetSum
+		// return final state
+		while (leftPointer !== rightPointer) {
+			pairSum = sorted[leftPointer] + sorted[rightPointer]
+				if (pairSum === targetSum) {
+					pairTwins = [sorted[leftPointer], sorted[rightPointer]]
+					break;
+				} else if (pairSum < targetSum) {
+					leftPointer++
+				} else if (pairSum > targetSum) {
+					rightPointer--
+				}
+		}
+		return pairTwins
+	}
+
 // ---------------------------------------------------------------------------
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }

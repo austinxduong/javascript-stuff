@@ -1,5 +1,5 @@
 
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum } = require('../codingChallenges')
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized } = require('../codingChallenges')
 // const { fetchQuotes } = require( '../../fetchApi')
 
 
@@ -44,8 +44,16 @@ describe('Test validity for functions', () => {
         expect(twoSum([-100, 4, -1111, 40, 2, 22, 4], 44)).toEqual([4, 40])
         expect(twoSum([2, 55, 3, 8, -11,], -9)).toEqual([2, -11])
     })
-
     //Optimized Method:
+    //Array is sorted before iteration:
+    test('Two Number Sum Optimized, Two Pointers Method', () => {
+        expect(twoNumberSumOptimized([3, 5, -4, 8, 11, 1, -1, 6], 10)).toEqual([-1, 11])
+        expect(twoNumberSumOptimized([2, 7, 11, 15], 9)).toEqual([2, 7])
+        expect(twoNumberSumOptimized([3, 2, 4], 6)).toEqual([2, 4])
+
+    })
+
+    
 
 })
 
