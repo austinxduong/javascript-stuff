@@ -40,6 +40,9 @@ describe('Test validity for functions', () => {
     // O(1) => "Constant" = Space Complexity
     test('Finds two elements within Array, and their sum matches targetSum', () => {
         expect(twoSum([-1, 3, 5, 0, 9, 6, 4, 2], 7)).toEqual([3, 4])
+        expect(twoSum([-9, -100, 50, 40, 3, 13, 5], 16)).toEqual([3, 13])
+        expect(twoSum([-100, 4, -1111, 40, 2, 22, 4], 44)).toEqual([4, 40])
+        expect(twoSum([2, 55, 3, 8, -11,], -9)).toEqual([2, -11])
     })
 
     //Optimized Method:
