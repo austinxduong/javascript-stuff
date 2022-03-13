@@ -35,9 +35,14 @@ describe('Test validity for functions', () => {
         expect(yummyPi(4)).toEqual(3.1416)
     })
 
+    //Brute Force Method:
+    // O(N^2) => O(N) = Time Complexity
+    // O(1) => "Constant" = Space Complexity
     test('Finds two elements within Array, and their sum matches targetSum', () => {
         expect(twoSum([-1, 3, 5, 0, 9, 6, 4, 2], 7)).toEqual([3, 4])
     })
+
+    //Optimized Method:
 
 })
 

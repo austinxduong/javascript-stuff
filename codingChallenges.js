@@ -79,6 +79,9 @@ export function yummyPi(n) {
 
 // ---------------------------------------------------------------------------
 //Two Sum 
+//Brute Force Method:
+// O(N^2) => O(N) = Time Complexity
+// O(1) => "Constant" = Space Complexity
 export function twoSum(array, targetSum) {
 	for ( let i = 0; i < array.length; i++){
 		const firstValue = array[i];
