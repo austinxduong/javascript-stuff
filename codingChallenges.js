@@ -70,7 +70,7 @@ export function sumOfCubes(nums) {
 }
 
 // ---------------------------------------------------------------------------
-
+//Number() method converts string to number
 export function yummyPi(n) {
 	let shiftDecimalPlaces = Math.PI.toFixed(n); // 
 
@@ -80,10 +80,17 @@ export function yummyPi(n) {
 // ---------------------------------------------------------------------------
 //Two Sum 
 export function twoSum(array, targetSum) {
-
+	for ( let i = 0; i < array.length; i++){
+		const firstValue = array[i];
+		for (let j = i + 1; j < array.length; j++){
+			const secondValue = array[j];
+			 if (firstValue + secondValue === targetSum){
+				  return [firstValue, secondValue];
+			 }
+		}
+	}
 }
 
-//Number() method converts string to number
 // ---------------------------------------------------------------------------
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }

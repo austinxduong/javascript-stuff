@@ -36,7 +36,7 @@ describe('Test validity for functions', () => {
     })
 
     test('Finds two elements within Array, and their sum matches targetSum', () => {
-        expect(twoSum(array, targetSum)).toEqual()
+        expect(twoSum([-1, 3, 5, 0, 9, 6, 4, 2], 7)).toEqual([3, 4])
     })
 
 })
