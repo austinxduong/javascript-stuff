@@ -5,12 +5,16 @@
         // '.then' resolves it again, this time outputting the data to the console
 fetch('https://api.aakhilv.me/fun/wouldyourather')
     .then((response) => {
+        console.log("status code 200!", alert("Question Received") )
         return response.json();
     })
     .then(data => {
         console.log(data.data[0])
         document.getElementById('fetchQuotes').innerHTML=data.data[0];
     })
+    .catch(error => console.error(alert("fetch failed, network error")))
+    
+
 
 
 

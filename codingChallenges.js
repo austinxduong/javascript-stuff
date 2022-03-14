@@ -93,7 +93,13 @@ export function twoSum(array, targetSum) {
 		}
 	}
 }
+// export function fetchingHAHA() {
+// 	return await fetch('/someURLHere/v1/users').then(response => response.json())
+// }
 
+// Optimized/Refactored: 
+// O(N) = Time Complexity 
+// 0(1) = Space Complexity 
 export function twoNumberSumOptimized(array, targetSum) {
 	// sorts all elements in the array in ascending order (small to large)
 	const sorted = array.sort((a, b) => {return a-b})	
