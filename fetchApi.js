@@ -3,14 +3,17 @@
         // '.then' resolves that 'promise'
         // we turn that into a JSON object
         // '.then' resolves it again, this time outputting the data to the console
-fetch('https://api.aakhilv.me/fun/wouldyourather')
+fetch('https://api.aakhilv.me/fun/wyr')
     .then((response) => {
         console.log("status code 200!", alert("Question Received") )
         return response.json();
     })
     .then(data => {
-        console.log(data.data[0])
-        document.getElementById('fetchQuotes').innerHTML=data.data[0];
+        //JSON object name changed. Previously "data", now is omitted from object.
+        // update Mon, March 14th 2022
+        // bug fix
+        console.log(data.json)
+        document.getElementById('fetchQuotes').innerHTML=data;
     })
     .catch(error => console.error(alert("fetch failed, network error")))
     

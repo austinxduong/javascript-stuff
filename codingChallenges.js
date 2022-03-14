@@ -93,9 +93,6 @@ export function twoSum(array, targetSum) {
 		}
 	}
 }
-// export function fetchingHAHA() {
-// 	return await fetch('/someURLHere/v1/users').then(response => response.json())
-// }
 
 // Optimized/Refactored: 
 // O(N) = Time Complexity 
