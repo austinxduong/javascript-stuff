@@ -132,7 +132,7 @@ export function countBits(n) {
 	let total = []
 
 	let bits = 0;
-	// conver out number to binary using toString() method, 2 represents the binary system that well converting into.
+	// convert our number to Binary using toString() method, 2 represents the binary system that well converting into.
 	// pass 2 as parameter
 	let transform = n.toString(2);
 	
