@@ -11,6 +11,6 @@
  + Iterates Array, and returns sum of all cubes
  + Pi to N Decimal Places
  + Two Sum (Optimal Pointers & Brute Force For Loop)
- + Count Binary Bits
+ + Count Total Bits of Binary Numbers
  ```
 <em>This is a simulation of myself in the Metaverse 🧬 </em>
