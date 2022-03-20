@@ -1,5 +1,5 @@
 
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized } = require('../codingChallenges')
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits } = require('../codingChallenges')
 // const { fetchQuotes } = require( '../../fetchApi')
 
 
@@ -53,6 +53,9 @@ describe('Test validity for functions', () => {
 
     })
 
+    test('Counts the number of Bits in a Binary number', () => {
+        expect(countBits()).toEqual()
+    })
     
 
 })

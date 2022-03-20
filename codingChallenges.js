@@ -125,6 +125,21 @@ export function twoNumberSumOptimized(array, targetSum) {
 		return pairTwins
 	}
 
+
+export function countBits(n) {
+	let total = []
+
+	let bits = 0;
+	
+	let transform = n.toString(2);
+	
+	for(let n = 0; n < transform.length; n++) {
+		total += transform[n];  
+	}
+	
+	return total.split('').filter(x => x === '1').length
+}
+
 // ---------------------------------------------------------------------------
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
