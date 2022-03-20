@@ -54,7 +54,7 @@ describe('Test validity for functions', () => {
     })
 
     test('Counts the number of Bits in a Binary number', () => {
-        expect(countBits()).toEqual()
+        expect(countBits(7)).toEqual(3)
     })
     
 
