@@ -127,6 +127,8 @@ export function twoNumberSumOptimized(array, targetSum) {
 
 
 export function countBits(n) {
+	// we collect all elements from the loop inside of array, because the method Ill be using further down, work on array data types.
+	// so instead of collecting all digits as numerial data type, we put it inside an array
 	let total = []
 
 	let bits = 0;
@@ -136,7 +138,8 @@ export function countBits(n) {
 	for(let n = 0; n < transform.length; n++) {
 		total += transform[n];  
 	}
-	
+	// in order to traverse each bit, split() method converts each digit into a single string
+	// filter each string with exact match of a '1' bit
 	return total.split('').filter(x => x === '1').length
 }
 
