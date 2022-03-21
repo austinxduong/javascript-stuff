@@ -58,7 +58,7 @@ describe('Test validity for functions', () => {
     })
     
     test('Compares each element, from two arrays', () => {
-        expect(compareTriplets()).toEqual()
+        expect(compareTriplets([2, 4, 5], [11, 7, 0])).toEqual([1, 2])
     })
 })
 

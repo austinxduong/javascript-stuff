@@ -148,16 +148,20 @@ export function countBits(n) {
 // ---------------------------------------------------------------------------
 
 export function compareTriplets(a, b) {
+	// we'll be keeping track of two states; points for Ally, and points for Brad
 	let bTotal = 0
 	let aTotal = 0
 	let pointsArray = []
+	// our points will be represented in an array data type
    
+	// traversing the beginning of both our arrays, and compares each element; Ally and Brad
 	for(let i = 0, j = 0; i < a.length; i++, j++) {
 		aTotal += a[i] > b[j]
 		bTotal += a[i] < b[j]
 		pointsArray = [aTotal, bTotal]
 	}
-	
+	// assign variables (Ally and Brad), to the pointsArray.
+	//return the final data
 	return pointsArray
    }
 
