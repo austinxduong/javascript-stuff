@@ -147,5 +147,20 @@ export function countBits(n) {
 
 // ---------------------------------------------------------------------------
 
+export function compareTriplets(a, b) {
+	let bTotal = 0
+	let aTotal = 0
+	let pointsArray = []
+   
+	for(let i = 0, j = 0; i < a.length; i++, j++) {
+		aTotal += a[i] > b[j]
+		bTotal += a[i] < b[j]
+		pointsArray = [aTotal, bTotal]
+	}
+	
+	return pointsArray
+   }
+
+
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 

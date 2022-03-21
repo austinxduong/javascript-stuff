@@ -1,5 +1,5 @@
 
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits } = require('../codingChallenges')
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets } = require('../codingChallenges')
 // const { fetchQuotes } = require( '../../fetchApi')
 
 
@@ -57,7 +57,9 @@ describe('Test validity for functions', () => {
         expect(countBits(7)).toEqual(3)
     })
     
-
+    test('Compares each element, from two arrays', () => {
+        expect(compareTriplets()).toEqual()
+    })
 })
 
 // describe('Test API fetch call', () => {
