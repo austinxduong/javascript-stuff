@@ -12,5 +12,6 @@
  + Pi to N Decimal Places
  + Two Sum (Optimal Pointers & Brute Force For Loop)
  + Count Total Bits of Binary Numbers
+ + Compare Triplets
  ```
 <em>This is a simulation of myself in the Metaverse 🧬 </em>
