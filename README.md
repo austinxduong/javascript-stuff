@@ -15,4 +15,7 @@
  + Compare Triplets
  + Find Ratio of +/-/ or 0 integers at 6th decimal
  ```
+  ![Screen Shot 2022-03-22 at 2 06 54 PM](https://user-images.githubusercontent.com/78833034/159576199-c7151e51-53bc-4a4c-b0db-bdb8792bf1ca.png)
+
+
 <em>This is a simulation of myself in the Metaverse 🧬 </em>
