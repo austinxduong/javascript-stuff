@@ -13,5 +13,6 @@
  + Two Sum (Optimal Pointers & Brute Force For Loop)
  + Count Total Bits of Binary Numbers
  + Compare Triplets
+ + Find Ratio of +/-/ or 0 integers at 6th decimal
  ```
 <em>This is a simulation of myself in the Metaverse 🧬 </em>
