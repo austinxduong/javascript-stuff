@@ -193,6 +193,8 @@ export function plusMinus(arr) {
 	console.log(finalRatioDec[2])
 }
 
+// output: [0.5, 0.166667, 0.333333]
+
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
