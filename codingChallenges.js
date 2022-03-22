@@ -165,6 +165,34 @@ export function compareTriplets(a, b) {
 	return pointsArray
    }
 
+export function plusMinus(arr) {
+	//count the amt of positive / zero / negative digits
+	// set state to 0
+	var positive = 0 
+	var zero = 0 
+	var negative = 0 
+	var finalRatio;
+	var finalRatioDec = null
+	
+	
+ for(let i = 0; i < arr.length; i++) {
+	 if (arr[i] > 0) {
+		 positive++
+	 } else if (arr[i] === 0) {
+		 zero++
+	 } else if (arr[i] < 0) {
+		 negative++
+	 }
+	 finalRatio = [positive, zero, negative]
+	 finalRatio = finalRatio.map(x => x / 6)
+	 finalRatioDec = finalRatio.map(x => Number(x.toFixed(6)))
+ 	}
+	 return finalRatioDec
+	console.log(finalRatioDec[0])
+	console.log(finalRatioDec[1])
+	console.log(finalRatioDec[2])
+}
+
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
