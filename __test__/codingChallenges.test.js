@@ -62,7 +62,7 @@ describe('Test validity for functions', () => {
     })
 
     test('Returns ratio for amount of positve, zero, negative digits', () => {
-        expect(plusMinus([-4, 3, -9, 0, 4, 1])).toEqual()
+        expect(plusMinus([-4, 3, -9, 0, 4, 1])).toEqual([0.5, 0.166667, 0.333333])
     })
 
 })
