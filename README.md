@@ -1,7 +1,7 @@
 
  Multi-flavored functions with [passing test cases](https://github.com/austinxduong/object-oriented-programming/actions). 
  
- >Tests are automated using [Jest](https://jestjs.io/). ✅ 🧪🔬
+ >Test Integration is automated using [Jest](https://jestjs.io/). ✅ 🧪🔬
 
  ```diff
  Intellect Level 🧠
