@@ -1,5 +1,5 @@
 
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus} = require('../codingChallenges')
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean} = require('../codingChallenges')
 // const { fetchQuotes } = require( '../../fetchApi')
 
 
@@ -63,6 +63,10 @@ describe('Test validity for functions, by Austi', () => {
 
     test('Returns ratio for amount of positve, zero, negative digits', () => {
         expect(plusMinus([-4, 3, -9, 0, 4, 1])).toEqual([0.5, 0.166667, 0.333333])
+    })
+
+    test('Checks each element in array, and returns truthy/falsy if 1', () => {
+        expect(integerBoolean()).toEqual();
     })
 })
 

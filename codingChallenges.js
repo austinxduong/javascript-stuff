@@ -197,7 +197,7 @@ export function plusMinus(arr) {
 
 // ---------------------------------------------------------------------------
 
-function integerBoolean(n) {
+export function integerBoolean(n) {
 	let truthyFalsy = [];
 	// splits string inside of array into invididual strings
 	let singledDigits = n.split('')
