@@ -8,8 +8,13 @@ header {
     color: whitesmoke;
     padding: 20px;
     justify-content: space-between;
-    
+    list-style: none;
+    text-decoration: none;
+}
 
+a {
+    text-decoration: none;
+    color: #333;
 }
 
 .ul-nav, a#blog #creations #bio {
@@ -24,6 +29,7 @@ header {
 
 .ul-nav, a#blog:hover {
     color: aquamarine
+    
 }
 .ul-nav, a#creations:hover {
     color: lightgreen
