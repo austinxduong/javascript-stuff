@@ -4,7 +4,7 @@ const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, y
 
 
 
-describe('Test validity for functions', () => {
+describe('Test validity for functions, by Austi', () => {
     test('finds the highest digit, when integer is passed in as input', () => {
         expect(findsHighestDigit(876329)).toEqual(9);
     })
@@ -64,7 +64,6 @@ describe('Test validity for functions', () => {
     test('Returns ratio for amount of positve, zero, negative digits', () => {
         expect(plusMinus([-4, 3, -9, 0, 4, 1])).toEqual([0.5, 0.166667, 0.333333])
     })
-
 })
 
 // describe('Test API fetch call', () => {

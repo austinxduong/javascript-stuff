@@ -188,9 +188,9 @@ export function plusMinus(arr) {
 	 finalRatioDec = finalRatio.map(x => Number(x.toFixed(6)))
  	}
 	 return finalRatioDec
-	console.log(finalRatioDec[0])
-	console.log(finalRatioDec[1])
-	console.log(finalRatioDec[2])
+	//console.log(finalRatioDec[0])
+	//console.log(finalRatioDec[1])
+	//console.log(finalRatioDec[2])
 }
 
 // output: [0.5, 0.166667, 0.333333]
@@ -198,3 +198,11 @@ export function plusMinus(arr) {
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
+const [data, setData] = useState([]);
+
+useEffect(() => {
+	apiFetchCall()
+		.then((res) => res.json())
+		.then((json) => console.log(json))
+		setData(json)
+}, [])

@@ -12,7 +12,7 @@ fetch('https://api.aakhilv.me/fun/wyr')
         //JSON object name changed. Previously "data", now is omitted from object.
         // update Mon, March 14th 2022
         // bug fix
-        console.log(data.son)
+        console.log(data.json)
         document.getElementById('fetchQuotes').innerHTML=data;
     })
     
