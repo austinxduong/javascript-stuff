@@ -14,6 +14,7 @@
  + Count Total Bits of Binary Numbers
  + Compare Triplets
  + Find Ratio of +/-/ or 0 integers at 6th decimal
+ + Truthy or Falsy?
  ```
  
 
