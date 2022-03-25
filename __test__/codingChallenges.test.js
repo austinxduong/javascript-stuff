@@ -65,8 +65,8 @@ describe('Test validity for functions, by Austi', () => {
         expect(plusMinus([-4, 3, -9, 0, 4, 1])).toEqual([0.5, 0.166667, 0.333333])
     })
 
-    test('Checks each element in array, and returns truthy/falsy if 1', () => {
-        expect(integerBoolean()).toEqual();
+    test('Checks each element string, and returns truthy/falsy if 1', () => {
+        expect(integerBoolean('1001011010101')).toEqual();
     })
 })
 
