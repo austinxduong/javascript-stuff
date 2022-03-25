@@ -195,14 +195,28 @@ export function plusMinus(arr) {
 
 // output: [0.5, 0.166667, 0.333333]
 
+// ---------------------------------------------------------------------------
+
+function integerBoolean(n) {
+	let truthyFalsy = [];
+	// splits string inside of array into invididual strings
+	let singledDigits = n.split('')
+	// loops through each index, and checks if the element is equal to 1 --> return boolean of 'true'
+	for(let i = 0; i < singledDigits.length; i++) {
+		if (singledDigits[i] === '1') {
+			truthyFalsy.push(true)
+		} else if (singledDigits[i] !== '1') {
+			truthyFalsy.push(false)
+			// returns us 'false' if element is not equal to '1'
+		} else {
+			// else set the default state to an empty array
+			return []
+		}
+	}
+		// invoke the variable of all truthy/falsy values
+	return truthyFalsy
+}
+
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
-const [data, setData] = useState([]);
-
-useEffect(() => {
-	apiFetchCall()
-		.then((res) => res.json())
-		.then((json) => console.log(json))
-		setData(json)
-}, [])
