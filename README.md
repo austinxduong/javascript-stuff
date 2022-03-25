@@ -1,7 +1,7 @@
 
  Multi-flavored functions with [passing test cases](https://github.com/austinxduong/object-oriented-programming/actions). 
  
- >Tests are automated using [Jest](https://jestjs.io/). ✅ 🧪🔬
+ >Test Integration is automated using [Jest](https://jestjs.io/). ✅ 🧪🔬
 
  ```diff
  Intellect Level 🧠
@@ -13,5 +13,13 @@
  + Two Sum (Optimal Pointers & Brute Force For Loop)
  + Count Total Bits of Binary Numbers
  + Compare Triplets
+ + Find Ratio of +/-/ or 0 integers at 6th decimal
  ```
+ 
+
+![updated_austi_local_dev_local_environment](https://user-images.githubusercontent.com/78833034/159577120-5cb2246d-05f0-40dd-aca2-3bcaab836034.png)
+![updated_austi_super_cool_test_coverage_report_CLI](https://user-images.githubusercontent.com/78833034/159578348-29901d32-533f-4de0-9967-63aeaa82bbbc.png)
+
+
+
 <em>This is a simulation of myself in the Metaverse 🧬 </em>
