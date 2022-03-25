@@ -34,8 +34,8 @@ display: flex;
 justify-content: center;
 text-align: center;
 transition: all 0.3s ease;
-background-color: lightblue;
-font-family: poppins;
+background-color: mintcream;
+font-family: "poppins", sans-serif;
 }
 
 button:hover {
