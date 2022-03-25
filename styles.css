@@ -30,6 +30,8 @@ justify-content: center;
 
 button {
 margin: 10px;
+border: 1px #333 solid;
+border-radius: 1px;
 display: flex;
 justify-content: center;
 text-align: center;
