@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 .parent-container{
@@ -34,6 +34,8 @@ display: flex;
 justify-content: center;
 text-align: center;
 transition: all 0.3s ease;
+background-color: lightblue;
+font-family: poppins;
 }
 
 button:hover {
