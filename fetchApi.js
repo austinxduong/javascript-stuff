@@ -3,9 +3,11 @@
         // '.then' resolves that 'promise'
         // we turn that into a JSON object
         // '.then' resolves it again, this time outputting the data to the console
-fetch('https://api.aakhilv.me/fun/wyr')
+
+
+    const fetching = fetch('https://api.aakhilv.me/fun/wyr')
     .then((response) => {
-        console.log("status code 200!", alert("Question Received") )
+        console.log("status code 200!")
         return response.json();
     })
     .then(data => {
@@ -15,6 +17,12 @@ fetch('https://api.aakhilv.me/fun/wyr')
         console.log(data.json)
         document.getElementById('fetchQuotes').innerHTML=data;
     })
+
+
+   
+
+
+
     
     
 
