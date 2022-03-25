@@ -8,3 +8,7 @@ refreshButton.addEventListener('click', e => {
 })
 
 //Functions
+
+function getChat() {
+    let c = document.getElementById('')
+}
