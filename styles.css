@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     background-color: black;
 }
@@ -16,13 +21,7 @@ header {
     text-decoration: none;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .ul-nav, a#blog #creations #bio {
-
     list-style: none;
     justify-content: center;
     color: #333;
@@ -109,8 +108,11 @@ button:hover {
 
 input {
     font-family: "Poppins", sans-serif;
-    background-color: #3f3f3f;
-    border: 1px #7c40ff solid 
+    background-color: #002930;
+    border: 1px #63c595 solid; 
+    color:#63c595;
 }
+
+
 
 

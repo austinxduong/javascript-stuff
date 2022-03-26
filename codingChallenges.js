@@ -220,7 +220,7 @@ export function integerBoolean(n) {
 // ---------------------------------------------------------------------------
 
 export function convertRomanNum(roman){
-	let total = null;
+	let total = {};
 	
 	let splitting = roman.split('')
 	console.log(splitting)
@@ -235,9 +235,9 @@ export function convertRomanNum(roman){
 	}
 	for(let i = 0; i < splitting.length; i++){
 		for (var key in dictionary) {
-			total += dictionary[key]
+			total += key
 		}
-	return total
+	return total + splitting
 
 	}
 }
