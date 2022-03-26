@@ -76,19 +76,29 @@ a {
     padding: 10px;
     margin: 10px;
     font-family: "poppins", sans-serif;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }  
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 button {
-margin: 10px;
-background-color: #74e98d;
-border: 1px #7c40ff solid;
-border-radius: 1px;
-display: flex;
-justify-content: center;
-text-align: center;
-transition: all 0.3s ease;
-background-color: mintcream;
-font-family: "poppins", sans-serif;
+    margin: 10px;
+    background-color: #74e98d;
+    border: 1px #7c40ff solid;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: mintcream;
+    font-family: "poppins", sans-serif;
+
 }
 
 button:hover {
@@ -96,8 +106,11 @@ button:hover {
     color: aliceblue;
     cursor: pointer;
 }
+
 input {
-font-family: "Poppins", sans-serif;
-background-color: #3f3f3f;
-border: 1px #7c40ff solid 
+    font-family: "Poppins", sans-serif;
+    background-color: #3f3f3f;
+    border: 1px #7c40ff solid 
 }
+
+

@@ -68,6 +68,10 @@ describe('Test validity for functions, by Austi', () => {
     test('Checks each element string, and returns truthy/falsy if 1', () => {
         expect(integerBoolean('1001011010101')).toEqual([true, false, false, true, false, true, true, false, true, false, true, false, true]);
     })
+
+    test('Converts Roman Numerals into decimal number system, and its sum', () => {
+        expect().toEqual()
+    })
 })
 
 // describe('Test API fetch call', () => {
