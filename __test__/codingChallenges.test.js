@@ -1,5 +1,5 @@
 
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean} = require('../codingChallenges')
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean, convertRomanNum } = require('../codingChallenges')
 // const { fetchQuotes } = require( '../../fetchApi')
 
 
@@ -70,7 +70,7 @@ describe('Test validity for functions, by Austi', () => {
     })
 
     test('Converts Roman Numerals into decimal number system, and its sum', () => {
-        expect().toEqual()
+        expect(convertRomanNum('MMVIII')).toEqual()
     })
 })
 

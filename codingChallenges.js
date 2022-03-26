@@ -217,6 +217,32 @@ export function integerBoolean(n) {
 	return truthyFalsy
 }
 
+// ---------------------------------------------------------------------------
+
+export function convertRomanNum(roman){
+	let total = null;
+	
+	let splitting = roman.split('')
+	console.log(splitting)
+	const dictionary = {
+		'I': 1,
+		'V': 5,
+		'X': 10,
+		'L': 50,
+		'C': 100,
+		'D': 500,
+		'M': 1000,
+	}
+	for(let i = 0; i < splitting.length; i++){
+		for (var key in dictionary) {
+			total += dictionary[key]
+		}
+	return total
+
+	}
+}
+
+
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
