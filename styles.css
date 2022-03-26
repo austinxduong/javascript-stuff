@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
 }
@@ -18,6 +22,7 @@ a {
 }
 
 .ul-nav, a#blog #creations #bio {
+
     list-style: none;
     justify-content: center;
     color: #333;
@@ -28,8 +33,7 @@ a {
 } 
 
 .ul-nav, a#blog:hover {
-    color: aquamarine
-    
+    color: aquamarine;
 }
 .ul-nav, a#creations:hover {
     color: lightgreen
@@ -37,6 +41,7 @@ a {
 .ul-nav, a#bio:hover {
     color: cyan
 }
+
 .parent-container {
     width: 90%;
     margin: auto;
@@ -75,7 +80,8 @@ a {
 
 button {
 margin: 10px;
-border: 1px #333 solid;
+background-color: #74e98d;
+border: 1px #7c40ff solid;
 border-radius: 1px;
 display: flex;
 justify-content: center;
@@ -89,4 +95,9 @@ button:hover {
     background-color: #333;
     color: aliceblue;
     cursor: pointer;
+}
+input {
+font-family: "Poppins", sans-serif;
+background-color: #3f3f3f;
+border: 1px #7c40ff solid 
 }

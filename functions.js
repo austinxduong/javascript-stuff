@@ -1,14 +1,14 @@
-// Selectors
-const headerTag = document.querySelectorAll('.header');
-const refreshButton = document.querySelector('.api-button')
+const result = document.querySelector('#fetch-quotes')
+const fetch_button = document.querySelector('#api-button')
 
-//Event Listeners
-refreshButton.addEventListener('click', e => {
-    console.log(e.target)
-})
+fetch_button.addEventListener('click', getRandomQ)
 
-//Functions
-
-function getChat() {
-    let c = document.getElementById('')
+function getRandomQ() {
+    result.innerText = "Loading ..."
+    fetch('https://api.aakhilv.me/fun/wyr')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data.json)
+            document.querySelector('#fetch-quotes').innerHTML=data
+        })
 }

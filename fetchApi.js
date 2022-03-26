@@ -15,7 +15,7 @@
         // update Mon, March 14th 2022
         // bug fix
         console.log(data.json)
-        document.getElementById('fetchQuotes').innerHTML=data;
+        document.getElementById('fetch-quotes').innerHTML=data;
     })
 
 
