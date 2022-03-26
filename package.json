@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.17.6",
+    "ajax": "^0.0.4",
     "jest": "^27.5.1",
     "jquery": "^3.6.0",
     "node-fetch": "^3.2.2"
