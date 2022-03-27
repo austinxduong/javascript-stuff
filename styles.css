@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+  
 }
 
 a {
@@ -20,6 +21,39 @@ header {
     list-style: none;
     text-decoration: none;
 }
+
+.menu-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+      165deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(24, 109, 79) 40%,
+      rgb(58, 206, 179) 98%,
+      rgb(239, 240, 245) 100%
+    );
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .menu-icon:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border-bottom: 0 solid #9af7e3e9;
+    box-shadow: 0 -10px 20px 20px #91f5c6b3 inset,
+      0 -1px 20px 10px #3cf5a5 inset, 0 -2px 5px #87c9a5f0 inset,
+      0 -1px 1px #30ff86f1 inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
+      0 1px 1px #5bf295ec, 0 10px 15px #09f3d0, 0 10px 20px 20px #9ae4be40;
+    filter: blur(3px);
+    animation: 2s rotate linear infinite;
+  }
+
+  @keyframes rotate {
+    100% { transform: rotate(360deg) }
+  }
 
 .ul-nav, a#blog #creations #bio {
     list-style: none;
@@ -67,6 +101,7 @@ header {
     from { width: 0 }
     to { width: 100% }
   }
+
 
 .fetchQuotes {
     text-align: center;

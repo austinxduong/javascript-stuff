@@ -7,7 +7,7 @@ fetch_button.addEventListener('click', getRandomQ)
 
 // Functions
 function getRandomQ() {
-    result.innerHTML = "<img src='Blocks-0.6s-78px.gif'/>"
+    result.innerHTML = "<img src='Blocks-0.6s-78px.gif' alt='digital block loader' />"
     fetch('https://api.aakhilv.me/fun/wyr')
         .then(res => res.json())
         .then(data => {
@@ -18,9 +18,4 @@ function getRandomQ() {
 
 // jQuery
 
-$(api-button).click(function(){
-    $('#fetch-quotes').html('');
-    $('#loader').show()
-
-});
   

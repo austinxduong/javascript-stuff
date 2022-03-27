@@ -18,7 +18,6 @@
         document.getElementById('fetch-quotes').innerHTML=data;
     })
 
-
    
 
 
