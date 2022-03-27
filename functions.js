@@ -7,7 +7,7 @@ fetch_button.addEventListener('click', getRandomQ)
 
 // Functions
 function getRandomQ() {
-    result.innerText = "Loading..."
+    result.innerHTML = "<img src='Blocks-0.6s-78px.gif'/>"
     fetch('https://api.aakhilv.me/fun/wyr')
         .then(res => res.json())
         .then(data => {
@@ -19,6 +19,8 @@ function getRandomQ() {
 // jQuery
 
 $(api-button).click(function(){
-    (this).html('<img src="Blocks-1s-200px.gif" />');
-    return false });
+    $('#fetch-quotes').html('');
+    $('#loader').show()
+
+});
   

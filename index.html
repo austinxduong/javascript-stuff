@@ -30,24 +30,18 @@
         <div class="master-container">
             <div class="parent-container">
                 <h1 class="header">  </h1>
-                <div class="fetchQuotes" id="fetch-quotes">
-                    <img src="Blocks-1s-200px.gif" id="loader" style="display:none"/ >
+                <div class="fetchQuotes" id="fetch-quotes" src="Blocks-1s-200px.gif" >
+                    <img src="Blocks-1s-200px.gif" id="loader"/ >
                 </div>
             </div>
-            <button id="api-button" onClick="getRandomQ()" onload="document.body.className += ' loaded';"" class="fadein"">🦄</button>
+            <button id="api-button" onClick="getRandomQ()" >🦄</button>
             <div id="result"></div>
             <form>
                 <input type='text' placeholder="lalalala"/>
             </form>
         </div>
 
-        <script>
-            $(document).ready(function(){
-                alert("jQUERY YEA!")
-            });
-        </script>
-        
-        
+                
 <script src="functions.js" type="text/javascript"></script>
 
 </body>
