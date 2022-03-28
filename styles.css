@@ -69,12 +69,14 @@ header {
 
 @media (max-width: 35em) {
   .ul-nav {
+    text-align: left;
     position: fixed;
     inset: 0 0 0 30%;
-    background:#002930;
     flex-direction: column;
     padding: 14rem 5rem;
-    text-align: left;
+    
+    background: rgba(143, 151, 229, 0.185);
+    backdrop-filter: blur(1rem);
     
   }
 }
@@ -158,8 +160,8 @@ button:hover {
 input {
     font-family: "Poppins", sans-serif;
     background-color: #002930;
-    border: 1px #63c595 solid; 
-    color:#63c595;
+    border: 1px #172920 solid; 
+    color:#93344c;
 }
 
 input:hover {
