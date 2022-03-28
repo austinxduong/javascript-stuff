@@ -75,9 +75,16 @@ header {
     flex-direction: column;
     padding: 14rem 5rem;
     
-    background: rgba(143, 151, 229, 0.185);
-    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     
+    
+    @supports (backdrop-filter: blur(1rem)) {
+      .ul-nav {
+        background: rgba(165, 174, 247, 0.185);
+        backdrop-filter: blur(1rem);
+      }
+    }
   }
 }
 
