@@ -26,7 +26,7 @@ header {
     width: 10px;
     height: 10px;
     background: linear-gradient(
-      360deg,
+      165deg,
       rgba(255, 255, 255, 1) 0%,
       rgb(24, 109, 79) 40%,
       rgb(58, 206, 179) 98%,
@@ -37,7 +37,8 @@ header {
   }
 
   .menu-icon:before {
-    padding: 3px;
+    margin: -15px;
+    padding: 4px;
     position: absolute;
     content: '';
     width: 100%;
