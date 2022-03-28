@@ -76,7 +76,7 @@ header {
     padding: 14rem 5rem;
     
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1rem);
     
     
     @supports (backdrop-filter: blur(1rem)) {
