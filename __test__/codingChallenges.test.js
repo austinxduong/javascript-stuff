@@ -1,6 +1,6 @@
 
 const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean, convertRomanNum } = require('../codingChallenges')
-// const { fetchQuotes } = require( '../../fetchApi')
+
 
 
 
@@ -77,7 +77,7 @@ describe('Test validity for functions, by Austi', () => {
 // describe('Test API fetch call', () => {
 //     test('validates status code', async () => {
 
-//         const apiCall = fetchQuotes().then(data => console.log(data))
-
-//         expect(apiCall).toEqual()
+//     expect(getRandomQ()).toEqual()
+       
 //     })
+// })
