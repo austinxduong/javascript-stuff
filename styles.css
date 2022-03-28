@@ -76,12 +76,13 @@ header {
     padding: 14rem 5rem;
     
     -webkit-backdrop-filter: blur(10px);
+    background: rgba(88, 98, 174, 0.185);
     backdrop-filter: blur(1rem);
     
     
     @supports (backdrop-filter: blur(1rem)) {
       .ul-nav {
-        background: rgba(165, 174, 247, 0.185);
+        background: rgba(88, 98, 174, 0.185);
         backdrop-filter: blur(1rem);
       }
     }
