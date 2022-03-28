@@ -57,7 +57,7 @@ header {
   }
 
 .ul-nav, a#blog #creations #bio {
-    
+    margin-inline-end: 0.75em;
     list-style: none;
     justify-content: center;
     color: #333;
@@ -72,8 +72,10 @@ header {
     position: fixed;
     inset: 0 0 0 30%;
     background:#002930;
-    padding: 40px
-
+    flex-direction: column;
+    padding: 14rem 5rem;
+    text-align: left;
+    
   }
 }
 
