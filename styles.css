@@ -102,13 +102,33 @@ header {
   .hamburger-button {
     display: block;
     position: absolute;
-    color: white;
-    width: 1rem;
+    border-radius: 100%;
+    border-color: white;
     aspect-ratio: 1;
+    box-shadow:
+    0 0 10px 9px rgb(255, 255, 255),
+    0 0 60px 20px rgb(6, 245, 201),
+    0 0 50px 11px rgb(205, 87, 95);
+    filter: drop-shadow(16px 16px 70px #7511f7) ;
     top: 2rem;
     right: 2rem;
     z-index: 8888;
   }
+
+  .hamburger-button:before {
+    display: block;
+    position: absolute;
+    box-shadow: 0 -10px 20px 20px #ffffff inset,
+      0 -10px 20px 10px #3cf5a5 inset, 0 -2px 5px #87c9a5f0 inset,
+      0 -1px 1px #30ff86f1 inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
+      0 1px 1px #d9c8ecec, 0 10px 15px #ba63f0ef, 0 10px 20px 20px #7ef8bb65;
+    filter: blur(3px) drop-shadow(16px 16px 20px #f71111) ;
+    animation: 3s rotate linear infinite;
+  }
+  @keyframes rotate {
+    100% { transform: rotate(360deg) }
+  }
+
 }
 
 .ul-nav, a#blog:hover {
@@ -122,7 +142,8 @@ header {
 }
 
 .hamburger-button:hover {
-  background-color: #7c40ff;
+  background-color: #333;
+  filter: drop-shadow(16px 16px 20px #1134f7) ;
 }
 
 .parent-container {
