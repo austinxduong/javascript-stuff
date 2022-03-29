@@ -77,6 +77,7 @@ header {
   transform: translateX(0%);
 }
 
+
 @media (max-width: 35em) {
   .ul-nav {
     text-align: left;
@@ -97,6 +98,21 @@ header {
         backdrop-filter: blur(1rem);
       }
     }
+
+  }
+
+ @media (max-width: 35em){
+   .moon-sun {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 4rem;
+    padding-top: .7rem;
+    
+    
+    
+   }
+  
   }
 
   .hamburger-button {
@@ -129,7 +145,13 @@ header {
     100% { transform: rotate(360deg) }
   }
 
+  .hamburger-button[aria-expanded="true"] {
+    background-image: url("atom.gif");
+    color: pink
+  }  
+
 }
+
 
 .ul-nav, a#blog:hover {
     color: aquamarine;
@@ -222,6 +244,7 @@ input {
 input:hover {
     background-color:#003640 ;
 }
+
 
 
 

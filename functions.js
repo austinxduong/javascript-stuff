@@ -11,8 +11,10 @@ hamburgerToggle.addEventListener('click', () => {
     console.log(show)
     if (show === "false") {
         navi.setAttribute('data-visible', true); 
+        hamburgerToggle.setAttribute('aria-expanded', true);
     } else if (show === "true") {
-        navi.setAttribute('data-visible', false)
+        navi.setAttribute('data-visible', false);
+        hamburgerToggle.setAttribute('aria-expanded', false);
     }
 })
 
