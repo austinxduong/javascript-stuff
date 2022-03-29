@@ -21,7 +21,7 @@ hamburgerToggle.addEventListener('click', () => {
 function getRandomQ() {
     result.innerHTML = "<img src='Blocks-0.6s-78px.gif' alt='digital block loader' />"
     fetch('https://api.aakhilv.me/fun/wyr')
-        .then(revs => res.json())
+        .then(res => res.json())
         .then(data => {
             console.log(data.json)
             document.querySelector('#fetch-quotes').innerHTML=data
