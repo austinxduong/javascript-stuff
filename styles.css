@@ -3,6 +3,7 @@
   
 }
 
+
 a {
     text-decoration: none;
     color: white;
@@ -20,6 +21,10 @@ header {
     justify-content: space-between;
     list-style: none;
     text-decoration: none;
+}
+
+.hamburger-button {
+  display: none;
 }
 
 .menu-icon {
@@ -56,9 +61,6 @@ header {
     100% { transform: rotate(360deg) }
   }
 
-  @supports (backdrop-filter: blur(1rem)) {
-
-    }
 
 .ul-nav, a#blog #creations #bio {
     margin-inline-end: 0.75em;
@@ -71,17 +73,22 @@ header {
     transition: all 0.3s ease 0s;
 } 
 
+.ul-nav[data-visible="true"] {
+  transform: translateX(0%);
+}
+
 @media (max-width: 35em) {
   .ul-nav {
     text-align: left;
     position: fixed;
     inset: 0 0 0 30%;
-    flex-direction: column;
     padding: 14rem 5rem;
     
     -webkit-backdrop-filter: blur(10px);
     background: rgba(88, 98, 174, 0.185);
     backdrop-filter: blur(1rem);
+
+    transform: translateX(100%);
     
     
     @supports (backdrop-filter: blur(1rem)) {
@@ -90,6 +97,17 @@ header {
         backdrop-filter: blur(1rem);
       }
     }
+  }
+
+  .hamburger-button {
+    display: block;
+    position: absolute;
+    color: white;
+    width: 1rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    z-index: 8888;
   }
 }
 
@@ -101,6 +119,10 @@ header {
 }
 .ul-nav, a#bio:hover {
     color: cyan
+}
+
+.hamburger-button:hover {
+  background-color: #7c40ff;
 }
 
 .parent-container {

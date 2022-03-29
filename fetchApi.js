@@ -5,7 +5,7 @@
         // '.then' resolves it again, this time outputting the data to the console
 
 
-    export const fetching = fetch('https://api.aakhilv.me/fun/wyr')
+const fetching = fetch('https://api.aakhilv.me/fun/wyr')
     .then((response) => {
         console.log("status code 200!")
         return response.json();
