@@ -101,19 +101,14 @@ header {
 
   }
 
- @media (max-width: 35em){
-   .moon-sun {
+@media screen and (max-width: 35rem) {
+  .moon-sun {
     display: flex;
     flex-direction: row;
     position: relative;
     margin: 0 4rem;
     padding-top: .7rem;
-    
-    
-    
-   }
-  
-  }
+}
 
   .hamburger-button {
     display: block;
