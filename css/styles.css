@@ -3,6 +3,11 @@
   
 }
 
+:root{
+  --primary-color: black
+  --secondary-color: white;
+}
+
 
 a {
     text-decoration: none;
@@ -10,7 +15,7 @@ a {
 }
 
 body {
-    background-color: black;
+    background-color:black;
 }
 
 header {
@@ -232,4 +237,11 @@ input:hover {
 }
 
 
+@media screen and (max-width: 35em) {
+  .sun-moon  {
+    cursor: pointer;
+    margin: 0 4rem;
+   }
 }
+
+

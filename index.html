@@ -10,7 +10,7 @@
 </head>
 <script src="codingChallenges.js" type="text/javascript"></script>
 <script src= "fetchApi.js" type="text/javascript" ></script>
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="./css/styles.css" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css">
@@ -21,7 +21,9 @@
 <body>
     <header>
         <div class="title-container">
+
             <h1 class="title" href="/">Ask Austi ...</h1>
+            <button id="api-button" onClick="getRandomQ()" >hello</button>
         </div>
         <nav class="nav-container">
             <!-- <li class="mode-toggle">
@@ -35,6 +37,10 @@
         
                 </span>
             </button>
+
+            <div class="sun-moon">
+                <i class='bx bx-moon'></i>
+            </div>
 
             <ul class="ul-nav" data-visible="false">
                 <span class="menu-icon" id="menu-icon"></span>
@@ -61,12 +67,7 @@
                 <h1 class="header">  </h1>
                 <div class="fetchQuotes" id="fetch-quotes" />
             </div>
-            <button id="api-button" onClick="getRandomQ()" >🦄</button>
-        </div>
-        </div>
-
-        <div class="cards">
-
+        
         </div>
 
                 
