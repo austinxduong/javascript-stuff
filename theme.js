@@ -29,3 +29,9 @@ function getTheme() {
 
   return theme;
 }
+
+// Anonymous Function
+(() => {
+    let theme = getTheme();
+    light_theme.href = `./css/${'theme'}.css`;
+})()
