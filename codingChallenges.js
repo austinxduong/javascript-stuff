@@ -220,10 +220,12 @@ export function integerBoolean(n) {
 // ---------------------------------------------------------------------------
 
 export function convertRomanNum(roman){
-	let total = {};
+	let total = [];
+
+	let finalTotal = 0;
 	
 	let splitting = roman.split('')
-	console.log(splitting)
+	
 	const dictionary = {
 		'I': 1,
 		'V': 5,
@@ -233,13 +235,17 @@ export function convertRomanNum(roman){
 		'D': 500,
 		'M': 1000,
 	}
-	for(let i = 0; i < splitting.length; i++){
 		for (var key in dictionary) {
-			total += key
+			for(let i = 0; i < splitting.length; i++) {
+				if(key === splitting[i]) {
+					finalTotal += dictionary[key];
+				}
+			}
+			total.push(key)
 		}
-	return total + splitting
+	return finalTotal
 
-	}
+
 }
 
 

@@ -70,7 +70,7 @@ describe('Test validity for functions, by Austi', () => {
     })
 
     test('Converts Roman Numerals into decimal number system, and its sum', () => {
-        expect(convertRomanNum('MMVIII')).toEqual()
+        expect(convertRomanNum('MMVIII')).toEqual(2008)
     })
 })
 
