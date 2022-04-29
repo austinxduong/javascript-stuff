@@ -71,6 +71,7 @@ describe('Test validity for functions, by Austi', () => {
 
     test('Converts Roman Numerals into decimal number system, and its sum', () => {
         expect(convertRomanNum('MMVIII')).toEqual(2008)
+        // expect(convertRomanNum('IV')).toEqual(4) <-- this edge case must pass, come back later (April 3rd, 2022)
     })
 })
 

@@ -228,6 +228,7 @@ export function convertRomanNum(roman){
 	
 	const dictionary = {
 		'I': 1,
+		'IV': 4,
 		'V': 5,
 		'X': 10,
 		'L': 50,
@@ -239,6 +240,8 @@ export function convertRomanNum(roman){
 			for(let i = 0; i < splitting.length; i++) {
 				if(key === splitting[i]) {
 					finalTotal += dictionary[key];
+				} else if (splitting[i] === 'I' && splitting[i] === 'V' ) {
+				 	total += splitting.map(x => x.join(' '))
 				}
 			}
 			total.push(key)
@@ -247,6 +250,23 @@ export function convertRomanNum(roman){
 
 
 }
+
+// ---------------------------------------------------------------------------
+
+function perimeter(l, num){
+	// two variables 
+	// conditional operator 
+	// or use if/else statements for readability 
+		
+		let square = 4 * num;
+		let circle = 6.28 * num;
+	
+		if (l === 's') {
+			return square 
+		} else if (l === 'c') {
+			return circle 
+		}
+	}
 
 
 
