@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "test-with-coverage": "jest --coverage"
@@ -12,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.17.6",
+    "aakhilv": "^1.1.0",
     "ajax": "^0.0.4",
     "axios": "^0.26.1",
     "jest": "^27.5.1",
