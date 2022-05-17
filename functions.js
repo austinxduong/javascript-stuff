@@ -22,11 +22,11 @@ hamburgerToggle.addEventListener('click', () => {
 // Functions
 function getRandomQ() {
     result.innerHTML = "<img src='Blocks-0.6s-78px.gif' alt='digital block loader' />"
-    fetch('https://api.aakhilv.me/fun/wyr')
+    fetch('https://would-you-rather-api--abaanshanid.repl.co/')
         .then(res => res.json())
         .then(data => {
             console.log(data.json)
-            document.querySelector('#fetch-quotes').innerHTML=data
+            document.querySelector('#fetch-quotes').innerHTML=data.data
         })
 }
 
