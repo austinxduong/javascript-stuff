@@ -15,7 +15,7 @@ const fetching = fetch('https://would-you-rather-api--abaanshanid.repl.co/')
         // update Mon, March 14th 2022
         // bug fix
         console.log(data.json)
-        document.getElementById('fetch-quotes').innerHTML=data;
+        document.getElementById('fetch-quotes').innerHTML=data.data;
     })
 
    
