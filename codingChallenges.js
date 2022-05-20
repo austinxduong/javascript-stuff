@@ -253,20 +253,20 @@ export function convertRomanNum(roman){
 
 // ---------------------------------------------------------------------------
 
-// function perimeter(l, num){
-// 	// two variables 
-// 	// conditional operator 
-// 	// or use if/else statements for readability 
+export function perimeter(l, num){
+	// two variables 
+	// conditional operator 
+	// or use if/else statements for readability 
 		
-// 		let square = 4 * num;
-// 		let circle = 6.28 * num;
+		let square = 4 * num;
+		let circle = 6.28 * num;
 	
-// 		if (l === 's') {
-// 			return square 
-// 		} else if (l === 'c') {
-// 			return circle 
-// 		}
-// 	}
+		if (l === 's') {
+			return square 
+		} else if (l === 'c') {
+			return circle 
+		}
+	}
 
 
 
