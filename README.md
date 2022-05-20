@@ -1,6 +1,7 @@
 
  Third-Party Integration(s): 
  > - <em>"Would you rather"</em> API by [@aakhilv](https://aakhilv.notion.site/aakhilv/api-aakhilv-me-a57b3dc3e4e2449ba4dcce5ddee1c684)
+ > - replaced previous API. new API created by other developer (beta)
  
  Multi-flavored functions with [passing test cases](https://github.com/austinxduong/object-oriented-programming/actions). 
  
