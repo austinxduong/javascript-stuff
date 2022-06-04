@@ -26,7 +26,7 @@ function getRandomQ() {
     .then(res => res.json())
         .then(data => {
             console.log(data.json)
-            document.querySelector('#fetch-quotes').innerHTML=data
+            document.querySelector('#fetch-quotes').innerHTML=data.data;
         })
 }
 
