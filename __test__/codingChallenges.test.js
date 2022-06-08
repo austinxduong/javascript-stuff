@@ -75,7 +75,7 @@ describe('Test validity for functions, by Austi', () => {
     })
 
     test('Finds which generation you are in', () => {
-        expect(generationFinder).toEqual()
+        expect(generationFinder()).toEqual()
     })
 })
 
