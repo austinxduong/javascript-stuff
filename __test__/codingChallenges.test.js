@@ -73,6 +73,10 @@ describe('Test validity for functions, by Austi', () => {
         expect(convertRomanNum('MMVIII')).toEqual(2008)
         // expect(convertRomanNum('IV')).toEqual(4) <-- this edge case must pass, come back later (April 3rd, 2022)
     })
+
+    test('Finds which generation you are in', () => {
+        expect(generationFinder).toEqual()
+    })
 })
 
 // describe('Test API fetch call', () => {
