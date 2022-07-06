@@ -277,6 +277,15 @@ export function perimeter(l, num){
 // If positive, return the related descendant.
 // You are generation 0. In the case of 0 (male or female), return "me!".
 
+export function DNA_generation() {
+	//psudeocode
+	// x && y; where... 
+	// x === number
+	//  y === 'm' || 'f' where m = male / f = female
+	// if === 0 then return a string 'me!'
+	return
+}
+
 
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
