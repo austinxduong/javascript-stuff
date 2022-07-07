@@ -283,10 +283,30 @@ export function DNA_generation() {
 	// x === number
 	//  y === 'm' || 'f' where m = male / f = female
 	// if === 0 then return a string 'me!'
-	return
+	//female = positive
+	//male = negative
+	// we want to store multiple values for each key
+	// create object of arrays to store unique values
+	
+	const obj = {
+		'-3': ['great grandfather' , 'great grandmother'],
+		'-2': ['grandfather', 'grandmother'],
+		'-1': ['father', 'mother'],
+		'0': ['me!'], 
+		'1': ['son', 'daughter'],
+		'2': ['grandson', 'granddaughter'],
+		'3':['great grandson', 'great granddaughter'],
+	}
+			 
+	for (let i in obj) {
+			if (x === 'm' && y !== 0) {
+			 obj[i][0];
+	} else if (x === 'f' && y !== 0) {
+				return obj[i][1];
+	}
 }
 
-
+}
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
