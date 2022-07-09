@@ -75,7 +75,7 @@ describe('Test validity for functions, by Austi', () => {
     })
 
     test('Finds which generation you are in', () => {
-        expect(DNA_generation()).toEqual()
+        expect(DNA_generation('-1', 'm')).toEqual('father')
     })
 })
 
