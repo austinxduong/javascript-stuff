@@ -289,24 +289,17 @@ export function DNA_generation() {
 	// create object of arrays to store unique values
 	
 	const obj = {
-		'-3': ['great grandfather' , 'great grandmother'],
-		'-2': ['grandfather', 'grandmother'],
-		'-1': ['father', 'mother'],
-		'0': ['me!'], 
-		'1': ['son', 'daughter'],
-		'2': ['grandson', 'granddaughter'],
-		'3':['great grandson', 'great granddaughter'],
+		"-3": {m: "great grandfather", f: "great grandmother",},
+		"-2": {m: "grandfather", f: "grandmother",},
+		"-1": {m: "father", f: "mother",},
+		0: {m: "me!", f: "me!",},
+		1: {m: "son", f: "daughter",},
+		2: {m: "grandson", f: "granddaughter",},
+		3: {m: "great grandson", f: "great granddaughter",},
+	  };
+	
+	  return obj[x][y];
 	}
-			 
-	for (let i in obj) {
-			if (x === 'm' && y !== 0) {
-			 obj[i][0];
-	} else if (x === 'f' && y !== 0) {
-				return obj[i][1];
-	}
-}
-
-}
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
