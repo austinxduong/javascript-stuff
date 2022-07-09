@@ -20,6 +20,7 @@
  + Find Ratio of +/-/ or 0 integers at 6th decimal
  + Truthy or Falsy?
  + Converts Roman Numerals, into Decimal Number System 
+ + DNA Generation Finder
  
  Not Intellect Level 😭
  Impact level: Desktop !== 'good'|| Mobile === 'good'
