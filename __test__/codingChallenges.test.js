@@ -1,5 +1,5 @@
 
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean, convertRomanNum } = require('../codingChallenges')
+const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean, convertRomanNum, DNA_generation } = require('../codingChallenges')
 
 
 
@@ -75,7 +75,7 @@ describe('Test validity for functions, by Austi', () => {
     })
 
     test('Finds which generation you are in', () => {
-        expect(generationFinder()).toEqual()
+        expect(DNA_generation()).toEqual()
     })
 })
 
