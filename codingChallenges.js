@@ -301,5 +301,7 @@ export function DNA_generation(x, y) {
 	  return obj[x][y];
 	}
 
+
+
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 

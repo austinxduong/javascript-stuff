@@ -1,3 +1,4 @@
+// Selectors
 const result = document.querySelector('#fetch-quotes')
 const fetch_button = document.querySelector('#api-button')
 const navi = document.querySelector('.ul-nav')

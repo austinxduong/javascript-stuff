@@ -1,5 +1,5 @@
 
-const { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean, convertRomanNum, DNA_generation } = require('../codingChallenges')
+import { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean, convertRomanNum, DNA_generation } from '../codingChallenges';
 
 
 
