@@ -305,8 +305,9 @@ export function DNA_generation(x, y) {
 
 
 	function arrayOfMultiples (num, length) {
+		// each single calculated element from transformer variable, is collected in finalArr
 		let finalArr = [];
-		// base num * index
+		// holding nest/variable per each calculation (base num * index)
 		let transformer = 0
 		// start at index 1, plus an additional index. 
 		// we start at 1, so base number is not mutiplied by index 0. We want 0 omitted from final array output
@@ -314,7 +315,7 @@ export function DNA_generation(x, y) {
 			// multiply the base num by the index
 			// ie. 3(num) * 1(i) //  3(num) * 2(i) // 3(num) * 3(i)
 			transformer = num * i
-			// push each calculated value, and push to final empty array
+			// push each calculated value, into final empty array
 			finalArr.push(transformer)
 		}
 		return finalArr;
