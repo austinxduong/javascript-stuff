@@ -308,7 +308,7 @@ export function DNA_generation(x, y) {
 		let finalArr = [];
 		// base num * index
 		let transformer = 0
-		// start at index 0, plus an additional index. 
+		// start at index 1, plus an additional index. 
 		// we start at 1, so base number is not mutiplied by index 0. We want 0 omitted from final array output
 		for(let i = 1; i < length + 1; i++) {
 			// multiply the base num by the index
