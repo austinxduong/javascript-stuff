@@ -306,12 +306,16 @@ export function DNA_generation(x, y) {
 
 	function arrayOfMultiples (num, length) {
 		let finalArr = [];
-		
-		let accumulator = 0
-		
-		for(let i = 0; i < length; i++) {
-			accumulator += num * i
-			finalArr.push(accumulator)
+		// take base num 
+		let transformer = 0
+		// start at index 0, plus an additional index. 
+		// we start at 0, so base number is not mutiplied by index 0. We wan 0 omitted from final array output
+		for(let i = 1; i < length + 1; i++) {
+			// multiply the base num by the index
+			// ie. 3 * 1 //  3 * 2 // 3 * 3
+			transformer = num * i
+			// push each calculated value, and push to final empty array
+			finalArr.push(transformer)
 		}
 		return finalArr;
 	}
