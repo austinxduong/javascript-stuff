@@ -301,7 +301,20 @@ export function DNA_generation(x, y) {
 	  return obj[x][y];
 	}
 
+// Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
 
+
+	function arrayOfMultiples (num, length) {
+		let finalArr = [];
+		
+		let accumulator = 0
+		
+		for(let i = 0; i < length; i++) {
+			accumulator += num * i
+			finalArr.push(accumulator)
+		}
+		return finalArr;
+	}
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
