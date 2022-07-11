@@ -306,7 +306,7 @@ export function DNA_generation(x, y) {
 
 	function arrayOfMultiples (num, length) {
 		let finalArr = [];
-		// take base num 
+		// base num * index
 		let transformer = 0
 		// start at index 0, plus an additional index. 
 		// we start at 0, so base number is not mutiplied by index 0. We wan 0 omitted from final array output
