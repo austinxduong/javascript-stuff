@@ -304,7 +304,7 @@ export function DNA_generation(x, y) {
 // Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
 
 
-function arrayOfMultiples (num, length) {
+export function arrayOfMultiples (num, length) {
 	// each single calculated element from transformer variable, is collected in finalArr
 	let finalArr = [];
 	// holding nest/variable per each calculation (base num * index)
@@ -324,10 +324,10 @@ function arrayOfMultiples (num, length) {
 	// Create a function that takes an object and returns the keys and values as separate arrays.
 	// Return the keys sorted alphabetically, and their corresponding values in the same order.
 function objectToArray() {
-	
+	// create 2 variables 1 to hold keys, 1 to hold values (thank you Github AI copilot)
 	let keys = Object.keys(obj)
 	let values = Object.values(obj)
-		return [...keys, ...values]
+		return [keys, values]
 
 }
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }

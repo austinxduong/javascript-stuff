@@ -1,5 +1,20 @@
 
-import { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi, twoSum, twoNumberSumOptimized, countBits, compareTriplets, plusMinus, integerBoolean, convertRomanNum, DNA_generation } from '../codingChallenges';
+import { 
+    findsHighestDigit, 
+    sortArrayByLength, 
+    calculateDifference, 
+    sumOfCubes, 
+    yummyPi, 
+    twoSum, 
+    twoNumberSumOptimized, 
+    countBits, 
+    compareTriplets, 
+    plusMinus, 
+    integerBoolean, 
+    convertRomanNum, 
+    DNA_generation,
+    objectToArray,
+} from '../codingChallenges';
 
 
 
@@ -76,6 +91,10 @@ describe('Test validity for functions, by Austi', () => {
 
     test('Finds which generation you are in', () => {
         expect(DNA_generation('-1', 'm')).toEqual('father')
+    })
+
+    test('Converts an Object of Key/Value pairs, and spreads them into an array', () => {
+        expect(objectToArray().toEqual())
     })
 })
 
