@@ -304,22 +304,27 @@ export function DNA_generation(x, y) {
 // Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
 
 
-	function arrayOfMultiples (num, length) {
-		// each single calculated element from transformer variable, is collected in finalArr
-		let finalArr = [];
-		// holding nest/variable per each calculation (base num * index)
-		let transformer = 0
-		// start at index 1, plus an additional index. 
-		// we start at 1, so base number is not mutiplied by index 0. We want 0 omitted from final array output
-		for(let i = 1; i < length + 1; i++) {
-			// multiply the base num by the index
-			// ie. 3(num) * 1(i) //  3(num) * 2(i) // 3(num) * 3(i)
-			transformer = num * i
-			// push each calculated value, into final empty array
-			finalArr.push(transformer)
-		}
-		return finalArr;
+function arrayOfMultiples (num, length) {
+	// each single calculated element from transformer variable, is collected in finalArr
+	let finalArr = [];
+	// holding nest/variable per each calculation (base num * index)
+	let transformer = 0
+	// start at index 1, plus an additional index. 
+	// we start at 1, so base number is not mutiplied by index 0. We want 0 omitted from final array output
+	for(let i = 1; i < length + 1; i++) {
+		// multiply the base num by the index
+		// ie. 3(num) * 1(i) //  3(num) * 2(i) // 3(num) * 3(i)
+		transformer = num * i
+		// push each calculated value, into final empty array
+		finalArr.push(transformer)
 	}
+	return finalArr;
+}
 
+	// Create a function that takes an object and returns the keys and values as separate arrays.
+	// Return the keys sorted alphabetically, and their corresponding values in the same order.
+	function objectToArray() {
+	
+	}
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
