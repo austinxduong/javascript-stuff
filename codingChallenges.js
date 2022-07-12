@@ -323,7 +323,7 @@ export function arrayOfMultiples (num, length) {
 
 	// Create a function that takes an object and returns the keys and values as separate arrays.
 	// Return the keys sorted alphabetically, and their corresponding values in the same order.
-function objectToArray() {
+export function objectToArray(obj) {
 	// create 2 variables 1 to hold keys, 1 to hold values (thank you Github AI copilot)
 	let keys = Object.keys(obj)
 	let values = Object.values(obj)

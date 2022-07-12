@@ -1,4 +1,3 @@
-
 import { 
     findsHighestDigit, 
     sortArrayByLength, 
@@ -94,7 +93,9 @@ describe('Test validity for functions, by Austi', () => {
     })
 
     test('Converts an Object of Key/Value pairs, and spreads them into an array', () => {
-        expect(objectToArray().toEqual())
+
+
+        expect(objectToArray({name: 'austi', favFood: 'pizza', bDayMonth: 'august'})).toEqual([['name', 'favFood', 'bDayMonth'], ['austi', 'pizza', 'august']])
     })
 })
 
