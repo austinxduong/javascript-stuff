@@ -323,8 +323,12 @@ function arrayOfMultiples (num, length) {
 
 	// Create a function that takes an object and returns the keys and values as separate arrays.
 	// Return the keys sorted alphabetically, and their corresponding values in the same order.
-	function objectToArray() {
+function objectToArray() {
 	
-	}
+	let keys = Object.keys(obj)
+	let values = Object.values(obj)
+		return [...keys, ...values]
+
+}
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
