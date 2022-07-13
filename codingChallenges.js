@@ -338,7 +338,8 @@ function isRepdigit(num) {
 
 // Create a function that counts the integer's number of digits.
 function count() {
-	
+	let convertNegInt = Math.abs(n)
+	return convertNegInt > 1 ? Math.ceil(Math.log10(convertNegInt)) : 1
 }
 
 
