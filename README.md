@@ -21,6 +21,7 @@
  + Truthy or Falsy?
  + Converts Roman Numerals, into Decimal Number System 
  + DNA Generation Finder
+ + RepDigit Transformer
  
  Not Intellect Level 😭
  Impact level: Desktop !== 'good'|| Mobile === 'good'
