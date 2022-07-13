@@ -332,6 +332,9 @@ export function objectToArray(obj) {
 }
 //A repdigit is a positive number composed out of the same digit. 
 //Create a function that takes an integer and returns whether it's a repdigit or not.
+function isRepdigit(num) {
+	return num % 2 === 0
+}
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
