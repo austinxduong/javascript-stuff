@@ -336,5 +336,11 @@ function isRepdigit(num) {
 	return num % 2 === 0
 }
 
+// Create a function that counts the integer's number of digits.
+function count() {
+	
+}
+
+
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
