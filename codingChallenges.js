@@ -372,5 +372,10 @@ class Circle {
 	}
 }
 
+// removes all falsey values within an array 
+function compact(arr) {
+	return arr.filter(Boolean)
+}
+
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 
