@@ -332,16 +332,45 @@ export function objectToArray(obj) {
 }
 //A repdigit is a positive number composed out of the same digit. 
 //Create a function that takes an integer and returns whether it's a repdigit or not.
-function isRepdigit(num) {
+export function isRepdigit(num) {
+	// let nest = ''
+	// let calc = num.toString().split('')
+	// let splitting = calc.slice(1)
+	// for(let i = 0; i < splitting.length; i++) {
+	// 	if( splitting === calc[0]) {
+	// 		return true;
+
+	// 	}
+	// 	// condition
+	// 	// do this --> nest += calc[i]
+	// 	}
+	// console.log([...calc], "calc variable")
+	// console.log(calc[1])
+	// console.log(splitting, "splitting variable")
 	return num % 2 === 0
 }
+console.log(isRepdigit(123))
 
 // Create a function that counts the integer's number of digits.
-function count() {
+export function count() {
 	let convertNegInt = Math.abs(n)
 	return convertNegInt > 1 ? Math.ceil(Math.log10(convertNegInt)) : 1
 }
 
+// Your task is to create a Circle constructor that creates a circle with a radius provided by an argument. 
+// The circles constructed must have two methods getArea() (PI*r^2) and getPerimeter() (2*PI*r) which give both respective areas and perimeter (circumference).
+// For help with this class, I have provided you with a Rectangle constructor which you can use as a base example.
+class Circle {
+	constructor(radius) {
+		this.radius = radius;
+	}
+	getArea(){
+		return Math.PI * Math.pow(this.radius, 2)
+	}
+	getPerim(){
+		return 2 * Math.PI * this.radius
+	}
+}
 
 // module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
 

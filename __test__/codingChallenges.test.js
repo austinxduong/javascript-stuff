@@ -13,6 +13,8 @@ import {
     convertRomanNum, 
     DNA_generation,
     objectToArray,
+    isRepdigit,
+    count
 } from '../codingChallenges';
 
 
@@ -96,6 +98,15 @@ describe('Test validity for functions, by Austi', () => {
 
 
         expect(objectToArray({name: 'austi', favFood: 'pizza', bDayMonth: 'august'})).toEqual([['name', 'favFood', 'bDayMonth'], ['austi', 'pizza', 'august']])
+    })
+
+    test('finds RepDigit of an integer', () => {
+        expect(isRepdigit(123)).toEqual(false)
+        // expect(isRepdigit(11)).toEqual(true)
+    })
+
+    test('Finds Length of Integer', () => {
+        expect().toEqual()
     })
 })
 
