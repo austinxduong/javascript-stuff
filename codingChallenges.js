@@ -377,5 +377,19 @@ function compact(arr) {
 	return arr.filter(Boolean)
 }
 
-// module.exports = { findsHighestDigit, sortArrayByLength, calculateDifference, sumOfCubes, yummyPi }
+// Given a grid of numbers, return a grid of the Spotlight Sum of each number. 
+// The spotlight sum can be defined as the total of all numbers immediately surrounding the number on the grid, including the number in the total.
+// function spotlightMap(grid) {
+	
+// }
+
+// Create a function that takes an array of numbers and returns the second largest number.
+
+function secondLargest(arr) {
+	let calc = arr.sort(function(a, b){
+		return a-b
+	})
+	return calc[calc.length - 2]
+}
+
 
