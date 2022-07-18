@@ -393,5 +393,11 @@ function secondLargest(arr) {
 }
 
 // Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
-
+function sevenBoom(arr) {
+	const stringify = arr.join('')
+	const regex = /7/g
+	const final = stringify.match(regex)
+	console.log(final)
+	return final ? 'Boom!' : 'there is no 7 in the array'
+}
 
