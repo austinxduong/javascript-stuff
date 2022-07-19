@@ -401,3 +401,19 @@ function sevenBoom(arr) {
 	return final ? 'Boom!' : 'there is no 7 in the array'
 }
 
+//Write a class called Rectangle that represents a rectangular two-dimensional region. It should have the following constructor:
+// constructor(x, y, width, height)
+
+class Rectangle {
+	constructor(x, y, width, height) {
+		this.x = x;
+		this.y = y;
+		this.width = width;
+		this.height = height;
+	}
+	
+	toString() {
+		const {x, y, width, height} = this;
+		return `[x=${x}, y=${y}, width=${width}, height=${height}]`;
+	}
+}
