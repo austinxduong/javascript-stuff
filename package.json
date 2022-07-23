@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest",
     "test-with-coverage": "jest --coverage"
   },
   "keywords": [],
