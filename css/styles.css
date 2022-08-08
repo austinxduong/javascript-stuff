@@ -99,7 +99,7 @@ header {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  background-color: wheat;
+  background-color: #aaf0d1;
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
