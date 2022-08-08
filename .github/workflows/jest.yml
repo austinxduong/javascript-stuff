@@ -30,4 +30,4 @@ jobs:
 
     
       - name: Run the tests
-        run: npm test --watchAll
+        run: npm test 
