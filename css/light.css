@@ -54,7 +54,7 @@ header {
   top: -50px;
   bottom: -50px;
   background-color: #000;
- display: none;
+  display: none;
 }
 
 .line:before,
@@ -109,11 +109,10 @@ content {
   width: calc(50% - 2rem);
 }
 
-.show-me:nth-child(){
+.show-me:nth-child(n){
   transform: none;
   opacity: 1;
 }
-
 
 
 
