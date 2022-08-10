@@ -114,6 +114,10 @@ content {
   opacity: 1;
 }
 
+h1 {
+  letter-spacing: 1px;
+}
+
 .timeline-container h1 {
   font-size: 22px;
 }
