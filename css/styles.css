@@ -109,6 +109,14 @@ content {
   width: calc(50% - 2rem);
 }
 
+.description {
+  background-color: #424242;
+  border: 1px solid;
+  padding: 10px;
+  border-color:#1134f7;
+  max-width: 300px;
+}
+
 .show-me:nth-child(n){
   transform: none;
   opacity: 1;
