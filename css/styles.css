@@ -103,9 +103,9 @@ header {
   transform: translateX(-50%);
 }
 
-content {
+/* content {
   width: calc(50% - 2rem);
-}
+} */
 
 .description {
   background-color: #424242;
