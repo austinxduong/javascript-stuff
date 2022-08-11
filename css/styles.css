@@ -112,7 +112,7 @@ header {
   border: 1px solid;
   padding: 10px;
   border-color:#1134f7;
-  max-width: 300px;
+  width: 300px;
 }
 
 .show-me:nth-child(n){

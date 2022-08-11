@@ -105,6 +105,14 @@ header {
   transform: translateX(-50%);
 }
 
+.description {
+  background-color: #D3D3D3;
+  border: 1px solid;
+  padding: 10px;
+  border-color:#1134f7;
+  max-width: 300px;
+}
+
 content {
   width: calc(50% - 2rem);
 }
