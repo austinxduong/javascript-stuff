@@ -24,6 +24,12 @@ header {
     text-decoration: none;
 }
 
+@media screen and (max-width: 800px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
 .timeline-container {
   padding: 2rem;
   padding-bottom: 400px;
