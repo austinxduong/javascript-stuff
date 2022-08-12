@@ -27,6 +27,12 @@
  Not Intellect Level 😭
  Impact level: Desktop !== 'good'|| Mobile === 'good'
 - 🐛  getRandom() function renders 2 API requests onClick. fetch call renders only once on DOM reload. (5/27th) 
+
+Enhancement Feature(s):
++ API Fetch
++ hamburger Menu
++ add interactive timeline
+ - historical projects 
  ```
  ![Screen Shot 2022-05-27 at 5 31 42 PM](https://user-images.githubusercontent.com/78833034/170802727-94516143-0731-41d3-b9f2-830eede50e30.png)
 
