@@ -34,6 +34,7 @@ Enhancement Feature(s):
 + add interactive timeline
 - historical projects 
 - last active/updated status
+- live chat/SMS interaction
  ```
  ![Screen Shot 2022-05-27 at 5 31 42 PM](https://user-images.githubusercontent.com/78833034/170802727-94516143-0731-41d3-b9f2-830eede50e30.png)
 
