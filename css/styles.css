@@ -45,6 +45,10 @@ header {
   margin: 0 auto;
 }
 
+.top-left h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .timeline-line {
   position: relative;
   min-height: 150px;
@@ -113,7 +117,12 @@ header {
   width: calc(50% - 2rem);
 } */
 
+.main-description {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .description {
+  font-family: 'Courier New', Courier, monospace;
   background-color: #424242;
   border: 1px solid;
   padding: 10px;
