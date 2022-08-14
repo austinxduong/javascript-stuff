@@ -22,7 +22,7 @@ hamburgerToggle.addEventListener('click', () => {
 
 // Functions
 function getRandomQ() {
-    result.innerHTML = "<img src='Blocks-0.6s-78px.gif' alt='digital block loader' />"
+    result.innerHTML = "<img src='Blocks-0.5s-184px.svg' alt='digital block loader' />"
     fetch('https://would-you-rather-api--abaanshanid.repl.co/')
     .then(res => res.json())
         .then(data => {
