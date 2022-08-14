@@ -162,6 +162,7 @@ h1 {
   }
 
   .menu-icon:before {
+    backdrop-filter: blur(10px);
     margin: -15px;
     padding: 8px;
     position: absolute;
@@ -195,6 +196,7 @@ h1 {
 
 .ul-nav[data-visible="true"] {
   transform: translateX(0%);
+  z-index: 3
 }
 
 
