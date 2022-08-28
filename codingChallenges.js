@@ -417,3 +417,9 @@ class Rectangle {
 		return `[x=${x}, y=${y}, width=${width}, height=${height}]`;
 	}
 }
+
+// Currying functions:
+// how its useful --> 
+/*function multiply {
+
+}*/
