@@ -28,11 +28,14 @@
  Impact level: Desktop !== 'good'|| Mobile === 'good'
 - 🐛  getRandom() function renders 2 API requests onClick. fetch call renders only once on DOM reload. (5/27th) 
 
+
 Enhancement Feature(s):
++ fixed time-line bleeding into "content" div block
++ add outter text glow to "title" text 
 + API Fetch
 + hamburger Menu
 + add interactive timeline
-- historical projects 
+- historical projects (WIP, still have to refactor old projects/repos)
 - last active/updated status
 - live chat/SMS interaction
 - native API ? (TBD; library, backend framework, etc.)
