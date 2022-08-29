@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-  
 }
 
 a {
@@ -125,7 +124,7 @@ h1 {
 }
 
 h2 {
-  background-color: #f1fafa;
+  background-color: white;
   z-index: 2;
   font-family: 'Titillium Web';
   color: rgb(0, 42, 255);
@@ -200,6 +199,9 @@ h2 {
 
 
 @media (max-width: 35em) {
+  h2 {
+    text-align: center;
+  }
   .ul-nav {
     text-align: left;
     position: fixed;
