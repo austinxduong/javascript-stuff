@@ -139,6 +139,20 @@ h1 {
   letter-spacing: 1px;
 }
 
+h2 {
+  font-family: 'Titillium Web';
+  color: rgba(255, 255, 255, 0.818);
+  text-shadow:
+      0 0 7px rgba(255, 255, 255, 0.645),
+      0 0 10px rgba(255, 255, 255, 0.657),
+      0 0 21px #fff,
+      0 0 42px rgb(0, 191, 255),
+      0 0 82px rgb(0, 47, 255),
+      0 0 92px rgb(255, 0, 153),
+      0 0 102px rgb(255, 0, 123),
+      0 0 151px rgb(255, 0, 140);
+}
+
 .timeline-container h1 {
   font-size: 22px;
 }
