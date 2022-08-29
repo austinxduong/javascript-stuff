@@ -140,6 +140,8 @@ h1 {
 }
 
 h2 {
+  background-color: #1b1c1c;
+  z-index: 2;
   font-family: 'Titillium Web';
   color: rgba(255, 255, 255, 0.818);
   text-shadow:
