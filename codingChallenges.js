@@ -424,7 +424,19 @@ Change will always be represented in the following order: quarters, dimes, nicke
 To illustrate: changeEnough([25, 20, 5, 0], 4.25) should yield true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50.
 */
 
-
+function changeEnough(change, amountDue) {
+	const initialValue = 0;
+	const quarter = .25 * change[0]
+	const dime = .10 * change[1]
+	const nickel = .05 * change[2]
+	const penny = .01 * change[3]
+	
+	var change = [quarter, dime, nickel, penny]
+	
+	const loopAdd = change.reduce((prevNum, currNum) => prevNum + currNum, initialValue);
+	
+	return loopAdd >= amountDue ? true : false
+}
 
 
 // Currying functions:
