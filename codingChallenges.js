@@ -438,6 +438,16 @@ function changeEnough(change, amountDue) {
 	return loopAdd >= amountDue ? true : false
 }
 
+// Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
+
+function intWithinBounds(n, lower, upper) {
+	if( n >= lower && n < upper && Number.isInteger(n)) {
+		return true
+	} else if (n !== Number.isInteger(n)) {
+			return false	
+	}
+}
+
 
 // Currying functions:
 // how its useful --> 
