@@ -23,6 +23,7 @@
  + DNA Generation Finder
  + RepDigit Transformer
  + Count length of Integer 
+ + Counts the amount of change, + determines if you have enough
  
  Not Intellect Level 😭
  Impact level: Desktop !== 'good'|| Mobile === 'good'
