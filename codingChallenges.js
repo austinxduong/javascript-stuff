@@ -453,6 +453,15 @@ function intWithinBounds(n, lower, upper) {
 If you can't find Nemo, return "I can't find Nemo :(".
 */
 
+// the index started at 0, and the tests expected the index to start at 1 -- which is why +1 is added within template literal
+function findNemo(sentence) {
+	const selectNemo = sentence.split(" ")
+	const indexNemo = selectNemo.indexOf("Nemo")
+ 
+	return selectNemo.includes("Nemo") ? `I found Nemo at ${indexNemo + 1}!` : "I can\'t find Nemo :("
+
+}
+
 
 
 // Currying functions:
