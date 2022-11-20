@@ -55,15 +55,16 @@
   gtag('config', 'G-1JG9T2B8TG');
 </script>
 
+
         <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
         <script>
         window.cookieconsent.initialise({
           "palette": {
             "popup": {
-              "background": "#000"
+              "background": "#0D1A6E"
             },
             "button": {
-              "background": "#f1d600"
+              "background": "#3CD184"
             }
           },
           "type": "opt-out"
@@ -125,6 +126,21 @@
         </div>
 
         <body>
+
+            <script type="text/javascript">
+                var aoProtocol = location.protocol;
+                if ( aoProtocol.indexOf('http') < 0 ) aoProtocol = 'http:';
+                var aoCAP = {
+                aid: '1234',
+                fid: '77abe64f-8baa-4dc9-9639-d92e23eab9f3',
+                did: 'd-0001',
+                server: 'marketing.actonsoftware.com',
+                formName: 'myMarketingForm',
+                protocol: aoProtocol
+                };
+                document.write( '<script type="text/javascript" src="'+aoCAP.protocol+'//'+aoCAP.server+'/acton/js/formcap.min.js"><'+'/script>' );
+                </script>
+
 
             <div class="timeline-container">
                 <div class="top-left">
