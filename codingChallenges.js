@@ -470,13 +470,13 @@ function isSpecialArray(arr) {
 	
 	const collector = []
 	
-	for (let i = 0; i < secCalc.length; i++) {
-		if (secCalc[i] % 2) {
-			console.log(secCalc[i])
-			collector.push(secCalc[i])
+	for (let i = 0; i < arr.length; i++) {
+		if (arr[i] % 2 === 0) {
+			console.log(arr[i])
+			collector.push(arr[i])
 		}
 	}
-	return collector;
+	return console.log(arr[i]);
 }
 
 
