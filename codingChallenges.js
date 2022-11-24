@@ -476,7 +476,7 @@ function isSpecialArray(arr) {
 			collector.push(arr[i])
 		}
 	}
-	return console.log(arr[i]);
+	return collector;
 }
 
 
