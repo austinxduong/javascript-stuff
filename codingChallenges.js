@@ -466,21 +466,19 @@ function findNemo(sentence) {
 // Create a function that returns true if an array is special, and false otherwise.
 function isSpecialArray(arr) {
 	//begins @ index 0, then iterates on every even number (i.e next # 2)
-	for(let i = 0; i < arr.length; i += 2){
-		if(arr[i] % 2 != 0){
+	for(let a = 0; a < arr.length; a += 2){
+		if(arr[a] % 2 != 0){
 			// if the value of the even index does not have a remainder of 0 (making it an odd number - return false)
 			return false
 		}
 	}
 	//beings @ index 1, then iterates on every odd number (i.e next # is 3)
-	for (let j = 1; j < arr.length; j += 2){
-		if(arr[j] % 2 == 0){
+	for (let b = 1; b < arr.length; b += 2){
+		if(arr[b] % 2 == 0){
 			// if the value of the odd index is evenly divisible by 2 with a remainder of 0 (making it an even number @ the odd index) - return false  
 			return false
 		}
 	}
-	// even both conditions above have not been met, this is a "true" special array
-	return true
 }
 
 // Currying functions:
