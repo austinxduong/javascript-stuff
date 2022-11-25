@@ -484,7 +484,14 @@ function isSpecialArray(arr) {
 }
 
 //Create a function that takes an array of items and checks if the last item matches the rest of the array concatenated together.
-
+function matchLastItem(arr) {
+	// removes last element of the array
+	const last = arr.pop()
+	// consolodates all elements into a single string
+	const concat = arr.join('')
+	// apply ternary operator if two strings match
+	return concat === last ? true : false
+}
 
 
 // Currying functions:
