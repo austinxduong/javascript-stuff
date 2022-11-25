@@ -462,6 +462,8 @@ function findNemo(sentence) {
 
 }
 
+//algorithms i've solved/played with over Thankgiving holiday :))) - 11.25.2022
+
 // An array is special if every even index contains an even number and every odd index contains an odd number. 
 // Create a function that returns true if an array is special, and false otherwise.
 function isSpecialArray(arr) {
