@@ -479,6 +479,8 @@ function isSpecialArray(arr) {
 			return false
 		}
 	}
+		// even both conditions above have not been met, this is a "true" special array
+		return true
 }
 
 // Currying functions:
