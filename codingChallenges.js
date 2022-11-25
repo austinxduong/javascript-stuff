@@ -424,7 +424,7 @@ Change will always be represented in the following order: quarters, dimes, nicke
 To illustrate: changeEnough([25, 20, 5, 0], 4.25) should yield true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50.
 */
 
-function changeEnough(change, amountDue) {
+export function changeEnough(change, amountDue) {
 	const initialValue = 0;
 	const quarter = .25 * change[0]
 	const dime = .10 * change[1]
@@ -437,6 +437,9 @@ function changeEnough(change, amountDue) {
 	
 	return loopAdd >= amountDue ? true : false
 }
+
+console.log("change enough? [8, 10, 50, 100], 5.00] = ", changeEnough([8, 10, 50, 100], 5.00))
+console.log("change enough? [8, 10, 50, 100], 55.00] = ", changeEnough([8, 10, 50, 100], 55.00))
 
 // Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
 
@@ -466,7 +469,7 @@ function findNemo(sentence) {
 
 // An array is special if every even index contains an even number and every odd index contains an odd number. 
 // Create a function that returns true if an array is special, and false otherwise.
-function isSpecialArray(arr) {
+export function isSpecialArray(arr) {
 	//begins @ index 0, then iterates on every even number (i.e next # 2)
 	for(let a = 0; a < arr.length; a += 2){
 		if(arr[a] % 2 != 0){
@@ -485,8 +488,11 @@ function isSpecialArray(arr) {
 		return true
 }
 
+console.log("[2, 3, 4, 9, 6, 11] = ",isSpecialArray([2, 3, 4, 9, 6, 11]))
+console.log("[22, 3, 4, 7, 2, 44] = ",isSpecialArray([22, 3, 4, 7, 2, 44]))
+
 //Create a function that takes an array of items and checks if the last item matches the rest of the array concatenated together.
-function matchLastItem(arr) {
+export function matchLastItem(arr) {
 	// removes last element of the array
 	const last = arr.pop()
 	// consolodates all elements into a single string
@@ -495,9 +501,11 @@ function matchLastItem(arr) {
 	return concat === last ? true : false
 }
 
+console.log('"hope", "you", "are", "having", "a", "fine","lovely", "evening", "hopeyouarehavingafinelovelyevening"] =',matchLastItem(["hope", "you", "are", "having", "a", "fine", "lovely", "evening", "hopeyouarehavingafinelovelyevening"]))
+
 // Create a function that moves all capital letters to the front of a word.
 // *playing more with Regex -- its... actually pretty fun .... :)
-function capToFront(s) {
+export function capToFront(s) {
 	// matches all global instance of Capital letters
 	const regexMatch = /[A-Z]/g
 	const collectCap = s.match(regexMatch).join('')
@@ -505,8 +513,12 @@ function capToFront(s) {
 	const regexSlice = /[a-z]/g
 	const slicedArr = s.match(regexSlice).join('')
 	// concatenate both regex variables
-	return collectCap + slicedArr
+	return collectCap + slicedArr 
 }
+
+console.log(capToFront("HEy my naMe iS AUsTI, Decode tHIS"))
+
+
 
 // Currying functions:
 // how its useful --> 
