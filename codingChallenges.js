@@ -483,6 +483,10 @@ function isSpecialArray(arr) {
 		return true
 }
 
+//Create a function that takes an array of items and checks if the last item matches the rest of the array concatenated together.
+
+
+
 // Currying functions:
 // how its useful --> 
 /*function multiply {
