@@ -465,25 +465,23 @@ function findNemo(sentence) {
 // An array is special if every even index contains an even number and every odd index contains an odd number. 
 // Create a function that returns true if an array is special, and false otherwise.
 function isSpecialArray(arr) {
-	function isSpecialArray(arr) {
-		const evenCalc = (collector) => collector % 2 === 0;
-		const oddCalc = (collector) => collector % 1 === 0;
-		const secCalc = arr.every(evenCalc);
-		
-		const collector = []
-		const collectorSingle = []
-		
-		for (let i = 0; i < arr.length; i++) {
-			if (i % 2 === 0 ) {
-				collector.push(arr[i])
-			} else if (i % 1 === 0) {
-				collectorSingle.push(arr[i])
-				console.log(collectorSingle)
-			}
+	//begins @ index 0, then iterates on every even number (i.e next # 2)
+	for(let i = 0; i < arr.length; i += 2){
+		if(arr[i] % 2 != 0){
+			// if the value of the even index does not have a remainder of 0 (making it an odd number - return false)
+			return false
 		}
-		// the collectorSingle variable is rendering 'true', although should be false. This is because .every() method returns boolean if condition is true
-		return collector.every(evenCalc) && collectorSingle.every(oddCalc);
-
+	}
+	//beings @ index 1, then iterates on every odd number (i.e next # is 3)
+	for (let j = 1; j < arr.length; j += 2){
+		if(arr[j] % 2 == 0){
+			// if the value of the odd index is evenly divisible by 2 with a remainder of 0 (making it an even number @ the odd index) - return false  
+			return false
+		}
+	}
+	// even both conditions above have not been met, this is a "true" special array
+	return true
+}
 
 // Currying functions:
 // how its useful --> 
