@@ -493,6 +493,18 @@ function matchLastItem(arr) {
 	return concat === last ? true : false
 }
 
+// Create a function that moves all capital letters to the front of a word.
+// *playing more with Regex -- its... actually pretty fun .... :)
+function capToFront(s) {
+	// matches all global instance of Capital letters
+	const regexMatch = /[A-Z]/g
+	const collectCap = s.match(regexMatch).join('')
+	// matches all global instance of lower case letters
+	const regexSlice = /[a-z]/g
+	const slicedArr = s.match(regexSlice).join('')
+	// concatenate both regex variables
+	return collectCap + slicedArr
+}
 
 // Currying functions:
 // how its useful --> 
