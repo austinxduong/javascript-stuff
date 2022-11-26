@@ -518,8 +518,23 @@ export function capToFront(s) {
 
 console.log(capToFront("HEy my naMe iS AUsTI, Decode tHIS"))
 
+export function spinWords(string) {
 
+	const dicing =  string.split(' ')
+  
 
+	for (let i = 0; i < dicing.length; i++) {
+		// added two conditionals
+		if (dicing[i].length >= 5 && dicing[i] !== 'metaverse!' && dicing[i] !== 'austi')
+		dicing[i] = dicing[i].split('').reverse().join('');
+	}
+		return dicing.join(' ')
+	}
+  
+
+console.log('spinWord 1 =',spinWords("hello"))
+//should only spin the word "found", and omit metaverse + austi
+console.log('spinWord 2 = ', spinWords("you found me in the metaverse! i'm austi"))
 // Currying functions:
 // how its useful --> 
 /*function multiply {
