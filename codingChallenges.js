@@ -349,7 +349,7 @@ export function isRepdigit(num) {
 	// console.log(splitting, "splitting variable")
 	return num % 2 === 0
 }
-console.log(isRepdigit(123))
+console.log("is this a RepDigit...? = ",isRepdigit(123))
 
 // Create a function that counts the integer's number of digits.
 export function count() {
@@ -450,6 +450,8 @@ function intWithinBounds(n, lower, upper) {
 			return false	
 	}
 }
+
+console.log("is wthin bounds 7, 1, 22 = ", intWithinBounds(7, 1, 22))
 
 /*You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find Nemo]!".
 
