@@ -330,6 +330,8 @@ export function objectToArray(obj) {
 		return [keys, values]
 
 }
+console.log("transforms object to array = ",objectToArray({ favRestaurant: 'fogo de chao', occupation: 'software engineer', range: 'fullstack development', gene: 'mutation', type: 'telepathy/telekensis', galaxy: 'supernova', energy: 'expansion' }))
+
 //A repdigit is a positive number composed out of the same digit. 
 //Create a function that takes an integer and returns whether it's a repdigit or not.
 export function isRepdigit(num) {
