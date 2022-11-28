@@ -7,14 +7,14 @@
 
 const fetching = fetch('https://would-you-rather-api--abaanshanid.repl.co/')
     .then((response) => {
-        console.log("status code 200!")
+        console.log("API status code === 200!")
         return response.json();
     })
     .then(data => {
         //JSON object name changed. Previously "data", now is omitted from object.
         // update Mon, March 14th 2022
         // bug fix
-        console.log(data.json)
+        console.log('External_API RAW Data = ',data.data)
         document.getElementById('fetch-quotes').innerHTML=data.data;
     })
 

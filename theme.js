@@ -32,6 +32,6 @@ function getTheme() {
 
 // Anonymous Function
 (() => {
-    let styles = getTheme();
-    light_theme.href = `./css/${'styles'}.css`;
+     styles = getTheme();
+    light_theme.href = `./css/${styles}.css`;
 })()
