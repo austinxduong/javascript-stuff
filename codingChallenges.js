@@ -354,7 +354,8 @@ export function isRepdigit(num) {
 	}
 	return true 
 }
-
+console.log("is this a RepDigit...? 1 = ",isRepdigit(1))
+console.log("is this a RepDigit...? 9 = ",isRepdigit(9))
 console.log("is this a RepDigit...? 123 = ",isRepdigit(123))
 console.log("is this a RepDigit...? 7777777 = ",isRepdigit(7777777))
 console.log("is this a RepDigit...111573411 = ",isRepdigit(111573411))
