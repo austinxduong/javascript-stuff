@@ -330,28 +330,36 @@ export function objectToArray(obj) {
 		return [keys, values]
 
 }
-console.log("transforms object to array = ",objectToArray({ favRestaurant: 'fogo de chao', occupation: 'software engineer', range: 'fullstack development', gene: 'mutation', type: 'telepathy/telekensis', galaxy: 'supernova', energy: 'expansion' }))
+console.log("transforms single object to arrays = ",objectToArray({ favRestaurant: 'fogo de chao', occupation: 'software engineer', range: 'fullstack development', gene: 'mutation', type: 'telepathy/telekensis', galaxy: 'supernova', energy: 'expansion' }))
 
 //A repdigit is a positive number composed out of the same digit. 
 //Create a function that takes an integer and returns whether it's a repdigit or not.
 export function isRepdigit(num) {
-	// let nest = ''
-	// let calc = num.toString().split('')
-	// let splitting = calc.slice(1)
-	// for(let i = 0; i < splitting.length; i++) {
-	// 	if( splitting === calc[0]) {
-	// 		return true;
+	const first = num % 2 === 0
+	const stringifyNum = num.toString().split('')
+	// console.log(stringifyNum)
 
-	// 	}
-	// 	// condition
-	// 	// do this --> nest += calc[i]
-	// 	}
-	// console.log([...calc], "calc variable")
-	// console.log(calc[1])
-	// console.log(splitting, "splitting variable")
-	return num % 2 === 0
+	const total = []
+
+	for (let i = 0; i < stringifyNum.length; i++) {
+			// console.log("stringfyNum[i] =", stringifyNum[i])
+			total.push(stringifyNum[i])
+			console.log("total =",total)
+	}
+
+	for (let j = 0; j < total.length; j++) {
+		if(total[j] !== total[0]) {
+			return false
+		}
+	}
+	return true 
 }
-console.log("is this a RepDigit...? = ",isRepdigit(123))
+
+console.log("is this a RepDigit...? 123 = ",isRepdigit(123))
+console.log("is this a RepDigit...? 7777777 = ",isRepdigit(7777777))
+console.log("is this a RepDigit...111573411 = ",isRepdigit(111573411))
+console.log("is this a RepDigit...? 2222222222222 = ",isRepdigit(2222222222222))
+
 
 // Create a function that counts the integer's number of digits.
 export function count() {
