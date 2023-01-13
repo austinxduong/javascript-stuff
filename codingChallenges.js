@@ -543,11 +543,20 @@ export function spinWords(string) {
 	}
 		return dicing.join(' ')
 	}
-  
+
+
 
 console.log('spinWord 1 =',spinWords("hello"))
 //should only spin the word "found", and omit metaverse + austi
 console.log('spinWord 2 = ', spinWords("you found me in the metaverse! i'm austi"))
+
+
+
+export 	function reverseWords(string) {
+	const splicing = string.split(' ')
+	const joins = splicing.reverse()
+	return joins.join(' ')
+}
 // Currying functions:
 // how its useful --> 
 /*function multiply {
