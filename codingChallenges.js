@@ -557,6 +557,14 @@ export 	function reverseWords(string) {
 	const joins = splicing.reverse()
 	return joins.join(' ')
 }
+
+
+// Create a function which concatenates the number 7 to the end of every chord in an array. Ignore all chords which already end with 7.
+function jazzify(arr) {
+	
+}
+
+
 // Currying functions:
 // how its useful --> 
 /*function multiply {
