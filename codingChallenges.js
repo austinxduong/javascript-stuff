@@ -564,6 +564,24 @@ function jazzify(arr) {
 	
 }
 
+//Create a function that returns true if two arrays contain identical values, and false otherwise.
+function checkEquals(arr1, arr2) {
+	
+	const firstVar = arr1.toString()
+	const calcVar = firstVar.split(' ').join('')
+	
+	const secondVar = arr2.toString()
+	const calcSecVar = secondVar.split(' ').join('')
+	
+	console.log(calcVar)
+	console.log(calcSecVar)
+	
+	if (calcVar === calcSecVar) {
+  	return true 
+  } else {
+  	return false
+  }
+}
 
 // Currying functions:
 // how its useful --> 
