@@ -561,7 +561,7 @@ export 	function reverseWords(string) {
 
 // Create a function which concatenates the number 7 to the end of every chord in an array. Ignore all chords which already end with 7.
 function jazzify(arr) {
-	
+	return arr.map(x => x.includes(7) ? x : x + 7);
 }
 
 //Create a function that returns true if two arrays contain identical values, and false otherwise.
@@ -588,3 +588,5 @@ function checkEquals(arr1, arr2) {
 /*function multiply {
 
 }*/
+
+let newVar = array.map(x => { return x * 4 })
