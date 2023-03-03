@@ -560,9 +560,28 @@ export 	function reverseWords(string) {
 
 
 // Create a function which concatenates the number 7 to the end of every chord in an array. Ignore all chords which already end with 7.
+// examples:
+/*jazzify(["G", "F", "C"]) ➞ ["G7", "F7", "C7"]
+
+jazzify(["Dm", "G", "E", "A"]) ➞ ["Dm7", "G7", "E7", "A7"]
+
+jazzify(["F7", "E7", "A7", "Ab7", "Gm7", "C7"]) ➞ ["F7", "E7", "A7", "Ab7", "Gm7", "C7"]
+
+jazzify([]) ➞ []
+*/
+
 function jazzify(arr) {
 	return arr.map(x => x.includes(7) ? x : x + 7);
 }
+
+/* output:
+/*
+Test Passed: Value == "['G7', 'F7', 'C7']"
+Test Passed: Value == "['Dm7', 'G7', 'E7', 'A7']"
+Test Passed: Value == "['F7', 'E7', 'A7', 'Ab7', 'Gm7', 'C7']"
+Test Passed: Value == "['G7', 'C7']"
+Test Passed: Value == '[]'
+*/
 
 //Create a function that returns true if two arrays contain identical values, and false otherwise.
 function checkEquals(arr1, arr2) {
