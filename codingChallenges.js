@@ -604,7 +604,38 @@ function checkEquals(arr1, arr2) {
 
 //Create a function that takes in a year and returns the correct century.
 function century(year) {
-	
+	const centuryObject = {
+		'1000': '10th century',
+		'1001-1100': '11th century',
+		'1101-1200': '12th century',
+		'1201-1300': '13th century',
+		'1310-1400': '14th century',
+		'1401-1500': '15th century',
+		'1501-1600': '16th century',
+		'1601-1700': '17th century',
+		'1701-1800': '18th century',
+		'1801-1900': '19th century',
+		'1901-2000': '20th century',
+		'2001-2100': '21st century',
+	}
+		
+	if (year === 1000) {
+		return `${centuryObject[1000]}`
+	} else if (year >= 1001 && !(year >= 1100)) {
+		return `${centuryObject['1001-1100']}`
+	} else if (year >= 1701 && !(year >= 1800)) {
+		return `${centuryObject['1701-1800']}`
+	} else if (year >= 1501 && !(year >= 1600)) {
+		return `${centuryObject['1501-1600']}` 
+	} else if (year >= 1601 && !(year >= 1700) ) {
+		return `${centuryObject['1601-1700']}`
+	} else if (year >= 1901 && !(year >= 2000) || year === 2000) {
+	return `${centuryObject['1901-2000']}`
+	} else if (year >= 2001 && !(year >= 2100)) {
+	return `${centuryObject['2001-2100']}`
+	} else {
+		return year
+	}
 }
 
 
