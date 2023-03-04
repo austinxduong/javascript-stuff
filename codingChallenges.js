@@ -602,10 +602,22 @@ function checkEquals(arr1, arr2) {
   }
 }
 
+//Create a function that takes in a year and returns the correct century.
+function century(year) {
+	
+}
+
+
+
 // Currying functions:
 // how its useful --> 
 /*function multiply {
 
 }*/
 
-let newVar = array.map(x => { return x * 4 })
+// const sun =  [2, 10, 20].reduce(function(firstNum, x){
+//  return firstNum + x;
+// }, 1);
+
+
+
