@@ -652,3 +652,14 @@ function century(year) {
 
 
 
+
+// (function(){
+// 	return console.log("hello" + " "+ contacts.firstName + " " + "can be contacted @" + contacts.email);
+// })(contacts); 
+
+//Write a function that returns an anonymous function, which adds n to its input
+function addsNum(n) {
+	return function(input){
+		return input + n;
+	}
+}
