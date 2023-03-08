@@ -663,3 +663,31 @@ function addsNum(n) {
 		return input + n;
 	}
 }
+
+// Create a function that takes a country's name and its area as params and returns the area of the country's proportion of the total world's landmass.
+function areaOfCountry(name, area) {
+	
+	// earths landmass = 148,940,000
+	
+	let countrysProportionToEarthLandMass = area / 148940000
+	let decimalTruncate = countrysProportionToEarthLandMass.toFixed(4)
+	let crops = Number.parseFloat(decimalTruncate) * 100
+	
+	if (crops > 1) {
+		return `${name} is ${crops}% of the total world's landmass`
+	} else if (crops < 1) {
+		return `${name} is ${crops.toFixed(2)}% of the total world's landmass`
+	}
+}
+console.log(areaOfCountry("Egypt", 1002450));
+console.log(areaOfCountry("Switzerland", 41284));
+console.log(areaOfCountry("Netherlands", 41850));
+console.log(areaOfCountry("Greece", 131990));
+
+/*output
+Egypt is 0.67% of the total world's landmass
+Switzerland is 0.03% of the total world's landmass
+Netherlands is 0.03% of the total world's landmass
+Greece is 0.09% of the total world's landmass                 
+*/
+
