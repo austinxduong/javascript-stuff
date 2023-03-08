@@ -691,3 +691,39 @@ Netherlands is 0.03% of the total world's landmass
 Greece is 0.09% of the total world's landmass                 
 */
 
+
+ function loopingMultiDimentionalArray(arr){
+
+	const emptyPortal = []
+
+	let salary = [
+		["ABC", 24, 18000],
+		["EFG", 30, 30000],
+		["IJK", 28, 41000],
+		["EFG", 31, 28000],
+	]
+
+	// console.log(salary)
+
+	for (let i = 0, l1 = salary.length; i < l1; i++) {
+		console.log(salary[i])
+		for(let j = 0, l2 = salary[i].length; j < l2; j++) {
+			emptyPortal.push(salary[i][j]);
+			console.log(salary[i][j])
+			// console.log(l1[i][j])
+			// console.log(l2[i][j])
+		}
+		// console.log(salary[i][j])
+		// console.log(l1[i][j])
+		// console.log(l2[i][j])
+	}
+		return emptyPortal;
+ }
+
+ console.log(loopingMultiDimentionalArray([
+	["ABC", 24, 18000],
+	["EFG", 30, 30000],
+	["IJK", 28, 41000],
+	["EFG", 31, 28000],
+]));
+
