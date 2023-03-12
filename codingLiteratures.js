@@ -720,4 +720,14 @@ let salary = [
 
  console.log(loopingMultiDimentionalArray(salary));
 
+/* 
+Create a function that returns the thickness (in meters) of a piece of paper after folding it n number of times. 
+The paper starts off with a thickness of 0.5mm.
+*/
+
+ function numLayers(n) {
+	const exponential = .5 * Math.pow(2, n) / 1000
+				
+	return `${exponential}m`
+}
 
