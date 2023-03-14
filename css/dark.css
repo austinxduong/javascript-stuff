@@ -9,6 +9,11 @@ a {
 
 body {
     background-color:#121212;
+    background: 
+      linear-gradient(100deg, rgba(3, 0, 12, 0.8), rgba(228, 13, 21, 0) 40.71%), 
+      linear-gradient(217deg, rgb(18, 1, 124), rgba(228, 13, 21, 0) 70.71%),
+      linear-gradient(127deg, rgba(2, 255, 238, 0.684), rgba(174, 106, 60, 0) 70.71%),
+      linear-gradient(300deg, rgba(128, 86, 225, 0.8), rgba(163, 60, 174, 0) 70.71%);
     line-height: 1.5;
     color: #1134f7; 
     line-height: 1.5;
