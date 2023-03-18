@@ -731,3 +731,20 @@ The paper starts off with a thickness of 0.5mm.
 	return `${exponential}m`
 }
 
+//Create a function that takes an array of numbers arr, a string str and return an array of numbers as per the following:
+/*"Asc" returns a sorted array in ascending order.
+"Des" returns a sorted array in descending order.
+"None" returns an array without any modification.*/
+
+function ascDesNone(arr, str) {
+	const asc = function ascSortFunction(a, b){
+		return a - b;
+	}
+	const desc = function descSortFunction(a, b) {
+		return b - a;
+	}
+	return str === "Asc" ? arr.sort(asc)
+			 : str === "Des" ? arr.sort(desc)
+			 : str === "None" ? arr
+			 : arr;
+}
