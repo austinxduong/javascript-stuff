@@ -1,9 +1,5 @@
 
- Third-Party Integration(s): 
- > - <em>"Would you rather"</em> API by [@aakhilv](https://aakhilv.notion.site/aakhilv/api-aakhilv-me-a57b3dc3e4e2449ba4dcce5ddee1c684)
- > - replaced previous API. [new API](https://would-you-rather-api.abaanshanid.repl.co/home/) created by other developer (beta)
- 
- Multi-flavored functions with [passing test cases](https://github.com/austinxduong/object-oriented-programming/actions). 
+Multi-flavored functions with [passing test cases](https://github.com/austinxduong/object-oriented-programming/actions). 
  
  > - Test Integration automated using [Jest](https://jestjs.io/). ✅ 🧪🔬
 
@@ -29,23 +25,3 @@
  Impact level: Desktop !== 'good'|| Mobile === 'good'
 - 🐛  getRandom() function renders 2 API requests onClick. fetch call renders only once on DOM reload. (5/27th) 
 
-
-Enhancement Feature(s):
-+ fixed time-line bleeding into "content" div block
-+ add outter text glow to "title" text 
-+ API Fetch
-+ hamburger Menu
-+ add interactive timeline
-- historical projects (WIP, still have to refactor old projects/repos)
-- last active/updated status
-- live chat/SMS interaction
-- native API ? (TBD; library, backend framework, etc.)
- ```
- ![Screen Shot 2022-05-27 at 5 31 42 PM](https://user-images.githubusercontent.com/78833034/170802727-94516143-0731-41d3-b9f2-830eede50e30.png)
-
-
-![updated_austi_local_dev_local_environment](https://user-images.githubusercontent.com/78833034/159577120-5cb2246d-05f0-40dd-aca2-3bcaab836034.png)
-![updated_austi_super_cool_test_coverage_report_CLI](https://user-images.githubusercontent.com/78833034/159578348-29901d32-533f-4de0-9967-63aeaa82bbbc.png)
-
-
-<em>This is a simulation of myself in the Metaverse 🧬 </em>
