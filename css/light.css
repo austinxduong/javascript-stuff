@@ -118,6 +118,15 @@ header {
   transform: translateX(-50%);
 }
 
+.main-description {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f6f4f9;
+  border: 1px solid;
+  padding: 10px;
+  border-color:#3f6bdb;
+  max-width: 700px;
+}
+
 .description {
   background-color: #f1fafa;
   border: 1px solid;

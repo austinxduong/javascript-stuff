@@ -2,9 +2,29 @@
     box-sizing: border-box;
 }
 
+
 a {
-    text-decoration: none;
-    color: white;
+  color: white;
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
 }
 
 body {
@@ -124,6 +144,11 @@ header {
 
 .main-description {
   font-family: 'Courier New', Courier, monospace;
+  background-color: #4004b7;
+  border: 1px solid;
+  padding: 10px;
+  border-color:#1134f7;
+  max-width: 700px;
 }
 
 .description {
