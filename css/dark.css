@@ -27,6 +27,58 @@ a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
+.wrapper {
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+.content-describe{
+  height: auto; /* here is the starting point */
+  max-height: 1000px; 
+  padding: 0;
+  background-color: #e5800d63;
+  color: #ffffff;
+  border-color: white ;
+  overflow: hidden;
+
+  transition-property: opacity, max-height;
+  transition-duration: 1s, 0.5s;
+}
+
+.activator {
+  color: white;
+  cursor: pointer;
+  padding: .5em;
+}
+
+
+.block {
+  display: block;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+
+/* Collapse */
+.wrapper .activator:after {
+  content: "🌿";
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+
+  transition: transform 0.3s linear;
+}
+
+.wrapper.collapsed .activator:after {
+  transform: rotate(-0.25turn);
+}
+
+.wrapper.collapsed .content-describe{
+  max-height: 0;
+  opacity: 0;
+}
+
 body {
     background-color:#121212;
     background: 
@@ -35,8 +87,9 @@ body {
       linear-gradient(127deg, rgba(2, 255, 238, 0.684), rgba(174, 106, 60, 0) 70.71%),
       linear-gradient(300deg, rgba(128, 86, 225, 0.8), rgba(163, 60, 174, 0) 70.71%);
     line-height: 1.5;
-    color: #1134f7; 
     line-height: 1.5;
+
+
 }
 
 header {
@@ -144,6 +197,8 @@ header {
 
 .main-description {
   font-family: 'Courier New', Courier, monospace;
+  /* font color */
+  color: white;
   background-color: #4004b7;
   border: 1px solid;
   padding: 10px;
@@ -153,6 +208,7 @@ header {
 
 .description {
   font-family: 'Courier New', Courier, monospace;
+  color: white;
   background-color: #ed787869;
   border: 1px solid;
   padding: 10px;

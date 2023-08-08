@@ -16,14 +16,15 @@ a {
   height: auto; /* here is the starting point */
   max-height: 1000px; 
   padding: 0;
-  background-color: #f3f3f7;
+  background-color: #3b3bcf14;
   overflow: hidden;
-
+  color: #1134f7;
   transition-property: opacity, max-height;
   transition-duration: 1s, 0.5s;
 }
 
 .activator {
+  color: #1134f7;
   cursor: pointer;
   padding: .5em;
 }
@@ -169,6 +170,7 @@ header {
 
 .main-description {
   font-family: 'Courier New', Courier, monospace;
+  color: #1134f7;
   background-color: #f6f4f9;
   border: 1px solid;
   padding: 10px;
@@ -178,6 +180,7 @@ header {
 
 .description {
   background-color: #f1fafa;
+  color: #1134f7;
   border: 1px solid;
   padding: 10px;
   border-color:#1134f7;
