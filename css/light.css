@@ -27,7 +27,7 @@ a {
 a:hover {
   background-size: 0 3px, 100% 3px;
 }
-}
+
 
 .wrapper {
   margin-left: 1rem;
@@ -454,10 +454,10 @@ button:hover {
 }
 
 input {
-    font-family: "Poppins", sans-serif;
-    background-color: #002930;
-    border: 1px #172920 solid; 
-    color:#93344c;
+  font-family: "Poppins", sans-serif;
+  background-color: #002930;
+  border: 1px #172920 solid; 
+  color:#93344c;
 }
 
 input:hover {
