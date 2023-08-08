@@ -81,7 +81,7 @@ opacity: 0;
 }
 
 body {
-  background-color:#121212;
+  background-color:#ffffff;
   background: 
     linear-gradient(100deg, rgba(121, 1, 139, 0.842), rgba(228, 13, 21, 0) 40.71%), 
     linear-gradient(217deg, rgb(18, 1, 124), rgba(228, 13, 21, 0) 70.71%),
@@ -403,7 +403,7 @@ filter: drop-shadow(16px 16px 20px #1134f7) ;
   color: rgb(255, 255, 255);
   font-family: poppins;
   overflow: hidden;
-  border-right: .15em solid black;
+  border-right: .15em solid rgb(247, 247, 247);
   white-space: nowrap;
   animation: 
   typing 1s steps(20, end) forwards;
