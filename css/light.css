@@ -14,7 +14,7 @@ a {
 
 .content-describe{
   height: auto; /* here is the starting point */
-  max-height: 1000px;
+  max-height: 1000px; 
   padding: 0;
   background-color: #f3f3f7;
   overflow: hidden;
