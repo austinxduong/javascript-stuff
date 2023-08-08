@@ -7,6 +7,55 @@ a {
     color: black; 
 }
 
+.wrapper {
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+.content-describe{
+  height: auto; /* here is the starting point */
+  max-height: 1000px;
+  padding: 0;
+  background-color: #f3f3f7;
+  overflow: hidden;
+
+  transition-property: opacity, max-height;
+  transition-duration: 1s, 0.5s;
+}
+
+.activator {
+  cursor: pointer;
+  padding: .5em;
+}
+
+
+.block {
+  display: block;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+
+/* Collapse */
+.wrapper .activator:after {
+  content: "🌿";
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+
+  transition: transform 0.3s linear;
+}
+
+.wrapper.collapsed .activator:after {
+  transform: rotate(-0.25turn);
+}
+
+.wrapper.collapsed .content-describe{
+  max-height: 0;
+  opacity: 0;
+}
+
 body {
   background-color:white;
   background:

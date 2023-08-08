@@ -30,7 +30,9 @@ function getRandomQ() {
             document.querySelector('#fetch-quotes').innerHTML=data.data;
         })
 }
-
+function toogleSelection(id) {
+    document.getElementById(id).classList.toggle('collapsed');
+  }
 // function toggleButton() {
 //     const show = navi.getAttribute('data-visible');
 
