@@ -13,12 +13,13 @@ a {
 }
 
 .content-describe{
-  height: auto; /* here is the starting point */
+  height: auto; 
   max-height: 1000px; 
   padding: 0;
   background-color: #3b3bcf14;
-  overflow: hidden;
   color: #1134f7;
+  overflow: hidden;
+
   transition-property: opacity, max-height;
   transition-duration: 1s, 0.5s;
 }
@@ -38,7 +39,7 @@ a {
 }
 
 
-/* Collapse */
+/* details */
 .wrapper .activator:after {
   content: "🌿";
   height: 1em;

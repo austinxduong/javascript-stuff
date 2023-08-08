@@ -5,26 +5,6 @@
 
 a {
   color: white;
-  background:
-    linear-gradient(
-      to right,
-      rgba(100, 200, 200, 1),
-      rgba(100, 200, 200, 1)
-    ),
-    linear-gradient(
-      to right,
-      rgba(255, 0, 0, 1),
-      rgba(255, 0, 180, 1),
-      rgba(0, 100, 200, 1)
-  );
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
-
-a:hover {
-  background-size: 0 3px, 100% 3px;
 }
 
 .wrapper {
@@ -60,7 +40,7 @@ a:hover {
 }
 
 
-/* Collapse */
+/* details */
 .wrapper .activator:after {
   content: "🌿";
   height: 1em;
@@ -166,7 +146,6 @@ header {
   transform: translateX(-100%);
   transition: 600ms ease;
   position: relative;
-  z-index: 1;
   margin: 50px 0;
   padding: 1rem;
   border-radius: 1rem;
@@ -191,9 +170,6 @@ header {
   transform: translateX(-50%);
 }
 
-/* content {
-  width: calc(50% - 2rem);
-} */
 
 .main-description {
   font-family: 'Courier New', Courier, monospace;
@@ -208,12 +184,12 @@ header {
 
 .description {
   font-family: 'Courier New', Courier, monospace;
-  color: white;
   background-color: #ed787869;
+  color: white;
   border: 1px solid;
   padding: 10px;
   border-color:#1134f7;
-  width: 300px;
+  max-width: 300px;
 }
 
 .show-me:nth-child(n){
@@ -298,7 +274,7 @@ h2 {
 
 .ul-nav[data-visible="true"] {
   transform: translateX(0%);
-  z-index: 3
+
 }
 
 
