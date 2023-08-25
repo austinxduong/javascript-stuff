@@ -106,7 +106,7 @@ header {
 @media screen and (max-width: 800px) {
 html, body {
   overflow-x: hidden;
-}
+  }
 }
 
 
@@ -115,7 +115,7 @@ padding: 2rem;
 padding-bottom: 400px;
 margin: 0 auto;
 max-width: 800px;
-color: black;
+
 }
 
 .top-left {
@@ -140,7 +140,7 @@ left: calc(50% - 1px);
 width: 2px;
 top: -50px;
 bottom: -50px;
-background-color: #000;
+background-color: #575656eb;
 display: none;
 }
 
@@ -351,16 +351,17 @@ h2 {
     0 1px 1px #d9c8ecec, 0 10px 15px #ba63f0ef, 0 10px 20px 20px #7ef8bb65;
   filter: blur(3px) drop-shadow(16px 16px 20px #f71111) ;
   animation: 3s rotate linear infinite;
-}
+  }
+  
 @keyframes rotate {
   100% { transform: rotate(360deg) }
-}
+  }
 
 .hamburger-button[aria-expanded="true"] {
   box-shadow: 0 -10px 20px 20px #faf7f7 inset,
   0 0px 20px 20px #f2060665;
   filter: blur(2px) drop-shadow(30px -9px 30px #f4f2f5) ;
-}  
+  }  
 
 .hamburger-button[aria-expanded="true"]:hover {
   box-shadow: 0 -1px 20px 10px #eb0808 inset,
@@ -368,7 +369,7 @@ h2 {
   0 0px 20px 20px hsl(51, 75%, 53%);
   filter: blur(2px) drop-shadow(30px -9px 30px #f4f2f5) ;
   
-} 
+  } 
 
 }
 
