@@ -76,6 +76,7 @@ a:hover {
 
   transition-property: opacity, max-height;
   transition-duration: 1s, 0.5s;
+  
 }
 
 .activator {
@@ -257,7 +258,7 @@ h1 {
 
 h2 {
   background-color: white;
-  z-index: 2;
+  
   font-family: 'Titillium Web';
   color: rgb(0, 42, 255);
   text-shadow:
@@ -327,6 +328,7 @@ h2 {
 
 .ul-nav[data-visible="true"] {
   transform: translateX(0%);
+  z-index: 100;
 }
 
 
@@ -365,11 +367,11 @@ h2 {
     box-shadow:
     0 0 10px 9px rgb(255, 255, 255),
     0 0 60px 20px rgb(6, 245, 201),
-    0 0 50px 11px rgb(205, 87, 95);
+    0 0 50px 11px rgb(87, 118, 205);
     filter: drop-shadow(16px 16px 70px #7511f7) ;
     top: 2rem;
     right: 2rem;
-    z-index: 8888;
+  
   }
 
   .hamburger-button:before {
@@ -388,12 +390,12 @@ h2 {
 
   .hamburger-button[aria-expanded="true"] {
     box-shadow: 0 -10px 20px 20px #faf7f7 inset,
-    0 0px 20px 20px #f2060665;
+    0 0px 20px 20px #06f28865;
     filter: blur(2px) drop-shadow(30px -9px 30px #f4f2f5) ;
   }  
 
   .hamburger-button[aria-expanded="true"]:hover {
-    box-shadow: 0 -1px 20px 10px #eb0808 inset,
+    box-shadow: 0 -1px 20px 10px #08ebc9 inset,
     0 0px 20px 20px #fcfbf9,
     0 0px 20px 20px hsl(51, 75%, 53%);
     filter: blur(2px) drop-shadow(30px -9px 30px #f4f2f5) ;
