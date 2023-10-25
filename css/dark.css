@@ -258,7 +258,7 @@ letter-spacing: 1px;
 
 h2 {
 background-color: #e18b2183;
-z-index: 2;
+
 font-family: 'Titillium Web';
 color: rgba(255, 255, 255, 0.818);
 text-shadow:
@@ -328,6 +328,7 @@ display: none;
 
 .ul-nav[data-visible="true"] {
 transform: translateX(0%);
+z-index: 1;
 }
 
 
@@ -370,7 +371,7 @@ h2 {
   filter: drop-shadow(16px 16px 70px #7511f7) ;
   top: 2rem;
   right: 2rem;
-  z-index: 8888;
+  z-index: 3;
 }
 
 .hamburger-button:before {
@@ -399,7 +400,6 @@ h2 {
   0 0px 20px 20px #fcfbf9,
   0 0px 20px 20px hsl(51, 75%, 53%);
   filter: blur(2px) drop-shadow(30px -9px 30px #f4f2f5) ;
-  
   } 
 
 }

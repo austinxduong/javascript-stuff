@@ -748,3 +748,27 @@ function ascDesNone(arr, str) {
 			 : str === "None" ? arr
 			 : arr;
 }
+
+//Create a function that takes two arguments: the original price and the discount percentage as integers and returns the final price after the discount.
+
+function dis(price, discount) {
+	const discountPrice = price * discount / 100
+	const totalPrice = parseFloat(price - discountPrice).toFixed(2)
+	return Number(totalPrice)
+}
+
+/*Given radius r and height h (in cm), calculate the mass of a cylinder when it's filled with water and the cylinder itself doesn't weigh anything. The desired output should be given in kg and rounded to two decimal places.
+
+How to solve:
+
+Calculate the volume of the cylinder.
+Convert cm³ into dm³.
+1dm³ = 1L, 1L is 1Kg.
+*/
+
+function weight(r, h) {
+	const radiusCalc = Math.pow(r, 2)
+	const piCalc = Math.PI * radiusCalc 
+	const cmDmCalc = piCalc / 1000 * h
+	return Number(cmDmCalc.toFixed(2))
+}

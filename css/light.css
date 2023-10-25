@@ -328,7 +328,7 @@ h2 {
 
 .ul-nav[data-visible="true"] {
   transform: translateX(0%);
-  z-index: 100;
+  z-index: 1;
 }
 
 
@@ -371,7 +371,7 @@ h2 {
     filter: drop-shadow(16px 16px 70px #7511f7) ;
     top: 2rem;
     right: 2rem;
-  
+    z-index: 3;
   }
 
   .hamburger-button:before {
@@ -392,6 +392,7 @@ h2 {
     box-shadow: 0 -10px 20px 20px #faf7f7 inset,
     0 0px 20px 20px #06f28865;
     filter: blur(2px) drop-shadow(30px -9px 30px #f4f2f5) ;
+    z-index: 100;
   }  
 
   .hamburger-button[aria-expanded="true"]:hover {
@@ -431,7 +432,6 @@ h2 {
 }
 
 .title {
-  
     text-align: center;
     color: black;
     font-family: poppins;
