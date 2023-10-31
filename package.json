@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "open http://localhost:5505",
     "test": "jest --watchAll",
-    "test-with-coverage": "jest --coverage"
+    "test-with-coverage": "jest --coverage",
+    "stack": "node algo/stack.js" 
   },
   "keywords": [],
   "author": "",
