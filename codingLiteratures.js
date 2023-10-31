@@ -772,3 +772,53 @@ function weight(r, h) {
 	const cmDmCalc = piCalc / 1000 * h
 	return Number(cmDmCalc.toFixed(2))
 }
+
+/*
+Mubashir has written a mysterious function that takes two numbers x and d and returns multiplication?. Solve the riddle of what Mubashir's function is by having a look at some of the examples below.
+*/
+
+function mubashirFunction(x, d) {
+	console.log(x)
+	console.log(d)
+
+	const paramA = x.toString().split('')
+	const paramB = d.toString().split('')
+	const paramANum = paramA.map(Number)
+	const paramBNum = paramB.map(Number)
+	
+	console.log(paramBNum)
+	const paramAAdd = paramANum.reduce((a, c) => a + c, initialValue = 0)
+	const paramBMult = paramBNum.reduce((a, c) => a + c, initialValue = 0)
+	
+	console.log(paramAAdd)
+	console.log(paramBMult)
+	return paramAAdd * paramBMult
+}
+
+/*
+A salesman has a number of cities to visit. He wants to calculate the total number of possible paths he could take, visiting each city once before returning home. Return the total number of possible paths a salesman can travel, given n cities.
+
+If we have cities A, B and C, possible paths would be:
+*/
+// algorithm describing a factorial with a for loop
+function paths(n) {
+	for(let i = n - 1; i >= 1; i--) {
+		n = n * i
+	}
+	return n
+}
+
+//Arrays can be mixed with various types. Your task for this challenge is to sum all the number elements in the given array. Create a function that takes an array and returns the sum of all numbers in the array.
+function numbersSum(arr) {
+	const filterArr = arr.filter(Number.isInteger)
+	return filterArr.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue = 0)
+}
+
+//Create a function that squares every digit of a number.
+function squareDigits(n) {
+	const sepDigits = n.toString().split('')
+	const mapSquare = sepDigits.map((digit) => digit ** 2)
+	const combineDigits = mapSquare.join("")
+	
+	return +combineDigits
+}
