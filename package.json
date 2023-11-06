@@ -8,7 +8,12 @@
     "start": "open http://localhost:5505",
     "test": "jest --watchAll",
     "test-with-coverage": "jest --coverage",
-    "stack": "node algo/stack.js" 
+    "carstack": "node algo/stack/carStack.js",
+    "numberstack": "node algo/stack/numberStack.js",
+    "storageStack": "node algo/stack/storageStack.js",
+    "carQueue": "node algo/queue/carQueue.js",
+    "headTailQueue": "node algo/queue/headtailQueue.js",
+    "priorityQueue": "node algo/queue/priorityQueue.js"
   },
   "keywords": [],
   "author": "",
