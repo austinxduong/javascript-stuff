@@ -13,7 +13,9 @@
     "storageStack": "node algo/stack/storageStack.js",
     "carQueue": "node algo/queue/carQueue.js",
     "headTailQueue": "node algo/queue/headtailQueue.js",
-    "priorityQueue": "node algo/queue/priorityQueue.js"
+    "priorityQueue": "node algo/queue/priorityQueue.js",
+    "priorityQ": "node algo/queue/priorityQ.js",
+    "linkedList" : "node algo/linkedList/linkedList.js"
   },
   "keywords": [],
   "author": "",
