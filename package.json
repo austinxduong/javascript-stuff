@@ -15,7 +15,8 @@
     "headTailQueue": "node algo/queue/headtailQueue.js",
     "priorityQueue": "node algo/queue/priorityQueue.js",
     "priorityQ": "node algo/queue/priorityQ.js",
-    "linkedList" : "node algo/linkedList/linkedList.js"
+    "linkedList" : "node algo/linkedList/linkedList.js",
+    "setCollection": "node algo/set/setCollection.js"
   },
   "keywords": [],
   "author": "",
