@@ -14,8 +14,8 @@ a {
   ),
   linear-gradient(
     to right,
-    rgba(255, 0, 0, 1),
-    rgba(255, 0, 180, 1),
+    rgb(0, 255, 191),
+    rgb(255, 170, 0),
     rgba(0, 100, 200, 1)
 );
 background-size: 100% 3px, 0 3px;
@@ -28,26 +28,13 @@ a:hover {
 background-size: 0 3px, 100% 3px;
 }
 
+.applink {
+  color: rgb(0, 0, 0);
+}
+
 .emailbtn-style {
   text-decoration: none;
   color: rgb(0, 0, 0); 
-
-  background:
-  linear-gradient(
-    to right,
-    rgba(100, 200, 200, 1),
-    rgba(100, 200, 200, 1)
-  ),
-  linear-gradient(
-    to right,
-    rgba(255, 0, 0, 1),
-    rgba(255, 0, 180, 1),
-    rgba(0, 100, 200, 1)
-);
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
 }
 
 .emailbtn-style:hover {
@@ -55,7 +42,7 @@ background-size: 0 3px, 100% 3px;
 }
 
 #btn {
-  border-color: #1134f7;
+  border-color: #ffffff;
   padding-bottom: 3px;
 }
 
@@ -68,19 +55,21 @@ border-radius: 5px;
   height: auto; 
   max-height: 1000px; 
   padding: 0;
-  background-color: #e5800d63;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #434343;
   border-color: white ;
   overflow: hidden;
 
   transition-property: opacity, max-height;
   transition-duration: 1s, 0.5s;
+  text-shadow: rgb(0, 0, 0) 1px 0 20px;
 }
 
 .activator {
 color: #ffffff;
 cursor: pointer;
 padding: .5em;
+text-shadow: rgb(255, 255, 255) 1px 0 10px;
 }
 
 
@@ -98,7 +87,7 @@ content: "🌿";
 height: 1em;
 width: 1em;
 display: inline-block;
-
+text-shadow: rgb(255, 255, 255) 1px 0 10px;
 transition: transform 0.3s linear;
 }
 
@@ -112,16 +101,16 @@ opacity: 0;
 }
 
 body {
-  background-color:#ffffff;
-  background: 
-    linear-gradient(100deg, rgba(121, 1, 139, 0.842), rgba(228, 13, 21, 0) 40.71%), 
-    linear-gradient(217deg, rgb(18, 1, 124), rgba(228, 13, 21, 0) 70.71%),
-    linear-gradient(127deg, rgba(2, 255, 238, 0.684), rgba(174, 106, 60, 0) 70.71%),
-    linear-gradient(300deg, rgba(128, 86, 225, 0.8), rgba(163, 60, 174, 0) 70.71%);
-    color: rgb(0, 42, 255);
+  background-color:#181818;
+  /* background: 
+    linear-gradient(100deg, rgba(0, 0, 0, 0.681), rgba(228, 13, 21, 0) 40.71%), 
+    linear-gradient(217deg, rgba(0, 0, 0, 0.752), rgba(228, 13, 21, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 0, 0, 0.684), rgba(174, 106, 60, 0) 70.71%),
+    linear-gradient(300deg, rgba(225, 155, 86, 0.8), rgba(163, 60, 174, 0) 70.71%);
+    color: rgb(0, 255, 166);
     padding: 0;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.5; */
 }
 
 header {
@@ -183,13 +172,17 @@ content: '';
 height: 1rem;
 width: 1rem;
 border-radius: 50%;
-background-color: #000;
+background-color: #ffffff;
 left: 50%;
-transform: translateX(-50%)
+transform: translateX(-50%);
+box-shadow: rgb(255, 255, 255) 1px 0 20px;
+
 }
 
 .line:after{
 bottom: 0;
+background-color: #ffffff;
+box-shadow: rgb(255, 255, 255) 1px 0 20px;
 }
 
 .section{
@@ -216,30 +209,33 @@ display: block;
 height: 1rem;
 width: 1rem;
 border-radius: 50%;
-background-color: #000;
+background-color: #ffffff ;
 left: 50%;
 top: 20%;
 transform: translateX(-50%);
+box-shadow: rgb(255, 255, 255) 1px 0 20px;
 }
 
 .main-description {
 font-family: 'Courier New', Courier, monospace;
 /* font color */
-color: white;
-background-color: #4004b7;
+background-color: #ffffff;
+color: #434343;
 border: 1px solid;
 padding: 10px;
-border-color:#1134f7;
+border-color:#ffffff;
 max-width: 700px;
+text-shadow: rgb(0, 0, 0) 1px 0 10px;
+
 }
 
 .description {
 font-family: 'Courier New', Courier, monospace;
-background-color: #ed787869;
+background-color: #91919169;
 color: white;
 border: 1px solid;
 padding: 10px;
-border-color:#1134f7;
+border-color:#ffffff;
 max-width: 300px;
 }
 
@@ -257,7 +253,7 @@ letter-spacing: 1px;
 }
 
 h2 {
-background-color: #e18b2183;
+background-color: #77777783;
 
 font-family: 'Titillium Web';
 color: rgba(255, 255, 255, 0.818);
@@ -306,8 +302,8 @@ display: none;
   box-shadow: 0 -10px 20px 20px #ffffff inset,
     0 -10px 20px 10px #3cf5a5 inset, 0 -2px 5px #87c9a5f0 inset,
     0 -1px 1px #30ff86f1 inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
-    0 1px 1px #d9c8ecec, 0 10px 15px #ba63f0ef, 0 10px 20px 20px #7ef8bb65;
-  filter: blur(3px) drop-shadow(16px 16px 20px #f71111) ;
+    0 1px 1px #d9c8ecec, 0 10px 15px #63f0f0ef, 0 10px 20px 20px #7ef8bb65;
+  filter: blur(3px) drop-shadow(16px 16px 20px #ffffff) ;
   animation: 3s rotate linear infinite;
 }
 @keyframes rotate {
@@ -367,7 +363,7 @@ h2 {
   box-shadow:
   0 0 10px 9px rgb(255, 255, 255),
   0 0 60px 20px rgb(6, 245, 201),
-  0 0 50px 11px rgb(205, 87, 95);
+  0 0 50px 11px rgb(87, 205, 187);
   filter: drop-shadow(16px 16px 70px #7511f7) ;
   top: 2rem;
   right: 2rem;
@@ -428,6 +424,8 @@ filter: drop-shadow(16px 16px 20px #1134f7) ;
 
 .title-container {
   display: inline-block;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+
 }
 
 .title {

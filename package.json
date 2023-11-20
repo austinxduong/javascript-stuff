@@ -16,7 +16,8 @@
     "priorityQueue": "node algo/queue/priorityQueue.js",
     "priorityQ": "node algo/queue/priorityQ.js",
     "linkedList" : "node algo/linkedList/linkedList.js",
-    "setCollection": "node algo/set/setCollection.js"
+    "setCollection": "node algo/set/setCollection.js",
+    "hash": "node algo/hash/hash.js"
   },
   "keywords": [],
   "author": "",
