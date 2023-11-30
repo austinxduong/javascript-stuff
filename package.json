@@ -17,7 +17,10 @@
     "priorityQ": "node algo/queue/priorityQ.js",
     "linkedList" : "node algo/linkedList/linkedList.js",
     "setCollection": "node algo/set/setCollection.js",
-    "hash": "node algo/hash/hash.js"
+    "hash": "node algo/hash/hash.js",
+    "tree": "node algo/tree/binaryTree.js",
+    "dfs": "node algo/tree/dfs.js",
+    "bfs": "node algo/tree/breadthFirstSearch.js"
   },
   "keywords": [],
   "author": "",
