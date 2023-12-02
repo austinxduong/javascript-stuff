@@ -20,7 +20,8 @@
     "hash": "node algo/hash/hash.js",
     "tree": "node algo/tree/binaryTree.js",
     "dfs": "node algo/tree/dfs.js",
-    "bfs": "node algo/tree/breadthFirstSearch.js"
+    "bfs": "node algo/tree/breadthFirstSearch.js",
+    "graphs": "node algo/graph/graphs.js"
   },
   "keywords": [],
   "author": "",
