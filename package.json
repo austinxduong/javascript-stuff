@@ -21,7 +21,11 @@
     "tree": "node algo/tree/binaryTree.js",
     "dfs": "node algo/tree/dfs.js",
     "bfs": "node algo/tree/breadthFirstSearch.js",
-    "graphs": "node algo/graph/graphs.js"
+    "graphs": "node algo/graph/graphs.js",
+    "dfsGraphs": "node algo/graph/dfsGraphs.js",
+    "dfsTopGraphs": "node algo/graph/dfsTopGraphs.js",
+    "bfsGraphs": "node algo/graph/bfsGraphs.js",
+    "bfsShortestPath": "node algo/graph/bfsShortestPath.js"
   },
   "keywords": [],
   "author": "",
