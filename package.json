@@ -29,7 +29,8 @@
     "bpGraph": "node algo/graph/bipartiteGraphs.js",
     "dSG": "node algo/graph/disjointSetGraphs.js",
     "mDSG": "node algo/graph/minimalizeMalwareSpreadGraph.js",
-    "bubblesort": "node algo/bubblesort/bubblesort.js"
+    "bubblesort": "node algo/bubblesort/bubblesort.js",
+    "slw": "node algo/slidingwindow/slidingwindow.js"
   },
   "keywords": [],
   "author": "",
