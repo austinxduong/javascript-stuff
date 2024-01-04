@@ -28,6 +28,10 @@ a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
+.applink {
+  color: black;
+}
+
 
 .emailbtn-style {
   text-decoration: none;
@@ -57,6 +61,7 @@ a:hover {
 
 #btn {
   border-color: #1134f7;
+  background-color: white;
   padding-bottom: 3px;
 }
 
@@ -70,8 +75,8 @@ a:hover {
   height: auto; 
   max-height: 1000px; 
   padding: 0;
-  background-color: #44444414;
   color: #000000;
+  background-color: white;
   overflow: hidden;
   transition-property: opacity, max-height;
   transition-duration: 1s, 0.5s;
@@ -224,6 +229,7 @@ header {
 
 .main-description {
   font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0px;
   color: black;
   background-color: white;
   border: 1px solid;
@@ -515,4 +521,9 @@ cursor: pointer;
     cursor: pointer;
 
    }
+
+.appImg {
+  width: 100%;
+  height: auto;
+  } 
 }

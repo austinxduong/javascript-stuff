@@ -15,8 +15,8 @@ a {
   linear-gradient(
     to right,
     rgb(0, 255, 191),
-    rgb(255, 170, 0),
-    rgba(0, 100, 200, 1)
+    rgb(237, 255, 73),
+    rgb(23, 139, 255)
 );
 background-size: 100% 3px, 0 3px;
 background-position: 100% 100%, 0 100%;
@@ -29,12 +29,12 @@ background-size: 0 3px, 100% 3px;
 }
 
 .applink {
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .emailbtn-style {
   text-decoration: none;
-  color: rgb(0, 0, 0); 
+  color: rgb(50, 224, 175);
 }
 
 .emailbtn-style:hover {
@@ -42,7 +42,8 @@ background-size: 0 3px, 100% 3px;
 }
 
 #btn {
-  border-color: #ffffff;
+  border-color: #3dffc5;
+  background-color: #014333a0;
   padding-bottom: 3px;
 }
 
@@ -52,24 +53,22 @@ border-radius: 5px;
 }
 
 .content-describe{
+  font-family:'Courier New', Courier, monospace;
   height: auto; 
   max-height: 1000px; 
   padding: 0;
-  background-color: #ffffff;
-  color: #434343;
+  color: white; 
   border-color: white ;
   overflow: hidden;
-
   transition-property: opacity, max-height;
   transition-duration: 1s, 0.5s;
-  text-shadow: rgb(0, 0, 0) 1px 0 20px;
 }
 
 .activator {
 color: #ffffff;
 cursor: pointer;
 padding: .5em;
-text-shadow: rgb(255, 255, 255) 1px 0 10px;
+
 }
 
 
@@ -87,7 +86,6 @@ content: "🌿";
 height: 1em;
 width: 1em;
 display: inline-block;
-text-shadow: rgb(255, 255, 255) 1px 0 10px;
 transition: transform 0.3s linear;
 }
 
@@ -102,15 +100,6 @@ opacity: 0;
 
 body {
   background-color:#181818;
-  /* background: 
-    linear-gradient(100deg, rgba(0, 0, 0, 0.681), rgba(228, 13, 21, 0) 40.71%), 
-    linear-gradient(217deg, rgba(0, 0, 0, 0.752), rgba(228, 13, 21, 0) 70.71%),
-    linear-gradient(127deg, rgba(0, 0, 0, 0.684), rgba(174, 106, 60, 0) 70.71%),
-    linear-gradient(300deg, rgba(225, 155, 86, 0.8), rgba(163, 60, 174, 0) 70.71%);
-    color: rgb(0, 255, 166);
-    padding: 0;
-    margin: 0;
-    line-height: 1.5; */
 }
 
 header {
@@ -217,25 +206,23 @@ box-shadow: rgb(255, 255, 255) 1px 0 20px;
 }
 
 .main-description {
-font-family: 'Courier New', Courier, monospace;
-/* font color */
-background-color: #ffffff;
-color: #434343;
-border: 1px solid;
-padding: 10px;
-border-color:#ffffff;
-max-width: 700px;
-text-shadow: rgb(0, 0, 0) 1px 0 10px;
-
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #003640;
+  letter-spacing: 1px;
+  color: white;
+  border: 1px solid;
+  border-color: #29eda5;
+  padding: 10px;
+  max-width: 700px;
 }
 
 .description {
 font-family: 'Courier New', Courier, monospace;
-background-color: #91919169;
+background-color: #014e4369;
 color: white;
 border: 1px solid;
 padding: 10px;
-border-color:#ffffff;
+border-color:#29eda5;
 max-width: 300px;
 }
 
@@ -253,7 +240,7 @@ letter-spacing: 1px;
 }
 
 h2 {
-background-color: #77777783;
+background-color: #01224564;
 
 font-family: 'Titillium Web';
 color: rgba(255, 255, 255, 0.818);
@@ -514,5 +501,10 @@ input:hover {
     color: black;
     filter: drop-shadow(16px 16px 20px #000208)
  }
+
+ .appImg {
+  width: 100%;
+  height: auto;
+  }
 }
 
