@@ -306,7 +306,7 @@ h2 {
   display: none;
 }
 
-/* .menu-icon {
+.menu-icon {
     width: 100px;
     height: 100px;
     background: linear-gradient(
@@ -338,7 +338,7 @@ h2 {
   }
   @keyframes rotate {
     100% { transform: rotate(360deg) }
-  } */
+  }
 
 
 .ul-nav, a#blog #creations #bio {
@@ -359,9 +359,11 @@ h2 {
 
 
 @media (max-width: 35em) {
+
   h2 {
     text-align: center;
   }
+
   .ul-nav {
     text-align: left;
     position: fixed;
@@ -383,6 +385,44 @@ h2 {
     }
 
   }
+
+  .hamburger-button {
+    display: none;
+  }
+  
+  .menu-icon {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(
+        165deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgb(35, 25, 235) 40%,
+        rgb(58, 206, 179) 98%,
+        rgb(239, 240, 245) 100%
+      );
+      border-radius: 50%;
+      position:relative;
+    }
+  
+    .menu-icon:before {
+      margin: -15px;
+      padding: 8px;
+      position: absolute;
+      content: '';
+      width: 20%;
+      height:20%;
+      border-radius: 100%;
+      border-bottom: 0 solid #9af7e3e9;
+      box-shadow: 0 -10px 20px 20px #ffffff inset,
+        0 -10px 20px 10px #3cf5a5 inset, 0 -2px 5px #87c9a5f0 inset,
+        0 -1px 1px #30ff86f1 inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff,
+        0 1px 1px #d9c8ecec, 0 10px 15px #ba63f0ef, 0 10px 20px 20px #7ef8bb65;
+      filter: blur(3px) drop-shadow(16px 16px 20px #11f7c9) ;
+      animation: 3s rotate linear infinite;
+    }
+    @keyframes rotate {
+      100% { transform: rotate(360deg) }
+    }
 
   .hamburger-button {
     display: block;
