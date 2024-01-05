@@ -32,6 +32,28 @@ background-size: 0 3px, 100% 3px;
   color: white;
 }
 
+.app_link_api_div {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #003640;
+  letter-spacing: 1px;
+  color: white;
+  border: 1px solid;
+  border-color: #29eda5;
+  padding: 10px;
+  max-width: 700px;
+}
+
+.app_link_app_div {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #003640;
+  letter-spacing: 1px;
+  color: white;
+  border: 1px solid;
+  border-color: #29eda5;
+  padding: 10px;
+  max-width: 700px;
+}
+
 .emailbtn-style {
   text-decoration: none;
   color: rgb(50, 224, 175);
@@ -100,6 +122,9 @@ opacity: 0;
 
 body {
   background-color:#181818;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
 }
 
 header {
@@ -505,6 +530,8 @@ input:hover {
  .appImg {
   width: 100%;
   height: auto;
+  margin-top: 10px;
   }
+
 }
 

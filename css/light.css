@@ -32,6 +32,28 @@ a:hover {
   color: black;
 }
 
+.app_link_api_div {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0px;
+  color: black;
+  background-color: white;
+  border: 1px solid;
+  padding: 10px;
+  border-color:#000000;
+  max-width: 700px;
+  }
+
+.app_link_app_div {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0px;
+  color: black;
+  background-color: white;
+  border: 1px solid;
+  padding: 10px;
+  border-color:#000000;
+  max-width: 700px;
+  }
+
 
 .emailbtn-style {
   text-decoration: none;
@@ -526,4 +548,5 @@ cursor: pointer;
   width: 100%;
   height: auto;
   } 
+
 }
