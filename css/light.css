@@ -306,7 +306,7 @@ h2 {
   display: none;
 }
 
-.menu-icon {
+/* .menu-icon {
     width: 100px;
     height: 100px;
     background: linear-gradient(
@@ -338,7 +338,7 @@ h2 {
   }
   @keyframes rotate {
     100% { transform: rotate(360deg) }
-  }
+  } */
 
 
 .ul-nav, a#blog #creations #bio {
@@ -430,6 +430,9 @@ h2 {
   } 
 
 }
+
+
+
 
 
 .ul-nav, a#blog:hover {
