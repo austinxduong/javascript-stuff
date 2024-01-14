@@ -26,9 +26,9 @@ hamburgerToggle.addEventListener('click', () => {
 
 
 // Functions
-function openMailApp(){
-    window.location.href = 'mailto:austinxduong@gmail.com'
-}
+// function openMailApp(){
+//     window.location.href = 'mailto:austinxduong@gmail.com'
+// }
 
 function toogleSelection(id) {
     document.getElementById(id).classList.toggle('collapsed');

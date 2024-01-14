@@ -822,3 +822,37 @@ function squareDigits(n) {
 	
 	return +combineDigits
 }
+
+
+
+//Given an array of boxes, create a function that returns the total volume of all those boxes combined together. 
+// A box is represented by an array with three elements: length, width and height
+
+//For instance, totalVolume([2, 3, 2], [6, 6, 7], [1, 2, 1]) 
+//should return 266 since (2 x 3 x 2) + (6 x 6 x 7) + (1 x 2 x 1) = 12 + 252 + 2 = 266.
+
+function totalVolume(...boxes) {
+	const initialValue = 0;
+	const subArr = [...boxes]
+	
+	const multCallBackFunction = (prev, curr) => prev * curr;
+	const multSubArr = subArr.map(arr => arr.reduce(multCallBackFunction, 1));
+	const adding = multSubArr.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+	
+	return adding
+	
+}
+
+
+
+
+// removing duplicate from an array
+// although concise, is not particularly efficient for large arrays -- quadratic time (large data sets/records)
+const arr = ["Mike","Matt","Nancy","Adam","Jenny","Nancy","Carl"]
+
+const uniqueArray = arr.filter(function(element, indexPosition, self) { // call back function
+	console.log(arr.indexOf(element) == indexPosition) // console logs boolean
+    return arr.indexOf(element) == indexPosition; // assigns an index per element. if there is a duplicate, that duplicate element will not be pushed into the new array -- the original element already has an assigned index, and the call back function verifies the attempt to assign an index to the duplicate -- is not the same index assigned to the original element 
+})
+
+console.log("uniqueArrayFunction --->", uniqueArray)

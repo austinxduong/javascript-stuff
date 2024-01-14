@@ -41,7 +41,7 @@
                     <i class='bx bx-moon'></i>
                 </div>
             </li> -->
-            <button class="hamburger-button" aria-controls="ul-nav" aria-expanded="false">
+            <button class="hamburger-button" id="open_to_work" aria-controls="ul-nav" aria-expanded="false">
                 <span>
                         open <br/> to work
                 </span>
@@ -55,7 +55,7 @@
             <ul class="ul-nav" data-visible="false">
                 <span class="menu-icon" id="menu-icon"></span>
                 <li>
-                    <a href="https://www.linkedin.com/in/austinxduong/" target="_blank" id="blog">
+                    <a href="https://www.linkedin.com/in/austinxduong/" target="_blank" id="open_to_work">
                         open <br /> to work
                     </a>
                 </li>
@@ -99,6 +99,37 @@
                     <div class="app_link_app_div">
                         Fullstack App: ESRI ArcGIS API
                         <iframe width="320" height="315" src="https://www.youtube.com/embed/optZ7p6bKls?si=tmlx6k58TqyMFiM9?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> allow="autoplay"</iframe>
+                    </div>
+
+                    <div class="app_link_app_algo_1">
+                        Algorithms I've Written:
+                        <div class="app_link_app_algo_inner">
+                        
+                            <pre>
+                                <code>
+function areaOfCountry(name, area) {
+
+// earths landmass = 148,940,000
+
+let countrysProportionToEarthLandMass = area / 148940000
+let decimalTruncate = countrysProportionToEarthLandMass.toFixed(4)
+let crops = Number.parseFloat(decimalTruncate) * 100
+
+if (crops > 1) {
+    return `${name} is ${crops}% of the total world's landmass`
+} else if (crops < 1) {
+    return `${name} is ${crops.toFixed(2)}% of the total world's landmass`
+}
+}
+console.log(areaOfCountry("Ireland", 32595));
+console.log(areaOfCountry("Switzerland", 41284));
+console.log(areaOfCountry("Netherlands", 41850));
+console.log(areaOfCountry("Greece", 131990));
+console.log(areaOfCountry("Sweden", 204035));
+                                </code>
+                            </pre>
+            
+                        </div>
                     </div>
 
 

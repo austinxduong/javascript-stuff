@@ -32,6 +32,7 @@ a:hover {
   color: black;
 }
 
+
 .app_link_api_div {
   font-family: 'Courier New', Courier, monospace;
   letter-spacing: 0px;
@@ -52,6 +53,24 @@ a:hover {
   padding: 10px;
   border-color:#000000;
   max-width: 700px;
+  }
+
+  .app_link_app_algo_1 {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0px;
+    color: black;
+    background-color:white;
+    border: 1px solid;
+    padding: 10px;
+    border-color:#000000;
+    max-width: 900px;
+    }
+
+  .app_link_app_algo_inner {
+    overflow-x: auto;
+    padding: 20px;
+    background-color: rgb(242, 251, 253);
+    border: none;
   }
 
 
@@ -341,7 +360,7 @@ h2 {
   }
 
 
-.ul-nav, a#blog #creations #bio {
+.ul-nav, a#open_to_work {
     margin-inline-end: 0.75em;
     list-style: none;
     justify-content: center;

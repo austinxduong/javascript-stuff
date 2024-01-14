@@ -54,6 +54,26 @@ background-size: 0 3px, 100% 3px;
   max-width: 700px;
 }
 
+.app_link_app_algo_1 {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0px;
+  color: white;
+  background-color:#003640;
+  border: 1px solid;
+  padding: 10px;
+  border-color:#29eda5;
+  max-width: 900px;
+  }
+
+.app_link_app_algo_inner {
+  overflow-x: auto;
+  padding: 20px;
+  background-color: #28cd8b58;
+  border: 2px solid;
+  border-color: rgba(255, 255, 0, 0.508);
+  
+}
+
 .emailbtn-style {
   text-decoration: none;
   color: rgb(50, 224, 175);
@@ -87,6 +107,7 @@ border-radius: 5px;
 }
 
 .activator {
+font-family: Arial, Helvetica, sans-serif;
 color: #ffffff;
 cursor: pointer;
 padding: .5em;
@@ -104,6 +125,7 @@ border-radius: 5px;
 
 /* details */
 .wrapper .activator:after {
+font-family: Arial, Helvetica, sans-serif;
 content: "🌿";
 height: 1em;
 width: 1em;
@@ -323,11 +345,11 @@ display: none;
 }
 
 
-.ul-nav, a#blog #creations #bio {
+.ul-nav, a#open_to_work {
   margin-inline-end: 0.75em;
   list-style: none;
   justify-content: center;
-  color: #333;
+  color: #ffffff;
   font-family: "poppins", sans-serif;
   text-decoration: none;
   text-align: right;
@@ -413,8 +435,8 @@ h2 {
 }
 
 
-.ul-nav, a#blog:hover {
-  color: aquamarine;
+.ul-nav, span#open_to_work:hover {
+  color: rgb(0, 0, 0);
 }
 .ul-nav, a#creations:hover {
   color: lightgreen
