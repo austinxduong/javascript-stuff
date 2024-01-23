@@ -278,7 +278,7 @@ export function perimeter(l, num){
 // You are generation 0. In the case of 0 (male or female), return "me!".
 
 export function DNA_generation(x, y) {
-	//psudeocode
+	//psudeocode32595
 	// x && y; where... 
 	// x === number
 	//  y === 'm' || 'f' where m = male / f = female
@@ -435,22 +435,22 @@ Change will always be represented in the following order: quarters, dimes, nicke
 To illustrate: changeEnough([25, 20, 5, 0], 4.25) should yield true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50.
 */
 
-export function changeEnough(change, amountDue) {
+export function accountsReceivableAndPayable(cents, amountDue) {
 	const initialValue = 0;
-	const quarter = .25 * change[0]
-	const dime = .10 * change[1]
-	const nickel = .05 * change[2]
-	const penny = .01 * change[3]
+	const quarter = .25 * cents[0]
+	const dime = .10 * cents[1]
+	const nickel = .05 * cents[2]
+	const penny = .01 * cents[3]
 	
-	var change = [quarter, dime, nickel, penny]
+	var cents = [quarter, dime, nickel, penny]
 	
-	const loopAdd = change.reduce((prevNum, currNum) => prevNum + currNum, initialValue);
+	const loopAdd = cents.reduce((elementFir, elementSec) => elementFir + elementSec, initialValue);
 	
 	return loopAdd >= amountDue ? true : false
 }
 
-console.log("change enough? [8, 10, 50, 100], 5.00] = ", changeEnough([8, 10, 50, 100], 5.00))
-console.log("change enough? [8, 10, 50, 100], 55.00] = ", changeEnough([8, 10, 50, 100], 55.00))
+console.log("cent calc [8, 10, 50, 100], 5.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 5.00))
+console.log("cent calc [8, 10, 50, 100], 55.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 55.00))
 
 // Create a function that validates whether a number n is within the bounds of lower and upper. Return false if n is not an integer.
 
@@ -679,10 +679,12 @@ function areaOfCountry(name, area) {
 		return `${name} is ${crops.toFixed(2)}% of the total world's landmass`
 	}
 }
-console.log(areaOfCountry("Egypt", 1002450));
+
+console.log(areaOfCountry("Ireland", 32595));
 console.log(areaOfCountry("Switzerland", 41284));
 console.log(areaOfCountry("Netherlands", 41850));
 console.log(areaOfCountry("Greece", 131990));
+console.log(areaOfCountry("Sweden", 204035));
 
 /*output
 Egypt is 0.67% of the total world's landmass
@@ -856,3 +858,53 @@ const uniqueArray = arr.filter(function(element, indexPosition, self) { // call 
 })
 
 console.log("uniqueArrayFunction --->", uniqueArray)
+
+// new Set() constuctor creates a new Set object, and stores collections of values. These values in the set only occur once and are unique in the sets collection
+console.log([...new Set(array)])
+
+// hashtables refactor
+// hash keys can only be strings or symbols; 1 & "1" will return just 1; (i.e) uniq([1, "1"]) === [1]
+// hash key objects (even with differeing values) equal the same 
+// this hash function does not recognize types
+
+const array = ["Jace", "Luke", "Connor", "Evan", "Zach", "Brendan"]
+
+
+// each subarray  = key
+// the elements within subarray  = values
+
+function uniq(array) {
+	var visited = {};
+	// filter through each subarray, and its elements
+	return array.filter(function(element){
+
+		// add each element from each sub array, in the visited object
+		// only add the element if it does not exist in the visited object
+		// if the same element already exists in the visited object, no need to add 
+		return visited.hasOwnProperty(element) ? false : (visited[element] = true); 
+	})
+}
+
+// this function hash tables lookup for primitives, and linear search for objects
+
+function primLinear(array) {
+
+	var prims = {"boolean":{}, "number":{}, "string":{}}, objs = []
+	console.log(prims) // { boolean: {}, number: {}, string: {} }
+
+	return array.filter(function(element){
+		var type = typeof element;
+
+		if (type in prims) {
+			return prims[type].hasOwnProperty(element) ? false : (prims[type][element] = true)
+		} else {
+			return objs.indexOf(element) >=0 ? false : objs.push(element)
+		}
+	})
+
+}
+
+
+
+
+

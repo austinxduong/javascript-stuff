@@ -126,6 +126,27 @@ console.log(areaOfCountry("Switzerland", 41284));
 console.log(areaOfCountry("Netherlands", 41850));
 console.log(areaOfCountry("Greece", 131990));
 console.log(areaOfCountry("Sweden", 204035));
+
+
+function accountsReceivableAndPayable(cents, amountDue) {
+	const initialValue = 0;
+    const twenty = 20.00 cents[0]
+    const ten = 10.00 * cents[1]
+    const dollar = 1.00 * cents[2]
+	const quarter = .25 * cents[3]
+	const dime = .10 * cents[4]
+	const nickel = .05 * cents[5]
+	const penny = .01 * cents[6]
+	
+	let cents = [twenty, ten, dollar, quarter, dime, nickel, penny]
+	
+	const loopAdd = cents.reduce((elementFir, elementSec) => elementFir + elementSec, initialValue);
+	
+	return loopAdd >= amountDue ? true : false
+}
+
+console.log("cent calc [8, 10, 50, 100], 5.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 5.00))
+console.log("cent calc [8, 10, 50, 100], 55.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 55.00))
                                 </code>
                             </pre>
             
