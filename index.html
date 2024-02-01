@@ -147,6 +147,24 @@ function accountsReceivableAndPayable(cents, amountDue) {
 
 console.log("cent calc [8, 10, 50, 100], 5.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 5.00))
 console.log("cent calc [8, 10, 50, 100], 55.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 55.00))
+
+
+
+// this algorithm receives an array of objects (accounts/financial&data migration), 
+// and renders the cummulative in dollars
+
+function cummulativeBudgets(arr) {
+let budgetCummulative = 0
+arr.forEach(array => {
+    for (let digit in array) {
+        if (digit === "budget") {
+            budgetCummulative += array[digit]
+            return budgetCummulative
+        }
+    }
+})
+return budgetCummulative
+}
                                 </code>
                             </pre>
             

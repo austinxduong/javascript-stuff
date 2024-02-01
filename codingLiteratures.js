@@ -904,7 +904,28 @@ function primLinear(array) {
 
 }
 
+//convert hours to seconds
+function howManySeconds(hours) {
+	const min = hours * 60
+	const mintosec = min * 60
+	
+	return mintosec
+}
 
+
+// receives an array of multiple objects, accesses the budget key and renders the digits cummulative
+function cummulativeBudgets(arr) {
+	let budgetCummulative = 0
+	arr.forEach(array => {
+		for (let digit in array) {
+			if (digit === "budget") {
+				budgetCummulative += array[digit]
+				return budgetCummulative
+			}
+		}
+	})
+	return budgetCummulative
+}
 
 
 
