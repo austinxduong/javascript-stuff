@@ -364,7 +364,7 @@ h2 {
     margin-inline-end: 0.75em;
     list-style: none;
     justify-content: center;
-    color: #333;
+    color: #5ad5a6;
     font-family: "poppins", sans-serif;
     text-decoration: none;
     text-align: right;
@@ -505,7 +505,7 @@ h2 {
 }
 
 .hamburger-button:hover {
-  background-color: #333;
+  background-color: #5ac396;
   filter: drop-shadow(16px 16px 20px #1134f7) ;
 }
 

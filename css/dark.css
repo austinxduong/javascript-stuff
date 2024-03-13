@@ -38,7 +38,7 @@ background-size: 0 3px, 100% 3px;
   letter-spacing: 1px;
   color: white;
   border: 1px solid;
-  border-color: #29eda5;
+  border-color: #c9ed29;
   padding: 10px;
   max-width: 700px;
 }
@@ -49,7 +49,7 @@ background-size: 0 3px, 100% 3px;
   letter-spacing: 1px;
   color: white;
   border: 1px solid;
-  border-color: #29eda5;
+  border-color: #c9ed29;
   padding: 10px;
   max-width: 700px;
 }
@@ -61,7 +61,7 @@ background-size: 0 3px, 100% 3px;
   background-color:#003640;
   border: 1px solid;
   padding: 10px;
-  border-color:#29eda5;
+  border-color:#c9ed29;
   max-width: 900px;
   }
 
@@ -143,7 +143,7 @@ opacity: 0;
 }
 
 body {
-  background-color:#181818;
+  background-color:#01164f;
   padding: 0;
   margin: 0;
   line-height: 1.5;
@@ -446,7 +446,7 @@ h2 {
 }
 
 .hamburger-button:hover {
-background-color: #333;
+background-color: #5ac396;
 filter: drop-shadow(16px 16px 20px #1134f7) ;
 }
 
