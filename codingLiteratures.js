@@ -927,7 +927,61 @@ function cummulativeBudgets(arr) {
 	return budgetCummulative
 }
 
-
-
+// receives a number and reverses the integers; it should also turn it positive even if it is negative
+function rev(n) {
+	const revString = Number(n)
+	const positiveStr = Math.abs(revString).toString()
+	const revStr = positiveStr.split('').reverse().join('')
 	
+	return revStr
+}
 
+
+// Create a function that takes a string, checks if it has the same number of x's and o's and returns either true or false.
+
+/*
+Return a boolean value (true or false).
+Return true if the amount of x's and o's are the same.
+Return false if they aren't the same amount.
+The string can contain any character.
+When "x" and "o" are not in the string, return true.
+*/
+
+function XO(str) {
+	const strSplit = str.split('')
+	const xAmount = []
+	const oAmount = []
+	
+	for (let i = 0; i < strSplit.length; i++) {
+		if (strSplit[i] === 'x' || strSplit[i] === 'X') {
+			xAmount.push(strSplit[i])
+		} else if (strSplit[i] === 'o' || strSplit[i] ==='O') {
+			oAmount.push(strSplit[i])
+		}
+	}
+	
+	if (xAmount.length === oAmount.length) {
+		return true
+	} else {
+		return false
+	}
+}
+	
+function maskify(str) {
+	const strSplit = str.split('')
+	const strSlice = strSplit.slice(-4)
+	const strSliceJoin = strSlice.join('')
+	const stor = []
+	
+	for (let i = 0; i < strSplit.length - 4; i++) {
+	strSplit[i] = '#'
+	stor.push(strSplit[i])
+}
+	const eleJoin = stor.concat(strSliceJoin)
+	
+    const strFilter = eleJoin.filter((element) => element !== ',')
+	const stringify = strFilter.toString()
+	const stringifyJoin = stringify.split('').join('')
+	
+	return stringifyJoin.replace(/,/g, "")
+}

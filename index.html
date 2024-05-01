@@ -33,6 +33,7 @@
         <div class="title-container">
             <h1 class="title" href="/"> hey, i'm aus</h1>
             <button id="btn"><a class="emailbtn-style" href="https://www.linkedin.com/in/austinxduong/">linkedin</a></button>
+         
         </div>
         <nav class="nav-container">
             <!-- <li class="mode-toggle">
@@ -127,7 +128,16 @@ console.log(areaOfCountry("Netherlands", 41850));
 console.log(areaOfCountry("Greece", 131990));
 console.log(areaOfCountry("Sweden", 204035));
 
+</code>
+</pre>
 
+<div class ="algo_description">
+    // this algorithm lets you enter your cents and dollars, the total balance amount
+    // and returns a true/false if a purchase is affordable
+</div>
+
+<pre>
+<code>
 function accountsReceivableAndPayable(cents, amountDue) {
 	const initialValue = 0;
     const twenty = 20.00 cents[0]
@@ -148,11 +158,16 @@ function accountsReceivableAndPayable(cents, amountDue) {
 console.log("cent calc [8, 10, 50, 100], 5.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 5.00))
 console.log("cent calc [8, 10, 50, 100], 55.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 55.00))
 
+</code>
+</pre>
 
+<div class ="algo_description">
 
 // this algorithm receives an array of objects (accounts/financial&data migration), 
 // and renders the cummulative in dollars
-
+</div>
+<pre>
+<code>
 function cummulativeBudgets(arr) {
 let budgetCummulative = 0
 arr.forEach(array => {
@@ -165,8 +180,38 @@ arr.forEach(array => {
 })
 return budgetCummulative
 }
+</code>
+</pre>
+
+<div class ="algo_description">
+// when adding credit/debit card information, previewing the ACH number on your online bank statements, or storing any sort of personal information etc.
+// this algorithm conceals these numbers with a '#' except the last 4 digits for confidentialality. 
+</div>
+
+
+<pre>
+<code>
+function maskify(str) {
+	const strSplit = str.split('')
+	const strSlice = strSplit.slice(-4)
+	const strSliceJoin = strSlice.join('')
+	const stor = []
+	
+	for (let i = 0; i < strSplit.length - 4; i++) {
+	strSplit[i] = '#'
+	stor.push(strSplit[i])
+}
+	const eleJoin = stor.concat(strSliceJoin)
+	
+  const strFilter = eleJoin.filter((element) => element !== ',')
+	const stringify = strFilter.toString()
+	const stringifyJoin = stringify.split('').join('')
+	
+	return stringifyJoin.replace(/,/g, "")
+}
                                 </code>
                             </pre>
+                            
             
                         </div>
                     </div>
