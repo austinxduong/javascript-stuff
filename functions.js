@@ -4,6 +4,7 @@ const fetch_button = document.querySelector('#api-button')
 const navi = document.querySelector('.ul-nav')
 const hamburgerToggle = document.querySelector('.hamburger-button')
 const emailButton = document.getElementById('btn')
+const changeLanguage = document.getElementById('java_language')
 
 // Event Listeners
 emailButton.addEventListener('click', () => {
@@ -34,6 +35,9 @@ function toogleSelection(id) {
     document.getElementById(id).classList.toggle('collapsed');
 }
 
+
+
+
 // function getRandomQ() {
 //     result.innerHTML = "<img src='Blocks-0.5s-184px.svg' alt='digital block loader' />"
 //     fetch('')
@@ -57,5 +61,4 @@ function toogleSelection(id) {
 
 
 
-// jQuery
 

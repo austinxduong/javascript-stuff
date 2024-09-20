@@ -1,0 +1,40 @@
+                   <div class="app_link_app_algo_1">
+                        Algorithms I've Written:
+
+                        <div class="button_container">
+                            <button class="javaScript_algo" onclick="changeLanguage('javaScript')">JavaScript</button>
+                            <button class="java_algo" onclick="changeLanguage('java')">Java</button>
+                        </div>
+<!-- script /////////////////////////////////////////////////////////////// --> 
+                        <div>
+                        <p id="languageToggle">
+                            language toggling
+                        </p>
+
+                        <script>
+                            function changeLanguage(languageChange) {
+                                location.hash = languageChange;
+                                location.reload();
+                            }
+                        
+                            let language = {
+                                java: {
+                                    key: "this is java algorithms (work in prog) 🍕"
+                                },
+                                javaScript: {
+                                    key: "javaScript algos (work in progress) 🌭"
+                                }
+                            };
+                            
+                            if (window.location.hash) {
+                                if (window.location.hash == "#java") {
+                                    languageToggle.textContent = language.java.key;
+                                } 
+                                else if (window.location.hash == "#javaScript") {
+                                    languageToggle.textContent = language.javaScript.key;
+                                }
+
+                            }
+                        </script>
+                        </div>
+<!-- script /////////////////////////////////////////////////////////////// -->

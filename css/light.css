@@ -616,3 +616,12 @@ cursor: pointer;
 .algo_description {
   background-color: white;
 }
+
+.button_container {
+display: flex;
+}
+
+#languageToggle{
+  color: #000;
+  background-color: #abd8df;
+}

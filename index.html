@@ -110,12 +110,52 @@
 
                     <div class="app_link_app_div">
                         Enter name & date of birth, then select a card deck. Click on the (Past) 1st card (should have a yellow highlight), then click "Pick A Card"-- repeat for the (Present) second and (Future) third cards. A summary of your personalized reading is presented 🔮. </br> </br>
-                        JavaScript App: <a href="https://taylor-tokareff.github.io/tarot-fortune-teller/"> Tarot Fortune Teller </a>
-                        <a href="https://taylor-tokareff.github.io/tarot-fortune-teller/"><img class="appImg" src ="tarot_fortune_teller.png" width="570"</a>
+                        JavaScript App: <a class="applink "href="https://taylor-tokareff.github.io/tarot-fortune-teller/"> Tarot Fortune Teller</a>
+                        <a href ="https://taylor-tokareff.github.io/tarot-fortune-teller/"><img class= "appImg" src="tarot_fortune_teller.png" width="570"></a> 
                     </div>
+                    
 
                     <div class="app_link_app_algo_1">
                         Algorithms I've Written:
+
+                        <div class="button_container">
+                            <button class="javaScript_algo" onclick="changeLanguage('javaScript')">JavaScript</button>
+                            <button class="java_algo" onclick="changeLanguage('java')">Java</button>
+                        </div>
+<!-- /////////////////////////////////////////////////////////////// -->
+                        <div>
+                        <p id="languageToggle">
+                            language toggling
+                        </p>
+
+                        <script>
+                            function changeLanguage(languageChange) {
+                                location.hash = languageChange;
+                                location.reload();
+                            }
+                        
+                            let language = {
+                                java: {
+                                    key: "this is java algorithms (work in prog) 🍕💸🎰🛎️🎲"
+                                },
+                                javaScript: {
+                                    key: "javaScript algos (work in progress) 🌭🏖️🍹🏝️🪼"
+                                }
+                            };
+                            
+                            if (window.location.hash) {
+                                if (window.location.hash == "#java") {
+                                    languageToggle.textContent = language.java.key;
+                                } 
+                                else if (window.location.hash == "#javaScript") {
+                                    languageToggle.textContent = language.javaScript.key;
+                                }
+
+                            }
+                        </script>
+                        </div>
+<!-- /////////////////////////////////////////////////////////////// -->
+
                         <div class="app_link_app_algo_inner">
                         
                             <pre>
