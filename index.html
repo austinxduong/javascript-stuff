@@ -118,17 +118,30 @@
                     <div class="app_link_app_algo_1">
                         Algorithms I've Written:
 
-                        <div class="button_container">
-                            <button class="javaScript_algo" onclick="changeLanguage('javaScript')">JavaScript</button>
-                            <button class="java_algo" onclick="changeLanguage('java')">Java</button>
-                        </div>
-<!-- /////////////////////////////////////////////////////////////// -->
-                        <div>
-                        <p id="languageToggle">
-                            language toggling
-                        </p>
 
-                        <script>
+<!-- /////////////////////////////////////////////////////////////// -->
+                        
+                    <ul role="menu" id="buttons">
+                        <option onclick="language.showhide(1)" id="javaScript_button" class="language_button_style" selected>Javascript</option>
+                        <option onclick="language.showhide(2)" id="java_button" class="language_button_style" >Java</option>
+                    </ul>
+                    
+                    <div class="js_java">
+                    <div id="javaScript_language" style="height:180px">javaScript algos (work in progress) 🌭🏖️🍹🏝️🪼 </div>
+                    <div id="java_language" style="height:180px; display:none">this is java algorithms (work in prog) 🍕💸🎰🛎️🎲</div>
+                    </div>
+<!-- /////////////////////////////////////////////////////////////// -->
+
+                    <!-- <div class="button_container">
+                        <button class="javaScript_algo" onclick="changeLanguage('javaScript')">JavaScript</button>
+                        <button class="java_algo" onclick="changeLanguage('java')">Java</button>
+                    </div> -->
+                        <!-- <div> -->
+                        <!-- <p id="languageToggle">
+                            language toggling
+                        </p> -->
+
+                        <!-- <script>
                             function changeLanguage(languageChange) {
                                 location.hash = languageChange;
                                 location.reload();
@@ -152,8 +165,8 @@
                                 }
 
                             }
-                        </script>
-                        </div>
+                        </script> -->
+                        <!-- </div> -->
 <!-- /////////////////////////////////////////////////////////////// -->
 
                         <div class="app_link_app_algo_inner">

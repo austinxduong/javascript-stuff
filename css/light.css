@@ -621,7 +621,68 @@ cursor: pointer;
 display: flex;
 }
 
-#languageToggle{
-  color: #000;
-  background-color: #abd8df;
+#buttons {
+display: flex;
+list-style: none;
+
 }
+
+#javaScript_button {
+  background-color: white;
+  border-style: solid;
+  border-color: #1134f7;
+  border-width: 1px;
+  padding: 7px;
+  margin: 5px;
+  font-family: "poppins", sans-serif;
+  font-size: 13px;
+  
+}
+
+#java_button {
+  background-color: mint;
+  border-style: solid;
+  border-color: #7c40ff;
+  border-width: 1px;
+  padding: 7px;
+  margin: 5px;
+  font-family: "poppins", sans-serif;
+  font-size: 13px;
+  
+}
+
+.language_button_style {
+  text-decoration: none;
+  color: rgb(0, 0, 0); 
+
+  background:
+    linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgb(59, 162, 157),
+      rgb(255, 255, 255)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  
+}
+
+.language_button_style:hover {
+  background-size: 0 3px, 100% 3px;
+  
+}
+
+.js_java {
+  background-color: mintcream;
+  margin: 1px;
+  padding: 13px;
+}
+
+
