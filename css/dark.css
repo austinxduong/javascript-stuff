@@ -529,13 +529,16 @@ input:hover {
 }
 
 .sun-moon  {
+  color: white;
   cursor: pointer;
  }
 
  .sun-moon:hover  {
   cursor: pointer;
-  color: black;
+  color: rgb(249, 249, 0);
  }
+
+
 
 @media screen and (max-width: 35em) {
   .sun-moon  {
@@ -545,19 +548,60 @@ input:hover {
 
   .sun-moon:hover  {
     cursor: pointer;
-    color: black;
-    filter: drop-shadow(16px 16px 20px #000208)
- }
-
- .appImg {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
+    color: yellow;
+    /* filter: drop-shadow(16px 16px 20px #000208) */
   }
 
-}
+  .sun-moon:active  {
+    cursor: pointer;
+    color: rgb(5, 0, 0); 
+    /* filter: drop-shadow(16px 16px 20px #000208); */
+    }
 
-.algo_description {
-  background-color: rgb(16, 162, 155);
-}
+  .appImg {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    }
 
+  }
+
+  .algo_description {
+    background-color: rgb(16, 162, 155);
+  }
+
+  #buttons {
+    display: flex;
+    list-style: none;
+    
+    }
+
+  #javaScript_button {
+    background-color: white;
+    border-style: solid;
+    border-color: #1134f7;
+    border-width: 1px;
+    padding: 7px;
+    margin: 5px;
+    font-family: "poppins", sans-serif;
+    font-size: 13px;
+    
+  }
+
+  #java_button {
+    background-color: mint;
+    border-style: solid;
+    border-color: #7c40ff;
+    border-width: 1px;
+    padding: 7px;
+    margin: 5px;
+    font-family: "poppins", sans-serif;
+    font-size: 13px;
+    
+  }
+
+  .js_java {
+    background-color: rgb(16, 162, 155);
+    margin: 1px;
+    padding: 13px;
+  }
