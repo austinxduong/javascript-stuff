@@ -245,8 +245,130 @@ function maskify(str) {
 
 
 
-                    <div id="java_language" style="height:180px; display:none">
+                    <div id="java_language" style="height:auto; display:none">
                         Java algos 🍕💸🎰🛎️🎲
+
+
+    <div class ="algo_description">
+        // implementing both the LinkedHashMap & Map data structures
+        // this algorithm receives an input of integers, and returns its ordinal counterpart
+        // specifiying the entered integers order & rank
+    </div>
+
+<pre>
+    <code>
+
+public class OrdinalNumber {
+    public static String ordinalNumber(int integer) {
+
+    LinkedHashMap<String, String> linkedHashMap = new  LinkedHashMap<String, String>();
+    linkedHashMap.put("1", "ST");
+    linkedHashMap.put("2", "ND");
+    linkedHashMap.put("3", "RD");
+    linkedHashMap.put("4", "TH");
+    linkedHashMap.put("5", "TH");
+    linkedHashMap.put("6", "TH");
+    linkedHashMap.put("7", "TH");
+    linkedHashMap.put("8", "TH");
+    linkedHashMap.put("9", "TH");
+    linkedHashMap.put("10", "TH");
+    linkedHashMap.put("11", "TH");
+    linkedHashMap.put("12","TH");
+    linkedHashMap.put("13", "TH");
+    linkedHashMap.put("14", "TH");
+    linkedHashMap.put("15", "TH");
+    linkedHashMap.put("16", "TH");
+    linkedHashMap.put("17", "TH");
+    linkedHashMap.put("18", "TH");
+    linkedHashMap.put("19", "TH");
+    
+    String sInteger = String.valueOf(integer); // "221"
+    String sIntegerD = String.valueOf(integer) + "-"; // "221-""
+    String subStringInteger = "";
+    String linkedSubStringInteger = "";
+        
+        
+    for (int i = 0; i < sInteger.length(); i++) {
+        if (sInteger.length() == 1) {
+            subStringInteger = sInteger;
+        } else if (sInteger.length() == 2 && sInteger.charAt(0) != 1) {
+            subStringInteger = sInteger.substring(1);
+        }
+            else if (sInteger.charAt(1) == '1') {
+            subStringInteger = sInteger.substring(sInteger.length() -2); // 521 // 18
+        } else {
+            subStringInteger = sInteger.substring(sInteger.length() -1); // 528 // 8
+            }            
+        }
+
+    for (Map.Entry<String, String> entry : linkedHashMap.entrySet()) {
+        if (entry.getKey().equals(subStringInteger)) {
+            linkedSubStringInteger = entry.getValue();
+                }
+    }
+    return sIntegerD + linkedSubStringInteger; 
+    
+}
+
+public static void main(String[] args) {
+    int integer = 21; // 21-ST
+    System.out.println(ordinalNumber(integer));
+}
+}
+
+// 1 // 1-ST
+// 3 // 3-RD
+// 8 // 8-TH
+// 21 // 21-ST
+// 22 // 22-ND
+// 23 // 23-RD
+// 521 // "521-ST"
+// 523 // "523-RD"
+// 522 // "522-RD"
+// 531 // "531-ST"
+
+    </code>
+</pre>
+
+
+                        
+
+
+    <div class ="algo_description">
+        // when creating or entering a pin for a credit/debit card, or visiting an ATM
+        // this algorithm validates whether the pin is only all numeric, with a minimum of 4 or a maximum of 6 digits.
+    </div>
+
+
+
+<pre>
+    <code>
+public class AtmPinValidation {
+    public static boolean ATMPin(String s) {
+    Pattern pat = Pattern.compile("^[0-9]{4}$|^[0-9]{6}$");
+    Matcher matcher = pat.matcher(s);
+
+if (!matcher.find()) {
+    return false;
+}
+return true;
+}
+
+public static void main(String[] args) {
+    String s = "";
+    System.out.println(ATMPin(s));
+}
+}
+
+// ^$12345 // false
+// 1234 // true
+// ^^^^^ // false
+// 123456 // true
+// "" // false
+// ^*%$# // false
+
+</pre>
+    </code>
 
 
                     </div>

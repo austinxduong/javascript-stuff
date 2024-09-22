@@ -625,6 +625,7 @@ cursor: pointer;
 
 .algo_description {
   background-color: white;
+  margin: 13px;
 }
 
 .button_container {
