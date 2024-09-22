@@ -1,22 +1,22 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: black; 
+  text-decoration: none;
+  color: black; 
 
-    background:
-    linear-gradient(
-      to right,
-      rgb(255, 255, 255),
-      rgba(100, 200, 200, 1)
-    ),
-    linear-gradient(
-      to right,
-      rgb(255, 255, 255),
-      rgb(59, 162, 157),
-      rgb(255, 255, 255)
+  background:
+  linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(100, 200, 200, 1)
+  ),
+  linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(59, 162, 157),
+    rgb(255, 255, 255)
   );
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
@@ -55,23 +55,23 @@ a:hover {
   max-width: 700px;
   }
 
-  .app_link_app_algo_1 {
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 0px;
-    color: black;
-    background-color:white;
-    border: 1px solid;
-    padding: 10px;
-    border-color:#000000;
-    max-width: 900px;
-    }
-
-  .app_link_app_algo_inner {
-    overflow-x: auto;
-    padding: 20px;
-    background-color: rgb(242, 251, 253);
-    border: none;
+.app_link_app_algo_1 {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0px;
+  color: black;
+  background-color:white;
+  border: 1px solid;
+  padding: 10px;
+  border-color:#000000;
+  max-width: 900px;
   }
+
+/* .app_link_app_algo_inner {
+  overflow-x: auto;
+  padding: 20px;
+  background-color: rgb(242, 251, 253);
+  border: none;
+} */
 
 
 .emailbtn-style {
@@ -587,6 +587,7 @@ input:hover {
 
 .sun-moon{
 color: black;
+cursor: pointer;
 }
 
 .sun-moon:hover{
@@ -612,6 +613,7 @@ cursor: pointer;
 
   .sun-moon.active {
     color: rgb(0, 0, 131);
+    cursor: pointer;
     }
     
   .appImg {
@@ -632,7 +634,6 @@ display: flex;
 #buttons {
 display: flex;
 list-style: none;
-
 }
 
 #javaScript_button {
@@ -644,11 +645,10 @@ list-style: none;
   margin: 5px;
   font-family: "poppins", sans-serif;
   font-size: 13px;
-  
 }
 
 #java_button {
-  background-color: mint;
+  background-color: white;
   border-style: solid;
   border-color: #7c40ff;
   border-width: 1px;
@@ -656,8 +656,7 @@ list-style: none;
   margin: 5px;
   font-family: "poppins", sans-serif;
   font-size: 13px;
-  
-}
+} 
 
 .language_button_style {
   text-decoration: none;
@@ -680,7 +679,7 @@ list-style: none;
   background-repeat: no-repeat;
   transition: background-size 400ms;
   
-}
+} 
 
 .language_button_style:hover {
   background-size: 0 3px, 100% 3px;
@@ -688,9 +687,11 @@ list-style: none;
 }
 
 .js_java {
+  overflow-x: auto;
   background-color: mintcream;
   margin: 1px;
   padding: 13px;
+
 }
 
 
