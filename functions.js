@@ -44,7 +44,7 @@ function spinner0(){
     spinnerDisplayer0.classList.add('loading');
    })
 
-   if (btnspinner0) {
+   if (btnspinner0.addEventListener('click')) {
     btnspinner0.style.display = 'none';
    }
 }
