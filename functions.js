@@ -41,7 +41,8 @@ function spinner0(){
    const btnspinner0 = document.getElementById('btnspinner-0');
 
    btnspinner0.addEventListener('click', () => {
-    spinnerDisplayer0.classList.add('loading').after(classList.remove('loading'));
+    spinnerDisplayer0.classList.add('loading')
+    document.getElementById("btnspinner-0").style.display = 'block'
    })
 }
 
