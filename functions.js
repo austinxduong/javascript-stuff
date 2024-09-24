@@ -35,6 +35,90 @@ function toogleSelection(id) {
     document.getElementById(id).classList.toggle('collapsed');
 }
 
+// spinner 0
+function spinner0(){
+   const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
+   const btnspinner0 = document.getElementById('btnspinner-0');
+
+   btnspinner0.addEventListener('click', () => {
+    spinnerDisplayer0.classList.add('loading');
+   })
+}
+
+spinner0()
+
+//spinner 
+function spinner(){
+    const spinnerDisplayer = document.querySelector('.spinner-displayer-1');
+    const btnspinner = document.getElementById('btnspinner-1');
+ 
+    btnspinner.addEventListener('click', () => {
+     spinnerDisplayer.classList.add('loading');
+    })
+ }
+
+spinner();
+
+// spinner2
+function spinner2(){
+    const spinnerDisplayer2 = document.querySelector('.spinner-displayer-2');
+    const btnspinner2 = document.getElementById('btnspinner-2');
+ 
+    btnspinner2.addEventListener('click', () => {
+     spinnerDisplayer2.classList.add('loading');
+    })
+ }
+
+spinner2();
+
+// spinner 3
+function spinner3(){
+    const spinnerDisplayer3 = document.querySelector('.spinner-displayer-3');
+    const btnspinner3 = document.getElementById('btnspinner-3');
+ 
+    btnspinner3.addEventListener('click', () => {
+     spinnerDisplayer3.classList.add('loading');
+    })
+ }
+
+spinner3();
+
+// spinner 4
+function spinner4(){
+    const spinnerDisplayer4 = document.querySelector('.spinner-displayer-4');
+    const btnspinner4 = document.getElementById('btnspinner-4');
+ 
+    btnspinner4.addEventListener('click', () => {
+     spinnerDisplayer4.classList.add('loading');
+    })
+ }
+
+spinner4();
+
+// // spinner 5
+function spinner5(){
+    const spinnerDisplayer5 = document.querySelector('.spinner-displayer-5');
+    const btnspinner5 = document.getElementById('btnspinner-5');
+ 
+    btnspinner5.addEventListener('click', () => {
+     spinnerDisplayer5.classList.add('loading');
+    })
+ }
+
+spinner5();
+
+// // spinner 6
+function spinner6(){
+    const spinnerDisplayer6 = document.querySelector('.spinner-displayer-6');
+    const btnspinner6 = document.getElementById('btnspinner-6');
+ 
+    btnspinner6.addEventListener('click', () => {
+     spinnerDisplayer6.classList.add('loading');
+    })
+ }
+
+spinner6();
+
 language = {};
 language.showhide = function(param1) {
     
