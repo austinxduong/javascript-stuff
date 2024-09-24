@@ -41,12 +41,10 @@ function spinner0(){
    const btnspinner0 = document.getElementById('btnspinner-0');
 
    btnspinner0.addEventListener('click', () => {
-    spinnerDisplayer0.classList.add('loading');
-   })
-
-   if (btnspinner0.addEventListener('click')) {
-    btnspinner0.style.display = 'none';
-   }
+    spinnerDisplayer0.classList.add('loading').then(data =>{
+        document.getElementById('btnspinner-0').style.display = "none";
+     });
+   });
 }
 
 spinner0()
