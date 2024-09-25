@@ -47,10 +47,12 @@ function spinner0(){
 
    btnspinner0.addEventListener('click', () => {
         spinnerDisplayer0.classList.add('loading');
+
+        setTimeout(function() {
+            document.getElementById('loading').style.display = "none";
+          },2000);
    })
-   if (spinnerDisplayer0.classList.contains('loading')) {
-        spinnerDisplayer0.classList.remove('loading');
-   }
+
 }
 spinner0();
 
