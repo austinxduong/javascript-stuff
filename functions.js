@@ -35,12 +35,31 @@ function toogleSelection(id) {
     document.getElementById(id).classList.toggle('collapsed');
 }
 
-// function spinner() {
-//     document.getElementById("loader_spinner").style.display = "block";
-// }
-// spinner()
 
 // spinner 0
+// function spinner0(){
+//    const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
+//    const btnspinner0 = document.getElementById('btnspinner-0');
+
+//    btnspinner0.addEventListener('click', () => {
+//         spinnerDisplayer0.classList.add('loading');
+//    })
+
+// }
+// spinner0();
+
+
+window.addEventListener("load", () => {
+    const loading = document.querySelector(".loading");
+
+    loader.classList.add("loading-hidden");
+
+    loading.addEventListener("transitioned", () => {
+        document.body.removeChild("loading");
+    });
+})
+
+//spinner0
 function spinner0(){
    const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
    const btnspinner0 = document.getElementById('btnspinner-0');
@@ -48,13 +67,13 @@ function spinner0(){
    btnspinner0.addEventListener('click', () => {
         spinnerDisplayer0.classList.add('loading');
    })
+
 }
 spinner0();
 
 
- 
 
-spinner 
+//spinner 
 function spinner(){
     const spinnerDisplayer = document.querySelector('.spinner-displayer-1');
     const btnspinner = document.getElementById('btnspinner-1');
