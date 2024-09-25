@@ -52,7 +52,7 @@ function toogleSelection(id) {
 window.addEventListener("load", () => {
     const loading = document.querySelector(".loading");
 
-    loader.classList.add("loading-hidden");
+    loading.classList.add("loading-hidden");
 
     loading.addEventListener("transitioned", () => {
         document.body.removeChild("loading");
