@@ -700,12 +700,12 @@ list-style: none;
 } */
 
 
-.loader {
+/* .loader {
   top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-}
+} */
 
 .loading {
   border: 2px solid #ccc;

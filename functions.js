@@ -54,17 +54,17 @@ spinner0();
 
  
 
-//spinner 
-// function spinner(){
-//     const spinnerDisplayer = document.querySelector('.spinner-displayer-1');
-//     const btnspinner = document.getElementById('btnspinner-1');
+spinner 
+function spinner(){
+    const spinnerDisplayer = document.querySelector('.spinner-displayer-1');
+    const btnspinner = document.getElementById('btnspinner-1');
  
-//     btnspinner.addEventListener('click', () => {
-//      spinnerDisplayer.classList.add('loading');
-//     })
-//  }
+    btnspinner.addEventListener('click', () => {
+     spinnerDisplayer.classList.add('loading');
+    })
+ }
 
-// spinner();
+spinner();
 
 // spinner2
 function spinner2(){
