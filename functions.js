@@ -35,31 +35,39 @@ function toogleSelection(id) {
     document.getElementById(id).classList.toggle('collapsed');
 }
 
+// function spinner() {
+//     document.getElementById("loader_spinner").style.display = "block";
+// }
+// spinner()
+
 // spinner 0
 function spinner0(){
    const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
    const btnspinner0 = document.getElementById('btnspinner-0');
 
    btnspinner0.addEventListener('click', () => {
-    spinnerDisplayer0.classList.add('loading').then(data =>{
-        document.getElementById('btnspinner-0').style.display = "none";
-     });
-   });
+        spinnerDisplayer0.classList.add('loading');
+   })
+   if (spinnerDisplayer0.classList.contains('loading')) {
+        spinnerDisplayer0.classList.remove('loading');
+   }
 }
+spinner0();
 
-spinner0()
+
+ 
 
 //spinner 
-function spinner(){
-    const spinnerDisplayer = document.querySelector('.spinner-displayer-1');
-    const btnspinner = document.getElementById('btnspinner-1');
+// function spinner(){
+//     const spinnerDisplayer = document.querySelector('.spinner-displayer-1');
+//     const btnspinner = document.getElementById('btnspinner-1');
  
-    btnspinner.addEventListener('click', () => {
-     spinnerDisplayer.classList.add('loading');
-    })
- }
+//     btnspinner.addEventListener('click', () => {
+//      spinnerDisplayer.classList.add('loading');
+//     })
+//  }
 
-spinner();
+// spinner();
 
 // spinner2
 function spinner2(){
