@@ -717,6 +717,15 @@ list-style: none;
   animation: spin 1s infinite ease-in;
 } */
 
+.loadingDiv {
+  position: fixed;
+  top:20px;    
+  left:20px;    
+  right:20px;    
+  bottom:20px;    
+  background-color: yellow;
+}
+
 .loading {
   position: fixed;
   top: 0;

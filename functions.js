@@ -89,22 +89,29 @@ function toogleSelection(id) {
     // });
 // })
 
+
+$('a').on("click", function(){
+    $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
+ });
+
+//
+// $(function() {
+//     $('a').on("click", function(){
+//         $('div class=loadingDiv>loading...</div>').prependTo(document.body);
+//     });
+// });
+
 // spinner0
-function spinner0(){
-   const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
-   const btnspinner0 = document.getElementById('btnspinner-0');
-   const loading = document.querySelector(".loading");
+// function spinner0(){
+//    const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
+//    const btnspinner0 = document.getElementById('btnspinner-0');
 
-   btnspinner0.addEventListener('click', () => {
-        spinnerDisplayer0.classList.add('loading');
+//    btnspinner0.addEventListener('click', () => {
+//         spinnerDisplayer0.classList.add('loading');
+//    })
 
-        loading.addEventListener('transitioned', () => {
-            document.body.removeChild("loading");
-        })
-   })
-
-}
-spinner0();
+// }
+// spinner0();
 
 
 //spinner 
