@@ -67,7 +67,7 @@ window.addEventListener("load", () => {
 
 
     loading.addEventListener("transitioned", () => {
-        document.body.removeChild("loader");
+        document.body.removeChild("loading");
     });
 })
 
