@@ -59,17 +59,35 @@ function toogleSelection(id) {
 //     });
 // })
 
-window.addEventListener("load", () => {
-    const loading = document.querySelector(".loading");
-    const spinner = document.querySelector(".spinner-displayer-0")
-    
+// window.addEventListener("load", () => {
+const loading = document.querySelector(".loading");
+let isLoading = true;
+
+function showLoader() {
     loading.classList.add("loading-hidden");
+}
 
+function hideLoader() {
+    loading.classList.remove("loading-hidden");
+}
 
-    loading.addEventListener("transitioned", () => {
-        document.body.removeChild("loading");
-    });
+window.addEventListener('load', () => {
+    isLoading = false;
+    showLoader();
 })
+
+window.addEventListener('popstate', () => {
+    if (isLoading) {
+        hideLoader();
+    }
+})
+
+
+
+    // loading.addEventListener("transitioned", () => {
+    //     document.body.removeChild("loading");
+    // });
+// })
 
 // spinner0
 function spinner0(){
