@@ -49,17 +49,29 @@ function toogleSelection(id) {
 // spinner0();
 
 
+// window.addEventListener("load", () => {
+//     const loading = document.querySelector(".loading");
+
+//     loading.classList.add("loading-hidden");
+
+//     loading.addEventListener("transitioned", () => {
+//         document.body.removeChild("loading");
+//     });
+// })
+
 window.addEventListener("load", () => {
     const loading = document.querySelector(".loading");
-
+    const spinner = document.querySelector(".spinner-displayer-0")
+    
     loading.classList.add("loading-hidden");
 
+
     loading.addEventListener("transitioned", () => {
-        document.body.removeChild("loading");
+        document.body.removeChild("spinner");
     });
 })
 
-//spinner0
+// spinner0
 function spinner0(){
    const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
    const btnspinner0 = document.getElementById('btnspinner-0');
@@ -70,7 +82,6 @@ function spinner0(){
 
 }
 spinner0();
-
 
 
 //spinner 
