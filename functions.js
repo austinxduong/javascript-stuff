@@ -60,27 +60,27 @@ function toogleSelection(id) {
 // })
 
 // window.addEventListener("load", () => {
-const loading = document.querySelector(".loading");
-let isLoading = true;
+// const loading = document.querySelector(".loading");
+// let isLoading = true;
 
-function showLoader() {
-    loading.classList.add("loading-hidden");
-}
+// function showLoader() {
+//     loading.classList.add("loading-hidden");
+// }
 
-function hideLoader() {
-    loading.classList.remove("loading-hidden");
-}
+// function hideLoader() {
+//     loading.classList.remove("loading-hidden");
+// }
 
-window.addEventListener('load', () => {
-    isLoading = false;
-    showLoader();
-})
+// window.addEventListener('load', () => {
+//     isLoading = false;
+//     showLoader();
+// })
 
-window.addEventListener('popstate', () => {
-    if (isLoading) {
-        hideLoader();
-    }
-})
+// window.addEventListener('popstate', () => {
+//     if (isLoading) {
+//         hideLoader();
+//     }
+// })
 
 
 
@@ -93,9 +93,14 @@ window.addEventListener('popstate', () => {
 function spinner0(){
    const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
    const btnspinner0 = document.getElementById('btnspinner-0');
+   const loading = document.querySelector(".loading");
 
    btnspinner0.addEventListener('click', () => {
         spinnerDisplayer0.classList.add('loading');
+
+        loading.addEventListener('transitioned', () => {
+            document.body.removeChild("loading");
+        })
    })
 
 }
