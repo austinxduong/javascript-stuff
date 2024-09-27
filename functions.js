@@ -102,6 +102,10 @@ $('a').on("click", function(){
     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
  });
 
+$(window).on("pageshow", function(){
+    $('<div class=loadingDiv>loading...</div>').hide();
+})
+
 //
 // $(function() {
 //     $('a').on("click", function(){
