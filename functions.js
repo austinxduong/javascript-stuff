@@ -98,7 +98,7 @@ function toogleSelection(id) {
 //     $('<div class=loadingDiv>loading...</div>').hide(); 
 //  });
 
-$(window).on("click", function(){
+$('a').on("click", function(){
     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
  });
 
