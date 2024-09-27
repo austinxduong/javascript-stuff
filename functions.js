@@ -102,7 +102,7 @@ $('a').on("click", function(){
     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
  });
 
-$(document).on("pageshow", function(){
+$(window).on('popstate', function(){
     $('<div class=loadingDiv>loading...</div>').hide();
 })
 
