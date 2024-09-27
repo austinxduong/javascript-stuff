@@ -90,7 +90,15 @@ function toogleSelection(id) {
 // })
 
 
-$('a').on("click", function(){
+// $('a').on("click", function(){
+//     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
+//  });
+
+// $(window).on("click", function(){
+//     $('<div class=loadingDiv>loading...</div>').hide(); 
+//  });
+
+$(window).on("click", function(){
     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
  });
 

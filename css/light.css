@@ -717,13 +717,50 @@ list-style: none;
   animation: spin 1s infinite ease-in;
 } */
 
+/* .loadingDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb89;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loadingDiv::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 15px solid #dddddd;
+  border-top-color: #1ecd97;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+} */
+
 .loadingDiv {
   position: fixed;
-  top:20px;    
-  left:20px;    
-  right:20px;    
-  bottom:20px;    
-  background-color: yellow;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb89;
+}
+
+.loadingDiv::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 15px solid #dddddd;
+  border-top-color: #1ecd97;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+
 }
 
 .loading {
