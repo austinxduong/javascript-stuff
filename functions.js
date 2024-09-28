@@ -49,14 +49,15 @@ function toogleSelection(id) {
 // spinner0();
 
 
+
+
 // window.addEventListener("load", () => {
 //     const loading = document.querySelector(".loading");
+//     const spinnerDisplayer = document.querySelector('.spinner-displayer-0');
+//     const btnspinner = document.getElementById('btnspinner-0');
 
-//     loading.classList.add("loading-hidden");
-
-//     loading.addEventListener("transitioned", () => {
-//         document.body.removeChild("loading");
-//     });
+//     btnspinner.addEventListener('click', () => {
+//         spinnerDisplayer.classList.add('loading');
 // })
 
 // window.addEventListener("load", () => {
@@ -90,21 +91,21 @@ function toogleSelection(id) {
 // })
 
 
-// $('a').on("click", function(){
-//     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
-//  });
-
-// $(window).on("click", function(){
-//     $('<div class=loadingDiv>loading...</div>').hide(); 
-//  });
-
 $('a').on("click", function(){
     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
  });
 
-$(window).on('popstate', function(){
-    $('<div class=loadingDiv>loading...</div>').hide();
-})
+$(window).on("click", function(){
+    $('<div class=loadingDiv>loading...</div>').hide(); 
+ });
+
+// $('a').on("click", function(){
+//     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
+//  });
+
+// $(window).on('popstate', function(){
+//     $('<div class=loadingDiv>loading...</div>').hide();
+// })
 
 //
 // $(function() {
@@ -127,16 +128,16 @@ $(window).on('popstate', function(){
 
 
 //spinner 
-function spinner(){
-    const spinnerDisplayer = document.querySelector('.spinner-displayer-1');
-    const btnspinner = document.getElementById('btnspinner-1');
+// function spinner(){
+//     const spinnerDisplayer = document.querySelector('.spinner-displayer-1');
+//     const btnspinner = document.getElementById('btnspinner-1');
  
-    btnspinner.addEventListener('click', () => {
-     spinnerDisplayer.classList.add('loading');
-    })
- }
+//     btnspinner.addEventListener('click', () => {
+//      spinnerDisplayer.classList.add('loading');
+//     })
+//  }
 
-spinner();
+// spinner();
 
 // spinner2
 function spinner2(){
