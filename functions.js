@@ -95,7 +95,7 @@ $('a').on("click", function(){
     $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
  });
 
-$(window).on("click", function(){
+$(window).on("pageshow", function(){
     $('<div class=loadingDiv>loading...</div>').hide(); 
  });
 
@@ -139,78 +139,78 @@ $(window).on("click", function(){
 
 // spinner();
 
-// spinner2
-function spinner2(){
-    const spinnerDisplayer2 = document.querySelector('.spinner-displayer-2');
-    const btnspinner2 = document.getElementById('btnspinner-2');
+// // spinner2
+// function spinner2(){
+//     const spinnerDisplayer2 = document.querySelector('.spinner-displayer-2');
+//     const btnspinner2 = document.getElementById('btnspinner-2');
  
-    btnspinner2.addEventListener('click', () => {
-     spinnerDisplayer2.classList.add('loading');
-    })
- }
+//     btnspinner2.addEventListener('click', () => {
+//      spinnerDisplayer2.classList.add('loading');
+//     })
+//  }
 
-spinner2();
+// spinner2();
 
-// spinner 3
-function spinner3(){
-    const spinnerDisplayer3 = document.querySelector('.spinner-displayer-3');
-    const btnspinner3 = document.getElementById('btnspinner-3');
+// // spinner 3
+// function spinner3(){
+//     const spinnerDisplayer3 = document.querySelector('.spinner-displayer-3');
+//     const btnspinner3 = document.getElementById('btnspinner-3');
  
-    btnspinner3.addEventListener('click', () => {
-     spinnerDisplayer3.classList.add('loading');
-    })
- }
+//     btnspinner3.addEventListener('click', () => {
+//      spinnerDisplayer3.classList.add('loading');
+//     })
+//  }
 
-spinner3();
+// spinner3();
 
-// spinner 4
-function spinner4(){
-    const spinnerDisplayer4 = document.querySelector('.spinner-displayer-4');
-    const btnspinner4 = document.getElementById('btnspinner-4');
+// // spinner 4
+// function spinner4(){
+//     const spinnerDisplayer4 = document.querySelector('.spinner-displayer-4');
+//     const btnspinner4 = document.getElementById('btnspinner-4');
  
-    btnspinner4.addEventListener('click', () => {
-     spinnerDisplayer4.classList.add('loading');
-    })
- }
+//     btnspinner4.addEventListener('click', () => {
+//      spinnerDisplayer4.classList.add('loading');
+//     })
+//  }
 
-spinner4();
+// spinner4();
 
-// // spinner 5
-function spinner5(){
-    const spinnerDisplayer5 = document.querySelector('.spinner-displayer-5');
-    const btnspinner5 = document.getElementById('btnspinner-5');
+// // // spinner 5
+// function spinner5(){
+//     const spinnerDisplayer5 = document.querySelector('.spinner-displayer-5');
+//     const btnspinner5 = document.getElementById('btnspinner-5');
  
-    btnspinner5.addEventListener('click', () => {
-     spinnerDisplayer5.classList.add('loading');
-    })
- }
+//     btnspinner5.addEventListener('click', () => {
+//      spinnerDisplayer5.classList.add('loading');
+//     })
+//  }
 
-spinner5();
+// spinner5();
 
-// // spinner 6
-function spinner6(){
-    const spinnerDisplayer6 = document.querySelector('.spinner-displayer-6');
-    const btnspinner6 = document.getElementById('btnspinner-6');
+// // // spinner 6
+// function spinner6(){
+//     const spinnerDisplayer6 = document.querySelector('.spinner-displayer-6');
+//     const btnspinner6 = document.getElementById('btnspinner-6');
  
-    btnspinner6.addEventListener('click', () => {
-     spinnerDisplayer6.classList.add('loading');
-    })
- }
+//     btnspinner6.addEventListener('click', () => {
+//      spinnerDisplayer6.classList.add('loading');
+//     })
+//  }
 
-spinner6();
+// spinner6();
 
-language = {};
-language.showhide = function(param1) {
+// language = {};
+// language.showhide = function(param1) {
     
-    if (param1 == 1) {
-        document.getElementById('javaScript_language').style.display = "";
-        document.getElementById('java_language').style.display = "none";
-    } 
-    else if (param1 == 2) {
-        document.getElementById('javaScript_language').style.display = "none";
-        document.getElementById('java_language').style.display = "";
-    } 
-}
+//     if (param1 == 1) {
+//         document.getElementById('javaScript_language').style.display = "";
+//         document.getElementById('java_language').style.display = "none";
+//     } 
+//     else if (param1 == 2) {
+//         document.getElementById('javaScript_language').style.display = "none";
+//         document.getElementById('java_language').style.display = "";
+//     } 
+// }
 
 
 
