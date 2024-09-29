@@ -96,7 +96,7 @@ $('a').on("click", function(){
  });
 
 $(window).on("pageshow", function(){
-    $('<div class=loadingDiv>loading...</div>').hide(); 
+    $('.loadingDiv').hide(); 
  });
 
 // $('a').on("click", function(){
