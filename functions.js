@@ -92,7 +92,7 @@ function toogleSelection(id) {
 
 
 $('a').on("click", function(){
-    $('<div class=loadingDiv>loading...</div>').prependTo(document.body); 
+    $('<div class=loadingDiv></div>').prependTo(document.body); 
  });
 
 $(window).on("pageshow", function(){
