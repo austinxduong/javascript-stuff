@@ -3,7 +3,7 @@
 }
 
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: rgb(255, 255, 255); 
 
   background:
@@ -24,9 +24,9 @@ background-repeat: no-repeat;
 transition: background-size 400ms;
 }
 
-a:hover {
+/* a:hover {
 background-size: 0 3px, 100% 3px;
-}
+} */
 
 .applink {
   color: white;
@@ -65,14 +65,13 @@ background-size: 0 3px, 100% 3px;
   max-width: 900px;
   }
 
-.app_link_app_algo_inner {
+/* .app_link_app_algo_inner {
   overflow-x: auto;
   padding: 20px;
   background-color: #28cd8b58;
   border: 2px solid;
   border-color: rgba(255, 255, 0, 0.508);
-  
-}
+} */
 
 .emailbtn-style {
   text-decoration: none;
@@ -90,8 +89,8 @@ background-size: 0 3px, 100% 3px;
 }
 
 .wrapper {
-margin-left: 1rem;
-border-radius: 5px;
+  margin-left: 1rem;
+  border-radius: 5px;
 }
 
 .content-describe{
@@ -100,7 +99,6 @@ border-radius: 5px;
   max-height: 1000px; 
   padding: 0;
   color: white; 
-  border-color: white ;
   overflow: hidden;
   transition-property: opacity, max-height;
   transition-duration: 1s, 0.5s;
@@ -111,7 +109,6 @@ font-family: Arial, Helvetica, sans-serif;
 color: #ffffff;
 cursor: pointer;
 padding: .5em;
-
 }
 
 
@@ -567,7 +564,9 @@ input:hover {
   }
 
   .algo_description {
-    background-color: rgb(16, 162, 155);
+    background-color: rgb(3, 0, 155);
+    margin: 13px;
+    padding: 8px;
   }
 
   #buttons {
@@ -577,9 +576,10 @@ input:hover {
     }
 
   #javaScript_button {
-    background-color: white;
+    color: rgb(50, 224, 175);
+    background-color: #250287a0;
+    border-color: #5d3dff;
     border-style: solid;
-    border-color: #1134f7;
     border-width: 1px;
     padding: 7px;
     margin: 5px;
@@ -589,9 +589,10 @@ input:hover {
   }
 
   #java_button {
-    background-color: mint;
+    color: rgb(50, 224, 175);
+    background-color: #250287a0;
+    border-color: #5d3dff;
     border-style: solid;
-    border-color: #7c40ff;
     border-width: 1px;
     padding: 7px;
     margin: 5px;
@@ -601,7 +602,41 @@ input:hover {
   }
 
   .js_java {
+    overflow-x: auto;
     background-color: rgb(16, 162, 155);
     margin: 1px;
     padding: 13px;
+  }
+
+  .loadingDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #015e5d89;
+  }
+  
+  .loadingDiv::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    /* border: 15px solid #dddddd; */
+    /* border-top-color: #1ecd97; */
+    border-radius: 50%;
+    box-shadow: 10px 1px 20px 1px rgb(126, 238, 171);
+    animation: loading 0.75s ease infinite;
+  }
+
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
   }

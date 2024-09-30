@@ -42,7 +42,7 @@ a {
   padding: 10px;
   border-color:#000000;
   max-width: 700px;
-  }
+}
 
 .app_link_app_div {
   font-family: 'Courier New', Courier, monospace;
@@ -77,6 +77,11 @@ a {
 .emailbtn-style {
   /* text-decoration: none; */
   color: rgb(0, 0, 0); 
+}
+
+.emailbtn-style:hover {
+  background-size: 0 3px, 100% 3px;
+}
 
   /* background:
     linear-gradient(
@@ -94,11 +99,6 @@ a {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms; */
-} 
-
-.emailbtn-style:hover {
-  background-size: 0 3px, 100% 3px;
-}
 
  #btn {
   border-color: #1134f7;
@@ -639,6 +639,7 @@ list-style: none;
   background-color: white;
   border-style: solid;
   border-color: #1134f7;
+  color:black;
   border-width: 1px;
   padding: 7px;
   margin: 5px;
@@ -649,7 +650,8 @@ list-style: none;
 #java_button {
   background-color: white;
   border-style: solid;
-  border-color: #7c40ff;
+  border-color: #1134f7;
+  color:black;
   border-width: 1px;
   padding: 7px;
   margin: 5px;
