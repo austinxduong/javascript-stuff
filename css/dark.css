@@ -855,3 +855,39 @@ input:hover {
     padding: 10px;
     text-decoration: none;
   }
+
+  #javaScript_info {
+    background-color: white;
+    border:1px solid #1134f7;
+  
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  #java_info {
+    background-color:white;
+    border:1px solid #1134f7;
+  
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .audio_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+  #audioPlay {
+    width:100%;
+  }
+  
+  .audio-footer {
+    background-color: #000;
+    /* padding: 30px; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /* height: 5vh; */
+    width: 100%;
+  }

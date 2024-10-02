@@ -807,6 +807,10 @@ list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  width:100%;
+}
+#audioPlay {
+  width:100%;
 }
 
 .audio-footer {
