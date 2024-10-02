@@ -35,7 +35,6 @@ function toogleSelection(id) {
     document.getElementById(id).classList.toggle('collapsed');
 }
 
-
 // spinner 0
 // function spinner0(){
 //    const spinnerDisplayer0 = document.querySelector('.spinner-displayer-0');
