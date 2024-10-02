@@ -855,22 +855,6 @@ input:hover {
     padding: 10px;
     text-decoration: none;
   }
-
-  #javaScript_info {
-    background-color: white;
-    border:1px solid #1134f7;
-  
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  #java_info {
-    background-color:white;
-    border:1px solid #1134f7;
-  
-    padding: 10px;
-    text-decoration: none;
-  }
   
   .audio_container {
     display: flex;
