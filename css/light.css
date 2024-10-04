@@ -823,6 +823,21 @@ list-style: none;
   width: 100%;
 }
 
+.creators {
+  background-color: white;
+  border:1px solid #1134f7;
+  padding: 8px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.creators_container{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 1px;
+}
+
 /* @media screen and (max-width: 800px) {
   .audio_container {
     display: flex;
