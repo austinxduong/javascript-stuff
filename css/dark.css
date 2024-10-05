@@ -877,5 +877,16 @@ input:hover {
   }
 
   .creators {
-    
+    background-color: rgb(2, 13, 132);
+    border:1px solid #1130f7;
+    padding: 8px;
+    margin: 5px;
+    text-decoration: none;
+  }
+  
+  .creators_container{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 1px;
   }
