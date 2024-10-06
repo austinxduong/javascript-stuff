@@ -93,7 +93,7 @@ a:hover {
 .wrapper {
   margin-left: 1rem;
   border-radius: 5px;
-}
+} 
 
 .content-describe{
   height: auto; 
@@ -141,17 +141,46 @@ a:hover {
 }
 
 body {
-  background-color:white;
+  background: 
+  linear-gradient(100deg,white, #ccfad9, #caf6f2 ,white , #ebedfd,#cceeff, #c7f7dc),
+  linear-gradient(100deg, rgba(238, 235, 220, 0.8), rgba(228, 13, 21, 0) 40.71%), 
+  linear-gradient(217deg, rgb(255, 255, 255), rgba(228, 13, 21, 0) 70.71%),
+  linear-gradient(127deg, rgba(20, 250, 235, 0.684), rgba(174, 106, 60, 0) 70.71%),
+  linear-gradient(300deg, rgba(169, 169, 169, 0.8), rgba(163, 60, 174, 0) 70.71%);
+  /* background-color:white;
   background:
   linear-gradient(100deg, rgba(238, 235, 220, 0.8), rgba(228, 13, 21, 0) 40.71%), 
   linear-gradient(217deg, rgb(255, 255, 255), rgba(228, 13, 21, 0) 70.71%),
   linear-gradient(127deg, rgba(20, 250, 235, 0.684), rgba(174, 106, 60, 0) 70.71%),
   linear-gradient(300deg, rgba(169, 169, 169, 0.8), rgba(163, 60, 174, 0) 70.71%);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); */
+  background-size: 600% 100%;
+  animation: gradient 4s linear infinite;
+  animation-direction: alternate;
   padding: 0;
   margin: 0;
   line-height: 1.5;
 }
+
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
+
+/* 
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+} */
 
 header {
     display:flex;
@@ -855,3 +884,17 @@ list-style: none;
     width: 100%;
   }
 } */
+
+.gradientWrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
