@@ -890,3 +890,29 @@ input:hover {
     margin: 5px;
     padding: 1px;
   }
+
+  #creators_meta {
+    background-color: rgb(2, 13, 132);
+    border:1px solid #1130f7;
+    padding: 4px;
+    margin: 5px;
+    text-decoration: none;
+  }
+  
+  .tech_line_break {
+    margin: 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #creators_meta {
+      background-color: rgb(2, 13, 132);
+      border:1px solid #1130f7;
+      padding: 4px;
+      margin: 5px;
+      text-decoration: none;
+    }
+  
+    .tech_line_break {
+      margin: 10px;
+    }
+  }
