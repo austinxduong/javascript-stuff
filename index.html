@@ -480,6 +480,44 @@ public static void main(String[] args) {
     </code>
 
 
+<div class ="algo_description">
+    // incorporating regex, this algorithm compiles a sequences of characters & a match
+    // verifying that a users input is officially of the email syntax.
+</div>
+
+
+<pre>
+    <code>
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class EmailRegex {
+    public static String email(String emale) {
+    Pattern pat = Pattern.compile("^(\\w+)((.))(\\w+)@(\\w+(.))(\\w+)$");
+    // ^\\(\\w+\\)\\(?=@\\)\\(\\w+\\)\\(?=.\\)$
+    Matcher matcher = pat.matcher(emale);
+
+    if (matcher.find()) {
+        return matcher.group();
+    } else {
+        return matcher.group();
+    }
+    } 
+
+    public static void main(String[] args) {
+    String emale = "gwhite.mail1818@hotmail.com";
+
+    System.out.println(email(emale));
+    }
+}
+🔥
+
+
+
+</pre>
+    </code>
+
+
                     </div>
                 </div>
 <!-- /////////////////////////////////////////////////////////////// -->
