@@ -278,6 +278,12 @@ background-size: 0 3px, 100% 3px;
   color: rgb(50, 224, 175);
 }
 
+.emailbtn-style-x {
+  text-decoration: none;
+  color: rgb(12, 0, 236);
+}
+
+
 .emailbtn-style:hover {
   background-size: 0 3px, 100% 3px;
 }
@@ -285,6 +291,12 @@ background-size: 0 3px, 100% 3px;
 #btn {
   border-color: #3dffc5;
   background-color: #014333a0;
+  padding-bottom: 3px;
+}
+
+#btn-x{
+  border-color: #3dffc5;
+  background-color: #23e1fe;
   padding-bottom: 3px;
 }
 
