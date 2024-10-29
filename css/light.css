@@ -673,6 +673,18 @@ list-style: none;
   font-size: 13px;
 } 
 
+#python_button {
+  background-color: white;
+  border-style: solid;
+  border-color: #1134f7;
+  color:black;
+  border-width: 1px;
+  padding: 7px;
+  margin: 5px;
+  font-family: "poppins", sans-serif;
+  font-size: 13px;
+}
+
 .language_button_style {
   text-decoration: none;
   color: rgb(0, 0, 0); 
@@ -827,6 +839,14 @@ list-style: none;
 }
 
 #java_info {
+  background-color:white;
+  border:1px solid #1134f7;
+
+  padding: 10px;
+  text-decoration: none;
+}
+
+#python_info {
   background-color:white;
   border:1px solid #1134f7;
 
