@@ -843,6 +843,21 @@ input:hover {
     
   }
 
+  #python_button {
+    color: rgb(50, 224, 175);
+    background-color: #250287a0;
+    border-color: #5d3dff;
+    border-style: solid;
+    border-width: 1px;
+    padding: 7px;
+    margin: 5px;
+    font-family: "poppins", sans-serif;
+    font-size: 13px;
+    
+  }
+
+
+
   .js_java {
     overflow-x: auto;
     background-color: rgb(16, 162, 155);
@@ -891,6 +906,13 @@ input:hover {
   }
   
   #java_info {
+    background-color: rgb(2, 13, 132);
+    border:1px solid #1130f7;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  #python_info {
     background-color: rgb(2, 13, 132);
     border:1px solid #1130f7;
     padding: 10px;
