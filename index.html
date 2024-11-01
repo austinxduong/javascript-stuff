@@ -526,6 +526,31 @@ public class EmailRegex {
                     <div id="python_language" style="height: auto;">
                         <a href="https://www.python.org/community/" id="python_info">Python ⚕️🐍🐉 </a>
                 </div>
+
+
+                <pre>
+                    <code>
+message = input(">")
+wordsInput = message.split(' ')
+
+emojis = {
+    ":)": "😀",
+    ">:)": "😈",
+}
+print(wordsInput)
+
+output = ""
+for word in wordsInput:
+    output += emojis.get(word, word) + " " #if key is present, return the value of that key. otherwise, default word returns the word
+print(output)
+
+</pre>
+    </code>
+
+
+
+
+
 <!-- /////////////////////////////////////////////////////////////// -->
 
                     <!-- <div class="button_container">
