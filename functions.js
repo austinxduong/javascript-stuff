@@ -204,7 +204,7 @@ language.showhide = function(param1) {
     if (param1 == 1) {
         document.getElementById('javaScript_language').style.display = "";
         document.getElementById('java_language').style.display = "none";
-        document.getElementById('python_language').style.display = "none"
+        document.getElementById('python_language').style.display = "none";
     } 
     else if (param1 == 2) {
         document.getElementById('javaScript_language').style.display = "none";
