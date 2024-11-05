@@ -112,15 +112,7 @@
 
 
                     <div class="app_link_api_div">
-                        <!-- Apps i recently created: <br /> <br />
-                        This API connects to an interactive front-end built with React.js. When pasting a url link of a website, it renders a shortened link --- shareable across various social media websites posts </p>
-                        API: <a class="applink" id="btnspinner-0" href="https://backend-microservice-urlshortener.onrender.com/">https://backend-microservice-urlshortener.onrender.com/ </a> <br /> <br />
-                        
-                        <div class='spinner-displayer-0' ></div>
-                        
-                        <div class='spinner-displayer-1'></div>
 
-                        <a href="https://backend-microservice-urlshortener.onrender.com/"><img class="appImg" id="btnspinner-1" src="microserviceApi.jpg" width="570"></a> -->
                         <div class="loadingDiv"></div>
                         Apps i recently created: <br /> <br />
                         This API connects to an interactive front-end built with React.js. When pasting a url link of a website, it renders a shortened link --- shareable across various social media websites posts </p>
@@ -143,9 +135,6 @@
 
                         Fullstack App: <a class="applink" id="btnspinner-2" href="https://frontend-microservice-urlshortnener.onrender.com/">https://frontend-microservice-urlshortnener.onrender.com/</a><br /><br />
 
-                        <!-- <div class='spinner-displayer-2'></div>
-
-                        <div class='spinner-displayer-3'></div> -->
 
                         <a href="https://frontend-microservice-urlshortnener.onrender.com/"><img class="appImg" id="btnspinner-3" src="fullstack.jpg" ></a>
 
@@ -218,9 +207,6 @@
                         Enter name & date of birth, then select a card deck. Click on the (Past) 1st card (should have a yellow highlight), then click "Pick A Card"-- repeat for the (Present) second and (Future) third cards. A summary of your personalized reading is presented 🔮. </br> </br>
                         JavaScript App: <a class="applink" id="btnspinner-5" href="https://taylor-tokareff.github.io/tarot-fortune-teller/"> Tarot Fortune Teller</a><br/><br/>
 
-                        <!-- <div class='spinner-displayer-5'></div>
-
-                        <div class='spinner-displayer-6'></div> -->
 
                         <a href ="https://taylor-tokareff.github.io/tarot-fortune-teller/" id="btnspinner-6"><img class= "appImg" src="tarot_fortune_teller.png" width="570"></a> 
                     </div>
@@ -245,7 +231,6 @@
                     <div id="javaScript_language" style="height: auto;">
                         <a href="https://www.javascript.com/" id="javaScript_info">JavaScript algos 🌭🏖️🍹🏝️🪼</a>
 
-                        <!-- <div class="app_link_app_algo_inner"> -->
                         
                             <pre>
                                 <code>
@@ -547,158 +532,9 @@ print(output)
             </div>
 
 
+                    </div>
+
 <!-- /////////////////////////////////////////////////////////////// -->
-
-                    <!-- <div class="button_container">
-                        <button class="javaScript_algo" onclick="changeLanguage('javaScript')">JavaScript</button>
-                        <button class="java_algo" onclick="changeLanguage('java')">Java</button>
-                    </div> -->
-                        <!-- <div> -->
-                        <!-- <p id="languageToggle">
-                            language toggling
-                        </p> -->
-
-                        <!-- <script>
-                            function changeLanguage(languageChange) {
-                                location.hash = languageChange;
-                                location.reload();
-                            }
-                        
-                            let language = {
-                                java: {
-                                    key: "this is java algorithms (work in prog) 🍕💸🎰🛎️🎲"
-                                },
-                                javaScript: {
-                                    key: "javaScript algos (work in progress) 🌭🏖️🍹🏝️🪼"
-                                }
-                            };
-                            
-                            if (window.location.hash) {
-                                if (window.location.hash == "#java") {
-                                    languageToggle.textContent = language.java.key;
-                                } 
-                                else if (window.location.hash == "#javaScript") {
-                                    languageToggle.textContent = language.javaScript.key;
-                                }
-
-                            }
-                        </script> -->
-                        <!-- </div> -->
-<!-- /////////////////////////////////////////////////////////////// -->
-
-                        <!-- <div class="app_link_app_algo_inner">
-                        
-                            <pre>
-                                <code>
-function areaOfCountry(name, area) {
-
-// earths landmass = 148,940,000
-
-let countrysProportionToEarthLandMass = area / 148940000
-let decimalTruncate = countrysProportionToEarthLandMass.toFixed(4)
-let crops = Number.parseFloat(decimalTruncate) * 100
-
-if (crops > 1) {
-    return `${name} is ${crops}% of the total world's landmass`
-} else if (crops < 1) {
-    return `${name} is ${crops.toFixed(2)}% of the total world's landmass`
-}
-}
-console.log(areaOfCountry("Ireland", 32595));
-console.log(areaOfCountry("Switzerland", 41284));
-console.log(areaOfCountry("Netherlands", 41850));
-console.log(areaOfCountry("Greece", 131990));
-console.log(areaOfCountry("Sweden", 204035));
-
-</code>
-</pre>
-
-<div class ="algo_description">
-    // this algorithm lets you enter your cents and dollars, the total balance amount
-    // and returns a true/false if a purchase is affordable
-</div>
-
-<pre>
-<code>
-function accountsReceivableAndPayable(cents, amountDue) {
-	const initialValue = 0;
-    const twenty = 20.00 cents[0]
-    const ten = 10.00 * cents[1]
-    const dollar = 1.00 * cents[2]
-	const quarter = .25 * cents[3]
-	const dime = .10 * cents[4]
-	const nickel = .05 * cents[5]
-	const penny = .01 * cents[6]
-	
-	let cents = [twenty, ten, dollar, quarter, dime, nickel, penny]
-	
-	const loopAdd = cents.reduce((elementFir, elementSec) => elementFir + elementSec, initialValue);
-	
-	return loopAdd >= amountDue ? true : false
-}
-
-console.log("cent calc [8, 10, 50, 100], 5.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 5.00))
-console.log("cent calc [8, 10, 50, 100], 55.00] = ", accountsReceivableAndPayable([8, 10, 50, 100], 55.00))
-
-</code>
-</pre>
-
-<div class ="algo_description">
-
-// this algorithm receives an array of objects (accounts/financial&data migration), 
-// and renders the cummulative in dollars
-</div>
-<pre>
-<code>
-function cummulativeBudgets(arr) {
-let budgetCummulative = 0
-arr.forEach(array => {
-    for (let digit in array) {
-        if (digit === "budget") {
-            budgetCummulative += array[digit]
-            return budgetCummulative
-        }
-    }
-})
-return budgetCummulative
-}
-</code>
-</pre>
-
-<div class ="algo_description">
-// when adding credit/debit card information, previewing the ACH number on your online bank statements, or storing any sort of personal information etc.
-// this algorithm conceals these numbers with a '#' except the last 4 digits for confidentialality. 
-</div>
-
-
-<pre>
-<code>
-function maskify(str) {
-	const strSplit = str.split('')
-	const strSlice = strSplit.slice(-4)
-	const strSliceJoin = strSlice.join('')
-	const stor = []
-	
-	for (let i = 0; i < strSplit.length - 4; i++) {
-	strSplit[i] = '#'
-	stor.push(strSplit[i])
-}
-	const eleJoin = stor.concat(strSliceJoin)
-	
-  const strFilter = eleJoin.filter((element) => element !== ',')
-	const stringify = strFilter.toString()
-	const stringifyJoin = stringify.split('').join('')
-	
-	return stringifyJoin.replace(/,/g, "")
-}
-                                </code>
-                            </pre>
-                            
-            
-                        </div> -->
-                    
-                </div>
-
 
 
                     </div>
