@@ -107,7 +107,6 @@ background-size: 0 3px, 100% 3px;
 }
 
 body {
-
   background: 
     linear-gradient(100deg,rgb(0, 11, 73), #00102ea5,rgb(9, 0, 108), #012e2a98 ,rgb(0, 12, 88) , #000a52,#002d4470,rgb(3, 0, 96), #00431db1),
     linear-gradient(100deg, rgba(144, 120, 0, 0.8), rgba(228, 13, 21, 0) 40.71%), 
@@ -153,14 +152,12 @@ body {
   padding: .5em;
 }
 
-
 .block {
   display: block;
   margin: 0.5em;
   padding: 0.5em;
   border-radius: 5px;
 }
-
 
 /* details */
 .wrapper .activator:after {
@@ -189,7 +186,6 @@ body {
   line-height: 1.5;
 }
 
-
 header {
   display:flex;
   text-align: center;
@@ -206,7 +202,7 @@ html, body {
   }
 }
 
-
+/* time-line */
 .timeline-container {
   padding: 2rem;
   padding-bottom: 400px;
