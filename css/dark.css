@@ -32,7 +32,6 @@ background-size: 0 3px, 100% 3px;
   color: white;
 }
 
-
 .app_link_api_div {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
@@ -74,6 +73,7 @@ background-size: 0 3px, 100% 3px;
   border-color: rgba(255, 255, 0, 0.508);
 } */
 
+/* email button*/
 .emailbtn-style {
   text-decoration: none;
   color: rgb(50, 224, 175);
@@ -134,6 +134,7 @@ body {
     100% {background-position: 100%}
   }
 
+/* expertise/specialization */
 .content-describe{
   font-family:'Courier New', Courier, monospace;
   height: auto; 
