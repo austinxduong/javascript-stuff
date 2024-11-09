@@ -886,9 +886,6 @@ list-style: none;
   margin: 10px;
 }
 
-/* @media (max-width: 35em) {
-
-} */
 
 @media screen and (max-width: 800px) {
   #creators_meta {

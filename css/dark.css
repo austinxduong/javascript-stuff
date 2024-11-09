@@ -381,7 +381,6 @@ h2 {
   100% { transform: rotate(360deg) }
 }
 
-
 .ul-nav, a#open_to_work {
   margin-inline-end: 0.75em;
   list-style: none;
@@ -397,7 +396,6 @@ h2 {
   transform: translateX(0%);
   z-index: 1;
 }
-
 
 @media (max-width: 35em) {
 h2 {
@@ -422,7 +420,6 @@ h2 {
       backdrop-filter: blur(1rem);
     }
   }
-
 }
 
 .hamburger-button {
@@ -470,7 +467,6 @@ h2 {
   } 
 
 }
-
 
 .ul-nav, span#open_to_work:hover {
   color: rgb(0, 0, 0);
