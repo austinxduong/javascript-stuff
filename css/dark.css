@@ -608,9 +608,9 @@ input:hover {
   #buttons {
     display: flex;
     list-style: none;
-    
     }
 
+  /*language algo toggling*/
   #javaScript_button {
     color: rgb(50, 224, 175);
     background-color: #250287a0;
@@ -621,7 +621,6 @@ input:hover {
     margin: 5px;
     font-family: "poppins", sans-serif;
     font-size: 13px;
-    
   }
 
   #java_button {
@@ -649,7 +648,6 @@ input:hover {
     font-size: 13px;
     
   }
-
 
 
   .js_java {

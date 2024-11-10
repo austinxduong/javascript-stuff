@@ -622,8 +622,6 @@ cursor: pointer;
 
 }
 
-/* language algo toggling */
-
 .algo_description {
   background-color: white;
   margin: 13px;
@@ -634,6 +632,7 @@ display: flex;
 list-style: none;
 }
 
+/* language algo toggling */
 #javaScript_button {
   background-color: white;
   border-style: solid;
@@ -815,6 +814,7 @@ list-style: none;
   }
 }
 
+  /* language buttons*/
 #javaScript_info {
   background-color: white;
   border:1px solid #1134f7;
