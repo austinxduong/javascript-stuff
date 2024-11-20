@@ -484,7 +484,6 @@ h2 {
   } 
 }
 
-
 .ul-nav, a#blog:hover {
     color: aquamarine;
 }
@@ -545,25 +544,6 @@ h2 {
       transform: translateX(0);
     }
   }
-
-/* button {
-    margin: 10px;
-    background-color: #74e98d;
-    border: 1px #7c40ff solid;
-    border-radius: 1px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    transition: all 0.3s ease;
-    background-color: mintcream;
-    font-family: "poppins", sans-serif;
-
-} */
-
-/* button:hover {
-    background-color: #dbd6d63c;
-    cursor: pointer;
-} */
 
 input {
   font-family: "Poppins", sans-serif;
