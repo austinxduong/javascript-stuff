@@ -856,7 +856,6 @@ list-style: none;
   margin: 10px;
 }
 
-
 @media screen and (max-width: 800px) {
   #creators_meta {
     background-color: rgb(255, 255, 255);
