@@ -860,7 +860,7 @@ const uniqueArray = arr.filter(function(element, indexPosition, self) { // call 
 console.log("uniqueArrayFunction --->", uniqueArray)
 
 // new Set() constuctor creates a new Set object, and stores collections of values. These values in the set only occur once and are unique in the sets collection
-console.log([...new Set(array)])
+// console.log([...new Set(array)])
 
 // hashtables refactor
 // hash keys can only be strings or symbols; 1 & "1" will return just 1; (i.e) uniq([1, "1"]) === [1]
