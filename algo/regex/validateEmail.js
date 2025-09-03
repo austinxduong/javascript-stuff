@@ -4,7 +4,7 @@
 // the '.' and '@' must be in the appropriate places (i.e hello@gmail.com)
 
 function validateEmail(str) {
-const regex = /[a-z][A-Z]\w@\w[a-z][A-Z]+\.com/
+const regex = /\w@\w+.com/
 
 const matchy = str.match(regex)
 
@@ -14,7 +14,9 @@ if(matchy) {
     else return false
 }
 
-console.log(validateEmail("hello@email.com"))
+console.log(validateEmail("hello@email.com")) // true
+// console.log(validateEmail("helloemail.com")) // false
+
 
 
 
