@@ -15,10 +15,12 @@ if(matchy) {
 }
 
 console.log(validateEmail("hello@email.com")) // true
+console.log(validateEmail("hello.world@email.com")) // true
 console.log(validateEmail("hello@emailcom")) // false
 console.log(validateEmail("helloemail.com")) // false
 console.log(validateEmail("helloemailcom")) // false
 console.log(validateEmail("hello.email@com")) // false
+console.log(validateEmail("@email.com")) // false
 
 
 
