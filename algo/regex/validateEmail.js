@@ -21,6 +21,7 @@ console.log(validateEmail("helloemail.com")) // false
 console.log(validateEmail("helloemailcom")) // false
 console.log(validateEmail("hello.email@com")) // false
 console.log(validateEmail("@email.com")) // false
+console.log(validateEmail("hello_world@email.com")) 
 
 
 
