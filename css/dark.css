@@ -561,7 +561,7 @@ input:hover {
 }
 
 .sun-moon  {
-  color: white;
+  color: rgb(239, 238, 238);
   cursor: pointer;
  }
 
@@ -570,7 +570,9 @@ input:hover {
   color: rgb(249, 249, 0);
  }
 
-
+.sun-moon.active{
+  color: rgb(4, 4, 0);
+  }
 
 @media screen and (max-width: 35em) {
   .sun-moon  {

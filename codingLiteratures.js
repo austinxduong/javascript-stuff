@@ -985,3 +985,7 @@ function maskify(str) {
 	
 	return stringifyJoin.replace(/,/g, "")
 }
+
+console.log(maskify("12345678910")) // #######8910
+console.log(maskify("12345")) //#2345
+console.log(maskify("123"))

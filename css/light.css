@@ -563,12 +563,12 @@ cursor: pointer;
 }
 
 .sun-moon:hover{
-color: rgb(163, 195, 255);
+color: rgb(7, 8, 8);
 cursor: pointer;
 }
 
 .sun-moon.active{
-  color: yellow;
+  color: rgb(4, 4, 0);
   }
 
 @media screen and (max-width: 35em) {
@@ -579,7 +579,7 @@ cursor: pointer;
     }
     
   .sun-moon:hover  {
-    color: white;
+    color: rgb(14, 9, 9);
     cursor: pointer;
     }
 
