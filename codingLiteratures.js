@@ -989,3 +989,20 @@ function maskify(str) {
 console.log(maskify("12345678910")) // #######8910
 console.log(maskify("12345")) //#2345
 console.log(maskify("123"))
+
+function cakes(recipe, available) {
+
+const bakes = [];
+
+for (let ingredients in recipe) {
+	available[ingredients] ? bakes.push(Math.floor(available[ingredients] / recipe[ingredients])) : bakes.push(0);
+}
+return Math.min(...bakes)
+
+}
+
+let recipe = {flour: 500, sugar: 200, eggs: 1};
+let available = {flour: 1200, sugar: 1200, eggs: 5, milk:200};
+
+console.log(cakes(recipe, available)) // 2
+
