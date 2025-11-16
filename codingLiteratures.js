@@ -991,12 +991,14 @@ console.log(maskify("12345")) //#2345
 console.log(maskify("123"))
 
 function cakes(recipe, available) {
-
+// create empty array to store quotients
 const bakes = [];
 
+// divide on hand inregredients, with required inrgredients. if ingredient doesn't exit, push 0
 for (let ingredients in recipe) {
 	available[ingredients] ? bakes.push(Math.floor(available[ingredients] / recipe[ingredients])) : bakes.push(0);
 }
+// return the smallest number from spreader operator array
 return Math.min(...bakes)
 
 }
@@ -1004,5 +1006,5 @@ return Math.min(...bakes)
 let recipe = {flour: 500, sugar: 200, eggs: 1};
 let available = {flour: 1200, sugar: 1200, eggs: 5, milk:200};
 
-console.log(cakes(recipe, available)) // 
+console.log(cakes(recipe, available)) // 2
 
