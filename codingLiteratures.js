@@ -1003,8 +1003,51 @@ return Math.min(...bakes)
 
 }
 
-let recipe = {flour: 500, sugar: 200, eggs: 1};
-let available = {flour: 1200, sugar: 1200, eggs: 5, milk:200};
+let recipe0 = {flour: 500, sugar: 200, eggs: 1};
+let available0 = {flour: 1200, sugar: 1200, eggs: 5, milk:200};
 
-console.log(cakes(recipe, available)) // 2
+console.log(cakes(recipe0, available0)) // 2
+
+// function cakes(recipe0, available0) {
+// 	return Object.keys(recipe).reduce(function(val, ingredient) {
+
+// 	}, Infinity)
+// }
+
+let recipe = {flour: 500, sugar: 200, eggs: 1};
+let available = {flour: 2200, sugar: 2200, eggs: 5, milk:200};
+
+function toWeirdCase0(string) {	
+	// const wierdString = [];
+	const splitString = string.split("")
+
+	const weirdString = splitString.map((word, index) => {
+		if (index % 2 !== 0) {
+			return word.toUpperCase();
+		} else {
+			return word;
+		}
+	})
+
+	return weirdString.join('');
+	
+}
+
+console.log(toWeirdCase0("hello what are you doing")) // hElLo wHaT ArE YoU DoInG
+
+// alternative
+
+function toWeirdCase1(string) {
+	// split string into their word chunks
+ return string.split(' ').map(function(word){
+	// split each word chunk into their individual letters/index
+	return word.split('').map(function(letter, index){
+		// can the index be dividied into 2, with no remainder? (starting by 0th index)
+		//upper cause letter if true / lower cause if false
+		return index % 2 == 0 ? letter.toUpperCase() : letter.toLowerCase();
+	}).join('');
+ })
+}
+
+console.log(toWeirdCase1("Hello what are you doing"))
 
