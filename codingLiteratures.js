@@ -1035,7 +1035,7 @@ function toWeirdCase0(string) {
 
 console.log(toWeirdCase0("hello what are you doing")) // hElLo wHaT ArE YoU DoInG
 
-// alternative
+// alternative solution (actual)
 
 function toWeirdCase1(string) {
 	// split string into their word chunks
@@ -1044,9 +1044,17 @@ function toWeirdCase1(string) {
 	return word.split('').map(function(letter, index){
 		// can the index be dividied into 2, with no remainder? (starting by 0th index)
 		//upper cause letter if true / lower cause if false
+		// 0 / 2 = 0 with, a remainder of 0 / true = upper case - H
+		// 1 / 2 = 1 with, a remainder of 1 / false = lower case - e
+		// 2 / 2 = 1, witha remainder of 0 / true = upper case - L
 		return index % 2 == 0 ? letter.toUpperCase() : letter.toLowerCase();
-	}).join('');
- })
+	}).join('')  /* join each single letter to form word chunk, 
+  [ 'H', 'e', 'L', 'l', 'O' ],
+  [ 'W', 'h', 'A', 't' ],
+  [ 'A', 'r', 'E' ],
+  [ 'Y', 'o', 'U' ],
+  [ 'D', 'o', 'I', 'n', 'G' ]*/ // [ 'HeLlO', 'WhAt', 'ArE', 'YoU', 'DoInG' ]
+ }).join(' ')// join word chunks with spaces // HeLlO WhAt ArE YoU DoInG
 }
 
 console.log(toWeirdCase1("Hello what are you doing"))
