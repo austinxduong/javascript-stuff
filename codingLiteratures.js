@@ -1045,8 +1045,8 @@ function toWeirdCase1(string) {
 		// can the index be dividied into 2, with no remainder? (starting by 0th index)
 		//upper cause letter if true / lower cause if false
 		// 0 / 2 = 0 with, a remainder of 0 / true = upper case - H
-		// 1 / 2 = 1 with, a remainder of 1 / false = lower case - e
-		// 2 / 2 = 1, witha remainder of 0 / true = upper case - L
+		// 1 / 2 = 0 with, a remainder of 1 / false = lower case - e
+		// 2 / 2 = 1, with a remainder of 0 / true = upper case - L
 		return index % 2 == 0 ? letter.toUpperCase() : letter.toLowerCase();
 	}).join('')  /* join each single letter to form word chunk, 
   [ 'H', 'e', 'L', 'l', 'O' ],
@@ -1057,5 +1057,5 @@ function toWeirdCase1(string) {
  }).join(' ')// join word chunks with spaces // HeLlO WhAt ArE YoU DoInG
 }
 
-console.log(toWeirdCase1("Hello what are you doing"))
+console.log(toWeirdCase1("hello what are you doing"))
 
