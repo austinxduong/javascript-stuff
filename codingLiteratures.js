@@ -1059,40 +1059,62 @@ function toWeirdCase1(string) {
 
 console.log(toWeirdCase1("hello what are you doing"))
 
+// function counting(string) {
+// 	let letters = 0;
+// 	const alphabet = {a: 0,
+//                     b: 0,
+//                     c: 0,
+//                     d: 0,
+//                     e: 0,
+//                     f: 0,
+//                     g: 0,
+//                     h: 0,
+//                     i: 0,
+//                     j: 0,
+//                     k: 0,
+//                     l: 0,
+//                     m: 0,
+//                     n: 0,
+//                     o: 0,
+//                     p: 0,
+//                     q: 0,
+//                     r: 0,
+//                     s: 0,
+//                     t: 0,
+//                     u: 0,
+//                     v: 0,
+//                     w: 0,
+//                     x: 0,
+//                     y: 0,
+//                     z: 0,
+//                    }
+// 	for (let i = 0; i < string.length; i++) {
+// 		if (string[i] === string) { // 1
+// 			letters++
+// 		}
+// 		return letters;  
+// 	}
+// }
+// console.log(counting('a')) // expected a: 1
+
+// actual
+
 function counting(string) {
-	let letters = 0;
-	const alphabet = {a: 0,
-                    b: 0,
-                    c: 0,
-                    d: 0,
-                    e: 0,
-                    f: 0,
-                    g: 0,
-                    h: 0,
-                    i: 0,
-                    j: 0,
-                    k: 0,
-                    l: 0,
-                    m: 0,
-                    n: 0,
-                    o: 0,
-                    p: 0,
-                    q: 0,
-                    r: 0,
-                    s: 0,
-                    t: 0,
-                    u: 0,
-                    v: 0,
-                    w: 0,
-                    x: 0,
-                    y: 0,
-                    z: 0,
-                   }
+	let result = {};
+	// store empty object
+
+	// loop through string
 	for (let i = 0; i < string.length; i++) {
-		if (string[i] == string) { // 1
-			letters++
+		// if key already exists in the empty object, increment
+		if(result.hasOwnProperty(string[i])) {
+			result[string[i]] += 1;
+			// otherwise, add the element to the array and set the value to 1
+		} else {
+			result[string[i]] = 1;
 		}
-		return letters;
 	}
+	return result;
 }
+console.log(counting('abc')) // { a: 1 }
+console.log(counting('abb'))
 console.log(counting('a'))
