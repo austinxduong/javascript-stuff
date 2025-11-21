@@ -1098,7 +1098,6 @@ console.log(toWeirdCase1("hello what are you doing"))
 // console.log(counting('a')) // expected a: 1
 
 // actual
-
 function counting(string) {
 	let result = {};
 	// store empty object
@@ -1118,3 +1117,27 @@ function counting(string) {
 console.log(counting('abc')) // { a: 1 }
 console.log(counting('abb'))
 console.log(counting('a'))
+
+// regex
+function solution0(string) {
+	// grouped uppercase characters, more then 0 occurences, followed by seperate group of uppercase characters at the beginning of string
+	return string.match(/[A-Z]*[^A-Z]+/g).join(" ")
+	 ;
+}
+console.log(solution0("CamelCasing"))
+// output: camel Casing
+
+// console.log(solution0("")) 
+
+/*return string.match(/[A-Z]*[^A-Z]+/g).join(" ")
+TypeError: Cannot read properties of null (reading 'join')
+*/
+
+
+//actual
+function solution(string) {
+	return(string.replace(/([A-Z])/g, ' $1'));
+}
+
+console.log(solution("")); 
+console.log(solution("CamelCasing"));  // camel Casing
