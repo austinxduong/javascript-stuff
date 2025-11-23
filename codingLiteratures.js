@@ -1141,3 +1141,53 @@ function solution(string) {
 
 console.log(solution("")); 
 console.log(solution("CamelCasing"));  // camel Casing
+
+
+function pageCount(collection, itemsPerPage) {
+	return Math.ceil(collection.length / itemsPerPage);
+}
+
+console.log(pageCount(['a','b','c','d','e','f'], 4))
+
+class PaginationHelper {
+	constructor(collection, itemsPerPage) {
+    this.collection = collection;
+    this.itemsPerPage = itemsPerPage;
+	}
+	itemCount() {
+	  return this.collection.length;
+	}
+	pageCount(collection, itemsPerPage) {
+	  return Math.ceil(this.collection.length / this.itemsPerPage);
+	}
+	pageItemCount(pageIndex) {
+	  if (pageIndex < 0 || pageIndex >= this.pageCount()) { // if page index is out of range
+        return -1
+        }
+    if (pageIndex < this.pageCount() -1 ) { // if the pageIndex is less than 2 =( pageIndexes 0 & 1 applies)
+        return this.itemsPerPage; // return items per page = 10 
+    } // else
+        return this.collection.length - (pageIndex * this.itemsPerPage) // 10 * 2 = 20 / 24-20 = 4
+	}
+	pageIndex(itemIndex) {
+    if (itemIndex < 0 || itemIndex >= this.collection.length) {
+      return -1
+    }
+      return Math.floor(itemIndex / this.itemsPerPage)
+    /*
+Math.floor(0 / 10)  = Math.floor(0.0)  = 0
+Math.floor(5 / 10)  = Math.floor(0.5)  = 0
+Math.floor(9 / 10)  = Math.floor(0.9)  = 0
+
+// Page 1 (items 10-19)  
+Math.floor(10 / 10) = Math.floor(1.0)  = 1
+Math.floor(15 / 10) = Math.floor(1.5)  = 1
+Math.floor(19 / 10) = Math.floor(1.9)  = 1
+
+// Page 2 (items 20-29)
+Math.floor(20 / 10) = Math.floor(2.0)  = 2
+Math.floor(25 / 10) = Math.floor(2.5)  = 2
+Math.floor(29 / 10) = Math.floor(2.9)  = 2
+*/
+	}
+}
