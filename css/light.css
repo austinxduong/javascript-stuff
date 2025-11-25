@@ -889,3 +889,7 @@ list-style: none;
   100% {background-position: 100%}
 }
 
+.last-updated {
+  font-family: Urbanist;
+  color: rgb(0, 28, 235)
+}

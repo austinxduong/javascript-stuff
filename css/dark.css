@@ -772,3 +772,8 @@ input:hover {
       margin: 10px;
     }
   }
+
+  .last-updated {
+  font-family: Urbanist;
+  color: rgb(255, 255, 255)
+}
