@@ -1164,14 +1164,14 @@ class PaginationHelper {
 	  if (pageIndex < 0 || pageIndex >= this.pageCount()) { // if page index is out of range
         return -1
         }
-    if (pageIndex < this.pageCount() -1 ) { // if the pageIndex is less than 2 =( pageIndexes 0 & 1 applies)
+    if (pageIndex < this.pageCount() -1 ) { // if the pageIndex is less than 2 = (pageIndexes 0 & 1 applies)
         return this.itemsPerPage; // return items per page = 10 
     } // else
         return this.collection.length - (pageIndex * this.itemsPerPage) // 10 * 2 = 20 / 24-20 = 4
 	}
 	pageIndex(itemIndex) {
     if (itemIndex < 0 || itemIndex >= this.collection.length) {
-      return -1
+      return -1 // return -1 if out of range
     }
       return Math.floor(itemIndex / this.itemsPerPage)
     /*
