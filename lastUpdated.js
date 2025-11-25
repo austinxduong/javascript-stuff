@@ -16,7 +16,8 @@ async function getLastUpdated() {
       const formattedDate = lastUpdated.toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
-        day: 'numeric'
+        day: 'numeric',
+        weekday: "long"
       });
       
       const element = document.getElementById('last-updated');
