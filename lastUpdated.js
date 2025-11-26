@@ -7,13 +7,13 @@ async function getLastUpdated() {
       throw new Error('Failed to fetch commits');
     }
     
-    const commits = await response.json();
+    const commits = await response.json(); //gets response from github
     
     if (commits.length > 0) {
-      const lastCommit = commits[0];
-      const lastUpdated = new Date(lastCommit.commit.author.date);
+      const lastCommit = commits[0]; // gets the most recent commit via. github
+      const lastUpdated = new Date(lastCommit.commit.author.date); // access the nested property from the github api response, then converts these key/values properties into a new Date object
       
-      const formattedDate = lastUpdated.toLocaleDateString('en-US', {
+      const formattedDate = lastUpdated.toLocaleDateString('en-US', { // date format is fixed due to 'toLocaleDateString
         year: 'numeric',
         month: 'long',
         day: 'numeric',
@@ -22,8 +22,8 @@ async function getLastUpdated() {
       
       const element = document.getElementById('last-updated');
       if (element) {
-        element.textContent = `Last updated: ${formattedDate}`;
-        element.title = `Last commit: ${lastCommit.commit.message}`;
+        element.textContent = `portfolio updated: ${formattedDate}`;
+        element.title = `Last repo commit message: ${lastCommit.commit.message}`; // shows the last commit message to the 'javascript-stuff' repo on hover
       }
     }
   } catch (error) {
