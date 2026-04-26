@@ -100,6 +100,37 @@
                     <script src="lastUpdated.js"></script>
                     </div>
                     
+                    <div id="gh-heatmap-section">
+  <div class="gh-header">
+    <span class="gh-title">github activity</span>
+    <span class="gh-meta" id="contrib-count">loading...</span>
+  </div>
+  <div class="gh-stats">
+    <div class="stat"><div class="stat-label">total commits</div><div class="stat-value" id="s-commits">—</div></div>
+    <div class="stat"><div class="stat-label">longest streak</div><div class="stat-value" id="s-streak">—</div></div>
+    <div class="stat"><div class="stat-label">peak day</div><div class="stat-value" id="s-peak">—</div></div>
+    <div class="stat"><div class="stat-label">active days</div><div class="stat-value" id="s-active">—</div></div>
+  </div>
+  <div class="gh-months" id="gh-month-labels"></div>
+  <div class="gh-grid-wrap">
+    <div class="gh-day-labels">
+      <div class="day-label" style="margin-top:13px">Mon</div>
+      <div class="day-label" style="margin-top:11px">Wed</div>
+      <div class="day-label" style="margin-top:11px">Fri</div>
+    </div>
+    <div class="gh-grid" id="gh-heatmap"></div>
+  </div>
+  <div class="gh-legend">
+    <span class="legend-label">less</span>
+    <div class="legend-cell" style="background:#ebedf0"></div>
+    <div class="legend-cell" style="background:#9FE1CB"></div>
+    <div class="legend-cell" style="background:#5DCAA5"></div>
+    <div class="legend-cell" style="background:#1D9E75"></div>
+    <div class="legend-cell" style="background:#085041"></div>
+    <span class="legend-label">more</span>
+  </div>
+  <div class="gh-tooltip" id="gh-tooltip">hover a cell to see details</div>
+</div>
 
                     
 
@@ -115,7 +146,17 @@
                         FullStack App: <a href="https://www.quantum-invoice.com/">www.quantum-invoice.com/</a> <br /> <br />
                         
 
-                        <a href="https://www.quantum-invoice.com/"><img class="appImg" id="btnspinner-1" src="quantum_invoice.png" width="570"></a> 
+                        <div style="position: relative; padding-bottom: calc(57.01058201058201% + 41px); height: 0; width: 100%;">
+                            <iframe
+                                src="https://demo.arcade.software/cfB8X24qCcvn4ONZx2vN?embed&embed_mobile=inline&embed_desktop=inline&show_copy_link=true"
+                                title="Open and Close a Cash Register Shift"
+                                frameborder="0"
+                                loading="lazy"
+                                allowfullscreen
+                                allow="clipboard-write"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; color-scheme: light;"
+                            ></iframe>
+                            </div>
 
                     </div>
 
@@ -641,6 +682,82 @@ print(output)
 <script src="./functions.js" type="text/javascript"></script>
 <script src="./timeLine.js" type="text/javascript"></script>
 
+<script>
+async function loadGithubHeatmap() {
+  const COLORS = ['#ebedf0','#9FE1CB','#5DCAA5','#1D9E75','#085041'];
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+  function getColor(count) {
+    if (count === 0) return COLORS[0];
+    if (count <= 2) return COLORS[1];
+    if (count <= 5) return COLORS[2];
+    if (count <= 10) return COLORS[3];
+    return COLORS[4];
+  }
+
+  try {
+    const res = await fetch('http://localhost:3000/api/github-contributions');
+    const json = await res.json();
+    const cal = json.data.user.contributionsCollection.contributionCalendar;
+
+    const days = cal.weeks.flatMap(w => w.contributionDays);
+    const total = cal.totalContributions;
+    const active = days.filter(d => d.contributionCount > 0).length;
+    const peak = Math.max(...days.map(d => d.contributionCount));
+
+    let streak = 0, cur = 0;
+    [...days].reverse().forEach(d => {
+      if (d.contributionCount > 0) { cur++; streak = Math.max(streak, cur); }
+      else cur = 0;
+    });
+
+    document.getElementById('contrib-count').textContent = total.toLocaleString() + ' contributions in the last year';
+    document.getElementById('s-commits').textContent = total.toLocaleString();
+    document.getElementById('s-streak').textContent = streak + 'd';
+    document.getElementById('s-peak').textContent = peak;
+    document.getElementById('s-active').textContent = active;
+
+    const grid = document.getElementById('gh-heatmap');
+    const tooltip = document.getElementById('gh-tooltip');
+    const monthLabels = document.getElementById('gh-month-labels');
+    let lastMonth = -1;
+
+    days.forEach((day, i) => {
+      const cell = document.createElement('div');
+      cell.className = 'gh-cell';
+      cell.style.background = getColor(day.contributionCount);
+
+      const d = new Date(day.date);
+      const label = DAYS[d.getDay()] + ', ' + MONTHS[d.getMonth()] + ' ' + d.getDate();
+      cell.addEventListener('mouseenter', () => {
+        tooltip.textContent = day.contributionCount === 0
+          ? 'No contributions on ' + label
+          : day.contributionCount + ' contribution' + (day.contributionCount !== 1 ? 's' : '') + ' on ' + label;
+      });
+      cell.addEventListener('mouseleave', () => {
+        tooltip.textContent = 'hover a cell to see details';
+      });
+      grid.appendChild(cell);
+
+      const m = d.getMonth();
+      if (m !== lastMonth) {
+        const span = document.createElement('span');
+        span.className = 'month-label';
+        span.textContent = MONTHS[m];
+        monthLabels.appendChild(span);
+        lastMonth = m;
+      }
+    });
+
+  } catch (err) {
+    document.getElementById('contrib-count').textContent = 'could not load contributions';
+    console.error('GitHub heatmap error:', err);
+  }
+}
+
+loadGithubHeatmap();
+</script>
 </body>
 </div>
 

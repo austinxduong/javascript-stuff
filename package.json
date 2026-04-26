@@ -16,7 +16,7 @@
     "headTailQueue": "node algo/queue/headtailQueue.js",
     "priorityQueue": "node algo/queue/priorityQueue.js",
     "priorityQ": "node algo/queue/priorityQ.js",
-    "linkedList" : "node algo/linkedList/linkedList.js",
+    "linkedList": "node algo/linkedList/linkedList.js",
     "setCollection": "node algo/set/setCollection.js",
     "hash": "node algo/hash/hash.js",
     "hashhash": "node algo/hash/hashTable.js",
@@ -41,6 +41,9 @@
     "@babel/cli": "^7.17.6",
     "ajax": "^0.0.4",
     "axios": "^0.26.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "jest": "^27.5.1",
     "jquery": "^3.6.0",
     "node-fetch": "^3.2.2"
