@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(cors({
-  origin: ['http://localhost:5505', 'https://austinxduong.github.io']
+  origin: ['http://localhost:5505', 'https://austinxduong.github.io', 'https://www.austinxduong.com', 'https://austinxduong.com']
 }));
 app.use(express.json());
 

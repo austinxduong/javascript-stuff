@@ -697,7 +697,7 @@ async function loadGithubHeatmap() {
   }
 
   try {
-    const res = await fetch('http://localhost:3000/api/github-contributions');
+    const res = await fetch('https://javascript-stuff-7ovd.onrender.com/api/github-contributions');
     const json = await res.json();
     const cal = json.data.user.contributionsCollection.contributionCalendar;
 
