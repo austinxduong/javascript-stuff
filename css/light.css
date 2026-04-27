@@ -925,3 +925,25 @@ list-style: none;
 .day-label { color: rgba(0,0,0,0.5); }
 .gh-tooltip { color: rgba(0,0,0,0.6); }
 .legend-label { color: rgba(0,0,0,0.5); }
+
+.ar-section-label { color: rgba(0,0,0,0.4) !important; }
+.ar-tab { border-color: rgba(0,0,0,0.2) !important; color: rgba(0,0,0,0.7) !important; background: rgba(0,0,0,0.04) !important; }
+.ar-tab:hover { background: rgba(0,0,0,0.08) !important; color: rgba(0,0,0,0.9) !important; }
+.ar-tab.active { background: #1D9E75 !important; border-color: #1D9E75 !important; color: #fff !important; }
+.ar-card { border-color: rgba(0,0,0,0.12) !important; background: rgba(0,0,0,0.02) !important; }
+.ar-code-block { background: rgba(0,0,0,0.05) !important; color: rgba(0,0,0,0.8) !important; border-color: rgba(0,0,0,0.08) !important; }
+.ar-inputs { border-color: rgba(0,0,0,0.08) !important; }
+.ar-label { color: rgba(0,0,0,0.5) !important; }
+.ar-input { border-color: rgba(0,0,0,0.15) !important; background: #ffffff !important; color: rgba(0,0,0,0.85) !important; }
+.ar-input:focus { border-color: #1D9E75 !important; }
+.ar-run { background: #1D9E75 !important; color: #ffffff !important; }
+.ar-output-label { color: rgba(0,0,0,0.35) !important; }
+.ar-output { color: rgba(0,0,0,0.4) !important; }
+.ar-output.success { color: #0F6E56 !important; }
+.ar-output.error { color: #993C1D !important; }
+.ar-desc { color: rgba(0,0,0,0.4) !important; border-color: rgba(0,0,0,0.06) !important; }
+
+.ar-tabs { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
+.ar-tab { min-width: 120px; text-align: center; }
+
+.ar-placeholder { color: rgba(0,0,0,0.3); }

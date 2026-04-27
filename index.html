@@ -30,7 +30,39 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- ── Algorithm Runner Styles ── -->
+<style>
+  .ar-section { margin: 32px 0 16px; }
+  .ar-section-label { font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 14px; }
+  .ar-tabs { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+  .ar-tab { font-family: 'Space Mono', monospace; font-size: 11px; padding: 5px 14px; border-radius: 999px; border: 0.5px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.5); background: transparent; cursor: pointer; transition: all 0.15s; }
+  .ar-tab:hover { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.8); }
+  .ar-tab.active { background: #5DCAA5; border-color: #5DCAA5; color: #04342C; font-weight: 700; }
+  .ar-card { border: 0.5px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden; background: rgba(255,255,255,0.03); }
+  .ar-code-block { background: rgba(0,0,0,0.25); padding: 1rem 1.25rem; font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.75); line-height: 1.7; border-bottom: 0.5px solid rgba(255,255,255,0.08); overflow-x: auto; white-space: pre; }
+  .ar-inputs { padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 10px; border-bottom: 0.5px solid rgba(255,255,255,0.08); }
+  .ar-input-row { display: flex; align-items: center; gap: 12px; }
+  .ar-label { font-family: 'Space Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.4); min-width: 90px; }
+  .ar-input { flex: 1; font-size: 12px; font-family: 'Space Mono', monospace; padding: 7px 12px; border-radius: 6px; border: 0.5px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.2); color: rgba(255,255,255,0.9); outline: none; transition: border-color 0.15s; }
+  .ar-input:focus { border-color: #5DCAA5; }
+  .ar-footer { padding: 1rem 1.25rem; display: flex; align-items: center; gap: 16px; }
+  .ar-run { font-family: 'Space Mono', monospace; font-size: 12px; font-weight: 700; padding: 8px 22px; border-radius: 6px; border: none; background: #5DCAA5; color: #04342C; cursor: pointer; transition: opacity 0.15s, transform 0.1s; letter-spacing: 0.05em; }
+  .ar-run:hover { opacity: 0.85; }
+  .ar-run:active { transform: scale(0.97); }
+  .ar-output-wrap { flex: 1; }
+  .ar-output-label { font-family: 'Space Mono', monospace; font-size: 10px; color: rgba(255,255,255,0.3); margin-bottom: 3px; letter-spacing: 0.05em; }
+  .ar-output { font-family: 'Space Mono', monospace; font-size: 13px; color: rgba(255,255,255,0.5); min-height: 20px; transition: color 0.2s; }
+  .ar-output.success { color: #5DCAA5; }
+  .ar-output.error   { color: #F0997B; }
+  .ar-desc { font-size: 12px; color: rgba(255,255,255,0.3); padding: 10px 1.25rem; border-top: 0.5px solid rgba(255,255,255,0.06); line-height: 1.6; font-style: italic; }
+  .ar-input-wrap { position: relative; flex: 1; }
+  .ar-input-wrap .ar-input { width: 100%; box-sizing: border-box; }
+  .ar-placeholder { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-family: 'Space Mono', monospace; font-size: 12px; color: rgba(255,255,255,0.3); pointer-events: none; animation: phBlink 1.2s step-end infinite; white-space: nowrap; overflow: hidden; max-width: calc(100% - 24px); }
+  @keyframes phBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+</style>
 
 <body>
     <div class="audioPlayer"></div>
@@ -264,6 +296,30 @@
                         <Button onclick="language.showhide(1)" id="javaScript_button" class="language_button_style"><img src="javascript-logo.svg" style= "height:20px; width:20px; margin-right:3px">Javascript</Button>
                         <Button onclick="language.showhide(2)" id="java_button" class="language_button_style"><img src="java-logo.svg"  style= "height:22px; width:22px; margin-right:3px">Java</Button>
                         <Button onclick="language.showhide(3)" id="python_button" class="language_button_style"><img src="python-svgrepo-com.svg"  style= "height:28px; width:22px; margin-right:3px">Python</Button>
+                    </div>
+
+                    <!-- ── LIVE ALGORITHM RUNNER (inserted here) ── -->
+                    <div class="ar-section">
+                      <div class="ar-section-label">run it live</div>
+                      <div class="ar-tabs">
+                        <button class="ar-tab active" onclick="arSelect(0)">maskify</button>
+                        <button class="ar-tab" onclick="arSelect(1)">areaOfCountry</button>
+                        <button class="ar-tab" onclick="arSelect(2)">cumulativeBudgets</button>
+                        <button class="ar-tab" onclick="arSelect(3)">accountsReceivable</button>
+                        <button class="ar-tab" onclick="arSelect(4)">ordinalNumber</button>
+                      </div>
+                      <div class="ar-card">
+                        <div class="ar-code-block" id="ar-code"></div>
+                        <div class="ar-inputs" id="ar-inputs"></div>
+                        <div class="ar-footer">
+                          <button class="ar-run" onclick="arRun()">run</button>
+                          <div class="ar-output-wrap">
+                            <div class="ar-output-label">output</div>
+                            <div class="ar-output" id="ar-output">—</div>
+                          </div>
+                        </div>
+                        <div class="ar-desc" id="ar-desc"></div>
+                      </div>
                     </div>
                         
                     
@@ -563,7 +619,7 @@ print(output)
                         <div class="activator" onClick="toogleSelection('my-scope')" >
                           ++ details
                         </div>
-                        <!-- <iframe width="320" height="315" src="https://www.youtube.com/watch?v=hjFaPsFyJLU?autoplay=1" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> allow=”autoplay”</iframe> -->
+                        <!-- <iframe width="320" height="315" src="https://www.youtube.com/watch?v=hjFaPsFyJLU?autoplay=1" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> allow="autoplay"</iframe> -->
                         <div class="content-describe">
                           <div class="block"> i've architeched and developed this web app with vanilla javascript</div>
                           Expertise: JavaScript/HTML/CSS 🪽Java 🪽 Node.js 🪽 React.js 🪽 <a href="https://www.forbes.com/sites/technology/article/what-is-an-api/" id="creators_meta">APIs'</a>🪽<a href="https://www.ibm.com/docs/en/radfws/9.7?topic=cycle-model-view-controller-architecture" id="creators_meta">MVC</a>🪽<a href="https://git-scm.com/about/trademark" id="creators_meta">Git</a>🪽<a href="https://www.ibm.com/docs/en/zos/3.1.0?topic=descriptions-zsh-z-shell" id="creators_meta">Zsh</a>🪽 <div class="tech_line_break"></div><a href="https://www.javatpoint.com/unit-testing" id="creators_meta">Unit Testing</a> 🪽 +more <br/><br/>
@@ -758,6 +814,176 @@ async function loadGithubHeatmap() {
 
 loadGithubHeatmap();
 </script>
+
+<!-- ── LIVE ALGORITHM RUNNER ── -->
+<script>
+var AR_ALGOS = [
+  {
+    name: 'maskify',
+    desc: 'Conceals all but the last 4 characters with #. Used for credit card and ACH number display.',
+    code: 'function maskify(str) {\n  const stor = []\n  for (let i = 0; i < str.length - 4; i++) stor.push(\'#\')\n  return stor.concat(str.split(\'\').slice(-4)).join(\'\')\n}',
+    inputs: [{ label: 'string', placeholder: '4556364607935616', id: 'ar_i0' }],
+    run: function(v) {
+      var s = v[0];
+      if (!s) return 'enter a string';
+      if (s.length <= 4) return s;
+      return '#'.repeat(s.length - 4) + s.slice(-4);
+    }
+  },
+  {
+    name: 'areaOfCountry',
+    desc: 'Calculates a country\'s percentage of Earth\'s total landmass (148,940,000 km²).',
+    code: 'function areaOfCountry(name, area) {\n  const earth = 148940000\n  let pct = (area / earth) * 100\n  return name + " is " + (pct > 1 ? pct.toFixed(2) : pct.toFixed(4)) + "% of world landmass"\n}',
+    inputs: [
+      { label: 'country',  placeholder: 'Ireland', id: 'ar_i0' },
+      { label: 'area km²', placeholder: '32595',   id: 'ar_i1' }
+    ],
+    run: function(v) {
+      var n = v[0] || 'Country', a = parseFloat(v[1]);
+      if (isNaN(a)) return 'enter a valid area';
+      var p = (a / 148940000) * 100;
+      return n + ' is ' + (p > 1 ? p.toFixed(2) : p.toFixed(4)) + '% of world landmass';
+    }
+  },
+  {
+    name: 'cumulativeBudgets',
+    desc: 'Sums all budget values from an array of objects. Useful for financial data migration and reporting.',
+    code: 'function cumulativeBudgets(arr) {\n  let total = 0\n  arr.forEach(obj => {\n    if (\'budget\' in obj) total += obj.budget\n  })\n  return "$" + total.toLocaleString()\n}',
+    inputs: [{ label: 'JSON array', placeholder: '[{"budget":500},{"budget":250},{"budget":750}]', id: 'ar_i0' }],
+    run: function(v) {
+      try {
+        var cleaned = v[0]
+          .replace(/[\u2018\u2019]/g, '"')
+          .replace(/[\u201C\u201D]/g, '"')
+          .replace(/'/g, '"');
+        var a = JSON.parse(cleaned);
+        if (!Array.isArray(a)) return 'must be a JSON array';
+        var t = 0;
+        a.forEach(function(o) { if ('budget' in o) t += o.budget; });
+        return 'cumulative total: $' + t.toLocaleString();
+      } catch(e) { return 'invalid JSON — use format: [{"budget":500}]'; }
+    }
+  },
+  {
+    name: 'accountsReceivable',
+    desc: 'Takes coin/bill counts [20s, 10s, $1s, quarters, dimes, nickels, pennies] and checks if total covers amount due.',
+    code: 'function accountsReceivable(coins, amountDue) {\n  const vals = [20, 10, 1, 0.25, 0.10, 0.05, 0.01]\n  const total = coins.reduce((sum, count, i) =>\n    sum + (count * vals[i]), 0)\n  return total >= amountDue\n}',
+    inputs: [
+      { label: 'coins [array]', placeholder: '[2,1,3,4,2,1,5]', id: 'ar_i0' },
+      { label: 'amount due',    placeholder: '12.50',           id: 'ar_i1' }
+    ],
+    run: function(v) {
+      try {
+        var c = JSON.parse(v[0]), a = parseFloat(v[1]);
+        if (!Array.isArray(c) || c.length !== 7) return 'need array of 7 values';
+        if (isNaN(a)) return 'enter valid amount';
+        var d = [20, 10, 1, 0.25, 0.10, 0.05, 0.01];
+        var t = c.reduce(function(s, n, i) { return s + (n * d[i]); }, 0);
+        return 'total: $' + t.toFixed(2) + ' — covers $' + a.toFixed(2) + ': ' + (t >= a ? 'true ✓' : 'false ✗');
+      } catch(e) { return 'invalid input'; }
+    }
+  },
+  {
+    name: 'ordinalNumber',
+    desc: 'Converts an integer to its ordinal string. Correctly handles edge cases like 11th, 12th, 13th.',
+    code: 'function ordinalNumber(n) {\n  const last2 = parseInt(String(n).slice(-2))\n  const last1 = parseInt(String(n).slice(-1))\n  let suffix\n  if (last2 >= 11 && last2 <= 13) suffix = "TH"\n  else if (last1 === 1) suffix = "ST"\n  else if (last1 === 2) suffix = "ND"\n  else if (last1 === 3) suffix = "RD"\n  else suffix = "TH"\n  return n + "-" + suffix\n}',
+    inputs: [{ label: 'integer', placeholder: '21', id: 'ar_i0' }],
+    run: function(v) {
+      var n = parseInt(v[0]);
+      if (isNaN(n)) return 'enter a valid integer';
+      var l2 = parseInt(String(n).slice(-2)), l1 = parseInt(String(n).slice(-1)), s;
+      if (l2 >= 11 && l2 <= 13) s = 'TH';
+      else if (l1 === 1) s = 'ST';
+      else if (l1 === 2) s = 'ND';
+      else if (l1 === 3) s = 'RD';
+      else s = 'TH';
+      return n + '-' + s;
+    }
+  }
+];
+
+var arCurrent = 0;
+
+function arSelect(idx) {
+  arCurrent = idx;
+  document.querySelectorAll('.ar-tab').forEach(function(t, i) { t.classList.toggle('active', i === idx); });
+  var algo = AR_ALGOS[idx];
+  document.getElementById('ar-code').textContent = algo.code;
+
+  var inputsEl = document.getElementById('ar-inputs');
+  inputsEl.innerHTML = '';
+  algo.inputs.forEach(function(inp) {
+    var row = document.createElement('div');
+    row.className = 'ar-input-row';
+
+    var label = document.createElement('span');
+    label.className = 'ar-label';
+    label.textContent = inp.label;
+
+    var wrap = document.createElement('div');
+    wrap.className = 'ar-input-wrap';
+
+    var input = document.createElement('input');
+    input.className = 'ar-input';
+    input.id = inp.id;
+    input.value = '';
+
+    var ph = document.createElement('span');
+    ph.className = 'ar-placeholder';
+    ph.textContent = inp.placeholder;
+
+    input.addEventListener('input', function() {
+      ph.style.display = input.value ? 'none' : '';
+    });
+    input.addEventListener('focus', function() {
+      ph.style.animation = 'none';
+      ph.style.opacity = '0.3';
+    });
+    input.addEventListener('blur', function() {
+      if (!input.value) {
+        ph.style.animation = '';
+        ph.style.opacity = '';
+      }
+    });
+
+    wrap.appendChild(input);
+    wrap.appendChild(ph);
+    row.appendChild(label);
+    row.appendChild(wrap);
+    inputsEl.appendChild(row);
+  });
+
+  document.getElementById('ar-desc').textContent = algo.desc;
+  var o = document.getElementById('ar-output');
+  o.textContent = '—'; o.className = 'ar-output';
+}
+
+function arRun() {
+  var algo = AR_ALGOS[arCurrent];
+  var vals = algo.inputs.map(function(inp) {
+    var el = document.getElementById(inp.id);
+    var val = el ? el.value.trim() : '';
+    if (!val) val = inp.placeholder;
+    return val;
+  });
+  var o = document.getElementById('ar-output');
+  try {
+    var result = String(algo.run(vals));
+    o.textContent = result;
+    o.className = 'ar-output ' + ((result.includes('invalid') || result.includes('enter') || result.includes('must') || result.includes('need')) ? 'error' : 'success');
+  } catch(e) {
+    o.textContent = 'error: ' + e.message;
+    o.className = 'ar-output error';
+  }
+}
+
+arSelect(0);
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' && document.activeElement.classList.contains('ar-input')) arRun();
+});
+</script>
+
 </body>
 </div>
 
